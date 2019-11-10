@@ -31,7 +31,7 @@ df.index = np.arange(1, len(df) + 1)
 #fixing Date format
 df.Date = pd.to_numeric(df['Date'], errors = 'coerce')
 df.Date = df['Date'].map("{:02}".format)
-df.Date = df['Date'].apply(lambda x:'20'+x if 0 < int(x) < 20 else '19'+x)
+df.Date = df['Date'].apply(lambda x:'20'+x if 0 <= int(x) <= 20 else '19'+x)
 df.Date = df['Date'].astype(int)
 
 #converting Gross from str to int
@@ -42,4 +42,4 @@ df.RTRating = df['RTRating'].apply(lambda x: x/10)
 
 #to csv
 df.to_csv('results.csv', index_label = 'ID')
-print(df)
+print(df.sort_values('Date'))

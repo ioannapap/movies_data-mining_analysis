@@ -14,7 +14,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 13,To Kill A Mockingbird,13129846,2000000.0,1962,,,9.7,8.4,82786.0
 14,"Tora, Tora, Tora",29548291,25000000.0,1970,,Richard Fleischer,,,
 15,Hollywood Shuffle,5228617,100000.0,1987,,,8.7,6.8,1532.0
-16,Over the Hill to the Poorhouse,3000000,100000.0,1920,,,,,
+16,Over the Hill to the Poorhouse,3000000,100000.0,2020,,,,,
 17,Wilson,2000000,5200000.0,1944,,,,7.0,451.0
 18,Darling Lili,5000000,22000000.0,1970,,Blake Edwards,,6.1,858.0
 19,The Ten Commandments,80000000,13500000.0,1956,,,9.0,2.5,1677.0
@@ -57,7 +57,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 56,American Ninja 2: The Confrontation,4000000,350000.0,1987,Action,Sam Firstenberg,,3.7,2495.0
 57,The American President,107822813,62000000.0,1995,Romantic Comedy,Rob Reiner,9.0,6.8,22780.0
 58,Annie Hall,38251425,4000000.0,1977,Comedy,Woody Allen,9.8,8.2,65406.0
-59,Anatomie,9598,2500000.0,1900,Horror,,,6.1,6266.0
+59,Anatomie,9598,2500000.0,2000,Horror,,,6.1,6266.0
 60,The Adventures of Huck Finn,24103594,6500000.0,1993,Adventure,Stephen Sommers,6.2,5.8,3095.0
 61,The Apartment,24600000,3000000.0,1960,Romantic Comedy,Billy Wilder,9.1,8.4,36485.0
 62,Apocalypse Now,78800000,31500000.0,1979,Action,Francis Ford Coppola,9.8,8.6,173141.0
@@ -138,7 +138,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 137,Les BronzÃˆs 3: amis pour la vie,83833602,42000000.0,2006,Comedy,,,4.4,1254.0
 138,Brazil,9929135,15000000.0,1985,Black Comedy,Terry Gilliam,9.8,8.0,76635.0
 139,Blazing Saddles,119500000,2600000.0,1974,Comedy,Mel Brooks,8.9,7.8,45771.0
-140,The Basket,609042,1300000.0,1900,Drama,,,6.3,343.0
+140,The Basket,609042,1300000.0,2000,Drama,,,6.3,343.0
 141,Bathing Beauty,3500000,2361000.0,1944,Musical,,,6.2,487.0
 142,Bill & Ted's Excellent Adventure,39916091,10000000.0,1989,Comedy,Stephen Herek,8.1,6.7,30341.0
 143,A Bridge Too Far,50800000,26000000.0,1977,Action,Sir Richard Attenborough,6.7,7.3,16882.0
@@ -333,7 +333,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 332,Funny Ha Ha,77070,30000.0,2005,Comedy,,,6.1,1138.0
 333,The Funeral,1412799,12500000.0,1996,Drama,Abel Ferrara,8.3,6.4,4084.0
 334,Fantasia,83320000,2280000.0,1940,Musical,,9.8,7.8,29914.0
-335,Fantasia 2000 (IMAX),60507228,80000000.0,1900,Musical,,,,
+335,Fantasia 2000 (IMAX),60507228,80000000.0,2000,Musical,,,,
 336,The Fog,21378361,1000000.0,1980,Horror,John Carpenter,6.9,3.3,15760.0
 337,Forrest Gump,679400525,55000000.0,1994,Drama,Robert Zemeckis,7.0,8.6,300455.0
 338,Fortress,46730578,12000000.0,1993,Action,,3.6,5.5,7026.0
@@ -354,7 +354,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 353,The First Wives Club,181489203,30000000.0,1996,Comedy,Hugh Wilson,4.1,5.6,14682.0
 354,Flirting with Disaster,14853474,7000000.0,1996,Comedy,David O. Russell,8.6,6.7,8474.0
 355,For Your Eyes Only,195300000,28000000.0,1981,Action,John Glen,7.1,6.8,23527.0
-356,Fiza,1179462,1000000.0,1900,Drama,,,6.5,749.0
+356,Fiza,1179462,1000000.0,2000,Drama,,,6.5,749.0
 357,Grip: A Criminal's Story,1336,12000.0,2006,Action,,,,
 358,The Ghost and the Darkness,38564422,55000000.0,1996,Action,Stephen Hopkins,5.1,6.6,19735.0
 359,Gallipoli,5732587,3000000.0,1981,,Peter Weir,8.6,7.7,14139.0
@@ -365,7 +365,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 364,The Godfather: Part III,66520529,54000000.0,1990,Drama,Francis Ford Coppola,,7.6,82977.0
 365,Goodfellas,46743809,25000000.0,1990,Drama,Martin Scorsese,9.7,8.8,229156.0
 366,The Godfather,268500000,7000000.0,1972,,Francis Ford Coppola,10.0,9.2,411088.0
-367,God's Army,2652515,300000.0,1900,Drama,,5.0,6.8,638.0
+367,God's Army,2652515,300000.0,2000,Drama,,5.0,6.8,638.0
 368,The Great Escape,11744471,4000000.0,1963,,John Sturges,9.1,8.4,62074.0
 369,Gory Gory Hallelujah,12604,425000.0,2005,Musical,Sue Corcoran,,5.2,134.0
 370,Ghost,517600000,22000000.0,1990,Drama,Jerry Zucker,8.1,6.9,51125.0
@@ -419,7 +419,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 418,Home Alone 2: Lost in New York,358994850,20000000.0,1992,Comedy,Chris Columbus,2.1,5.8,51408.0
 419,Home Alone,476684675,15000000.0,1990,Comedy,Chris Columbus,4.7,7.0,79080.0
 420,Home Movies,89134,400000.0,1980,,,,5.3,291.0
-421,Hum to Mohabbt Karega,121807,2000000.0,1900,Drama,,,3.6,74.0
+421,Hum to Mohabbt Karega,121807,2000000.0,2000,Drama,,,3.6,74.0
 422,The Hotel New Hampshire,5142858,7500000.0,1984,Drama,,6.9,5.8,4387.0
 423,Henry V,10161099,9000000.0,1989,Action,Kenneth Branagh,10.0,7.9,14499.0
 424,Housefull,14883658,10100000.0,2010,,,,4.6,687.0
@@ -576,7 +576,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 575,Mo' Better Blues,16153000,10000000.0,1990,Drama,Spike Lee,7.2,6.3,4210.0
 576,Moby Dick,10400000,4500000.0,1956,Adventure,John Huston,6.7,7.4,5969.0
 577,My Beautiful Laundrette,0,400000.0,1986,,Stephen Frears,,6.9,5381.0
-578,Michael Jordan to the MAX,18642318,7000000.0,1900,Documentary,,6.4,7.2,746.0
+578,Michael Jordan to the MAX,18642318,7000000.0,2000,Documentary,,6.4,7.2,746.0
 579,Michael Collins,27572844,25000000.0,1996,Drama,Neil Jordan,7.7,6.9,11805.0
 580,My Cousin Vinny,52929168,11000000.0,1992,Comedy,,8.6,7.3,30524.0
 581,Medicine Man,44948240,40000000.0,1992,Drama,John McTiernan,2.2,5.7,9307.0
@@ -707,7 +707,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 706,The Player,28876702,8000000.0,1992,Black Comedy,Robert Altman,,7.7,24451.0
 707,Apollo 13,334100000,65000000.0,1995,Drama,Ron Howard,,7.5,87605.0
 708,Platoon,137963328,6000000.0,1986,Drama,Oliver Stone,8.6,8.2,108641.0
-709,Panic,889279,1000000.0,1900,Drama,,9.2,2.7,473.0
+709,Panic,889279,1000000.0,2000,Drama,,9.2,2.7,473.0
 710,The Adventures of Pinocchio,36682170,25000000.0,1996,Adventure,Steve Barron,2.7,5.3,1734.0
 711,Pandora's Box,881950,800000.0,2002,Thriller/Suspense,,,4.6,386.0
 712,Pink Narcissus,8231,27000.0,1999,,,,6.0,384.0
@@ -944,7 +944,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 943,The Craft,55669466,15000000.0,1996,Thriller/Suspense,Andrew Fleming,4.5,5.9,21130.0
 944,It Happened One Night,2500000,325000.0,1934,Romantic Comedy,Frank Capra,9.7,8.3,25074.0
 945,The Net,110521733,22000000.0,1995,Thriller/Suspense,,3.3,5.6,24363.0
-946,La otra conquista,886410,3500000.0,1900,Drama,,,6.1,584.0
+946,La otra conquista,886410,3500000.0,2000,Drama,,,6.1,584.0
 947,The Journey,19800,500000.0,2003,,,,4.4,74.0
 948,They Live,13000000,4000000.0,1988,Thriller/Suspense,John Carpenter,8.8,7.0,20995.0
 949,Tales from the Hood,11784569,6000000.0,1995,Horror,,3.3,5.8,1860.0
@@ -969,8 +969,8 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 968,True Romance,12281000,12500000.0,1993,Thriller/Suspense,Tony Scott,9.1,7.9,73829.0
 969,Tron,26918576,17000000.0,1982,Action,,6.8,2.9,923.0
 970,Trapeze,14400000,4000000.0,1956,,,6.0,6.7,1570.0
-971,The Terrorist,195043,25000.0,1900,,,,5.5,50.0
-972,Trois,1161843,200000.0,1900,Thriller/Suspense,,,3.3,360.0
+971,The Terrorist,195043,25000.0,2000,,,,5.5,50.0
+972,Trois,1161843,200000.0,2000,Thriller/Suspense,,,3.3,360.0
 973,Things to Do in Denver when You're Dead,529766,15000000.0,1995,Black Comedy,,3.3,6.6,12789.0
 974,A Time to Kill,152266007,40000000.0,1996,Drama,Joel Schumacher,6.8,7.1,38577.0
 975,Total Recall,261400000,65000000.0,1990,Action,Paul Verhoeven,8.1,7.4,70355.0
@@ -1017,7 +1017,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1016,The Wild Bunch,509424,6000000.0,1969,Western,Sam Peckinpah,9.7,8.2,31196.0
 1017,Wall Street,43848100,15000000.0,1987,Drama,Oliver Stone,7.8,7.3,35454.0
 1018,The Wrong Man,2000000,1200000.0,1956,,Alfred Hitchcock,8.9,7.5,7531.0
-1019,Woman Chaser,110719,150000.0,1900,,,,,
+1019,Woman Chaser,110719,150000.0,2000,,,,,
 1020,We're No Angels,10555348,20000000.0,1989,Comedy,Neil Jordan,5.0,5.6,7839.0
 1021,Wolf,131011757,70000000.0,1994,Thriller/Suspense,Mike Nichols,6.0,6.0,20035.0
 1022,Warriors of Virtue,6448817,35000000.0,1997,Action,Ronny Yu,1.0,4.0,1202.0
@@ -1047,7 +1047,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1046,You Only Live Twice,111600000,9500000.0,1967,Action,,7.0,7.0,24701.0
 1047,Ayurveda: Art of Being,2066892,300000.0,2002,Documentary,,,7.3,181.0
 1048,Young Sherlock Holmes,19739000,18000000.0,1985,Adventure,Barry Levinson,6.3,6.5,7293.0
-1049,102 Dalmatians,66941559,85000000.0,1900,Comedy,Kevin Lima,3.0,4.4,7147.0
+1049,102 Dalmatians,66941559,85000000.0,2000,Comedy,Kevin Lima,3.0,4.4,7147.0
 1050,Ten Things I Hate About You,38177966,13000000.0,1999,Romantic Comedy,,,6.9,61910.0
 1051,"10,000 B.C.",269065678,105000000.0,2008,Adventure,Roland Emmerich,0.9,5.8,134.0
 1052,10th & Wolf,54702,8000000.0,2006,Drama,Robert Moresco,1.9,6.3,3655.0
@@ -1069,7 +1069,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1068,21,157852532,35000000.0,2008,Thriller/Suspense,Robert Luketic,3.5,6.7,60918.0
 1069,21 Grams,60448701,20000000.0,2003,Drama,Alejandro Gonzalez Inarritu,8.1,7.9,77910.0
 1070,25th Hour,23928503,4500000.0,2002,Drama,Spike Lee,7.8,7.9,58781.0
-1071,28 Days,62063972,43000000.0,1900,Comedy,Betty Thomas,3.0,5.8,17937.0
+1071,28 Days,62063972,43000000.0,2000,Comedy,Betty Thomas,3.0,5.8,17937.0
 1072,28 Days Later...,82719885,15000000.0,2003,Horror,Danny Boyle,8.9,7.6,103525.0
 1073,28 Weeks Later,64238440,15000000.0,2007,Horror,,,7.1,69558.0
 1074,Two Brothers,39925603,72000000.0,2004,Drama,Jean-Jacques Annaud,7.7,6.0,127.0
@@ -1083,7 +1083,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1082,30 Days of Night,75066323,30000000.0,2007,Horror,,4.9,6.6,52518.0
 1083,Three Kings,107752036,48000000.0,1999,Action,David O. Russell,9.4,7.3,68726.0
 1084,3000 Miles to Graceland,18708848,62000000.0,2001,Drama,,1.4,5.6,20094.0
-1085,3 Strikes,9821335,4000000.0,1900,Comedy,,,2.9,905.0
+1085,3 Strikes,9821335,4000000.0,2000,Comedy,,,2.9,905.0
 1086,3:10 to Yuma,69791889,48000000.0,2007,Western,James Mangold,8.9,7.9,98355.0
 1087,40 Days and 40 Nights,95092667,17000000.0,2002,Romantic Comedy,Michael Lehmann,3.8,5.4,27912.0
 1088,The 40 Year-old Virgin,177339049,26000000.0,2005,Comedy,Judd Apatow,,7.5,94557.0
@@ -1094,7 +1094,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1093,"4 luni, 3 saptamani si 2 zile",4723542,900000.0,2008,Drama,,,,
 1094,50 First Dates,196376832,75000000.0,2004,Romantic Comedy,Peter Segal,4.4,6.8,64701.0
 1095,Six-String Samurai,134624,2000000.0,1998,,,6.0,6.4,3462.0
-1096,The 6th Day,96024898,82000000.0,1900,Action,Roger Spottiswoode,4.0,5.8,32606.0
+1096,The 6th Day,96024898,82000000.0,2000,Action,Roger Spottiswoode,4.0,5.8,32606.0
 1097,Seven Pounds,166617328,54000000.0,2008,Drama,Gabriele Muccino,2.7,7.6,62718.0
 1098,88 Minutes,32955399,30000000.0,2008,Thriller/Suspense,Jon Avnet,0.5,5.9,31205.0
 1099,Eight Below,120612565,40000000.0,2006,Adventure,Frank Marshall,7.1,7.3,17717.0
@@ -1104,7 +1104,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1103,9,46603791,30000000.0,2009,Adventure,Shane Acker,,7.8,1488.0
 1104,Nine Queens,12412889,1500000.0,2002,Drama,,,,
 1105,The Whole Ten Yards,26323969,30000000.0,2004,Comedy,Howard Deutch,0.4,5.1,20807.0
-1106,The Whole Nine Yards,85262492,24000000.0,1900,Comedy,,4.5,6.6,42928.0
+1106,The Whole Nine Yards,85262492,24000000.0,2000,Comedy,,4.5,6.6,42928.0
 1107,About a Boy,129949664,27000000.0,2002,Romantic Comedy,Paul Weitz,9.3,7.4,48875.0
 1108,A Bug's Life,363109485,45000000.0,1998,Adventure,John Lasseter,9.1,7.3,56866.0
 1109,Abandon,12219367,25000000.0,2002,Thriller/Suspense,,1.7,4.8,5361.0
@@ -1134,8 +1134,8 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1133,Alien: Resurrection,160700000,60000000.0,1997,Action,Jean-Pierre Jeunet,,6.2,66141.0
 1134,Alien,203630630,9000000.0,1979,Horror,Ridley Scott,9.7,8.5,180387.0
 1135,A Lot Like Love,47835784,25000000.0,2005,Comedy,,4.1,6.4,17929.0
-1136,All the Pretty Horses,18120267,45000000.0,1900,Western,Billy Bob Thornton,3.2,5.7,6511.0
-1137,Almost Famous,47371191,60000000.0,1900,Comedy,Cameron Crowe,8.8,8.0,94424.0
+1136,All the Pretty Horses,18120267,45000000.0,2000,Western,Billy Bob Thornton,3.2,5.7,6511.0
+1137,Almost Famous,47371191,60000000.0,2000,Comedy,Cameron Crowe,8.8,8.0,94424.0
 1138,Evan Almighty,173219280,175000000.0,2007,Comedy,Tom Shadyac,2.3,5.5,43164.0
 1139,Bruce Almighty,485004995,81000000.0,2003,Comedy,Tom Shadyac,4.8,6.6,92494.0
 1140,All or Nothing,184255,9000000.0,2002,Drama,Mike Leigh,,,
@@ -1157,12 +1157,12 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1156,American Gangster,265697825,100000000.0,2007,Drama,Ridley Scott,7.9,7.9,114060.0
 1157,An American Haunting,27844063,14000000.0,2006,Horror,,1.2,4.9,13510.0
 1158,Amistad,44212592,40000000.0,1997,Drama,Steven Spielberg,7.7,7.1,28477.0
-1159,AimÃˆe & Jaguar,927107,6800000.0,1900,Drama,,,7.2,2974.0
+1159,AimÃˆe & Jaguar,927107,6800000.0,2000,Drama,,,7.2,2974.0
 1160,Amores Perros,20883834,2000000.0,2001,Drama,Alejandro Gonzalez Inarritu,,8.1,61083.0
 1161,American Pie 2,286500000,30000000.0,2001,Comedy,,5.2,6.2,66751.0
 1162,American Wedding,126425115,55000000.0,2003,Comedy,,5.6,6.1,52210.0
 1163,American Pie,234800000,12000000.0,1999,Comedy,Paul Weitz,5.9,6.9,106624.0
-1164,American Psycho,28674417,8000000.0,1900,Black Comedy,Mary Harron,6.6,7.4,99424.0
+1164,American Psycho,28674417,8000000.0,2000,Black Comedy,Mary Harron,6.6,7.4,99424.0
 1165,American Splendor,7978681,2000000.0,2003,Drama,,9.4,7.6,23686.0
 1166,America's Sweethearts,157627733,46000000.0,2001,Romantic Comedy,,3.2,5.7,26899.0
 1167,The Amityville Horror,108047131,18500000.0,2005,Horror,,2.4,5.8,26303.0
@@ -1198,7 +1198,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1197,King Arthur,203877963,90000000.0,2004,Adventure,Antoine Fuqua,3.1,6.2,53106.0
 1198,Arthur et les Minimoys,110102340,80000000.0,2006,Adventure,Luc Besson,,5.9,7626.0
 1199,Artificial Intelligence: AI,235900000,90000000.0,2001,Drama,Steven Spielberg,,6.9,91901.0
-1200,The Art of War,30199105,40000000.0,1900,Thriller/Suspense,Christian Duguay,1.6,5.5,12484.0
+1200,The Art of War,30199105,40000000.0,2000,Thriller/Suspense,Christian Duguay,1.6,5.5,12484.0
 1201,Astro Boy,44093014,65000000.0,2009,Adventure,David Bowers,,6.4,5265.0
 1202,A Serious Man,30710147,7000000.0,2009,Comedy,Joel Coen,8.8,7.2,32396.0
 1203,The Astronaut Farmer,11003643,13000000.0,2007,Drama,Michael Polish,,6.4,10506.0
@@ -1213,7 +1213,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1212,ATL,21170563,17000000.0,2006,Comedy,,6.3,4.7,5480.0
 1213,Atlantis: The Lost Empire,186049020,90000000.0,2001,Adventure,Gary Trousdale,,6.4,15552.0
 1214,Hearts in Atlantis,30885781,31000000.0,2001,Drama,,4.9,6.8,16336.0
-1215,Autumn in New York,90717684,40000000.0,1900,Drama,Joan Chen,2.1,4.8,9309.0
+1215,Autumn in New York,90717684,40000000.0,2000,Drama,Joan Chen,2.1,4.8,9309.0
 1216,Atonement,129425746,30000000.0,2007,Drama,Joe Wright,8.3,7.9,75491.0
 1217,The Rules of Attraction,11799060,4000000.0,2002,Black Comedy,,4.4,6.7,26634.0
 1218,August Rush,65627510,25000000.0,2007,Drama,,3.7,7.5,28650.0
@@ -1244,9 +1244,9 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1243,Bad Lieutenant: Port of Call New Orleans,8162545,25000000.0,2009,Drama,Werner Herzog,8.7,,
 1244,The Bad News Bears,33500620,35000000.0,2005,Comedy,Richard Linklater,,7.1,7749.0
 1245,Burn After Reading,163415735,37000000.0,2008,Black Comedy,Joel Coen,7.8,7.2,92553.0
-1246,Bait,15471969,35000000.0,1900,Action,Antoine Fuqua,2.6,5.6,5143.0
-1247,Boys and Girls,21799652,16000000.0,1900,Romantic Comedy,,1.1,4.9,7779.0
-1248,Black and White,5241315,10000000.0,1900,Drama,James Toback,,6.6,452.0
+1246,Bait,15471969,35000000.0,2000,Action,Antoine Fuqua,2.6,5.6,5143.0
+1247,Boys and Girls,21799652,16000000.0,2000,Romantic Comedy,,1.1,4.9,7779.0
+1248,Black and White,5241315,10000000.0,2000,Drama,James Toback,,6.6,452.0
 1249,Bangkok Dangerous,46598133,45000000.0,2008,Action,Oxide Pang Chun,0.9,5.4,20931.0
 1250,The Banger Sisters,38067218,10000000.0,2002,Comedy,,4.7,5.5,7435.0
 1251,Les invasions barbares,8460000,5000000.0,2003,Drama,,,7.8,14322.0
@@ -1254,23 +1254,23 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1253,Basic Instinct 2,35417162,70000000.0,2006,Thriller/Suspense,Michael Caton-Jones,0.7,3.9,16784.0
 1254,Basic,42598498,50000000.0,2003,Thriller/Suspense,John McTiernan,2.1,6.3,25960.0
 1255,Batman Begins,372353017,150000000.0,2005,Action,Christopher Nolan,8.4,8.3,270641.0
-1256,Battlefield Earth: A Saga of the Year 3000,29725663,80000000.0,1900,Action,,,2.3,39316.0
+1256,Battlefield Earth: A Saga of the Year 3000,29725663,80000000.0,2000,Action,,,2.3,39316.0
 1257,The Dark Knight,1022345358,185000000.0,2008,Action,Christopher Nolan,9.3,8.9,465000.0
 1258,Bats,10155691,6500000.0,1999,Horror,,1.7,3.3,5565.0
 1259,The Battle of Shaker Heights,280351,1000000.0,2003,Comedy,,4.3,6.1,2524.0
 1260,Baby Boy,28734552,16000000.0,2001,Drama,John Singleton,6.9,6.1,4485.0
 1261,The Curious Case of Benjamin Button,329809326,160000000.0,2008,Drama,David Fincher,7.2,8.0,137120.0
 1262,Baby Mama,64391484,,2008,Comedy,,6.3,6.1,16128.0
-1263,Bless the Child,40435694,40000000.0,1900,Thriller/Suspense,Chuck Russell,0.3,4.8,7765.0
+1263,Bless the Child,40435694,40000000.0,2000,Thriller/Suspense,Chuck Russell,0.3,4.8,7765.0
 1264,The Bachelor,36882378,21000000.0,1999,Romantic Comedy,,0.9,4.8,9030.0
-1265,The Broken Hearts Club: A Romantic Comedy,2022442,1000000.0,1900,Comedy,,,6.6,3731.0
+1265,The Broken Hearts Club: A Romantic Comedy,2022442,1000000.0,2000,Comedy,,,6.6,3731.0
 1266,Be Cool,94849401,75000000.0,2005,Comedy,F. Gary Gray,3.0,5.6,32082.0
 1267,Big Daddy,234779795,30000000.0,1999,Comedy,Dennis Dugan,4.0,4.7,48.0
-1268,Bedazzled,90376224,48000000.0,1900,Comedy,Harold Ramis,4.9,5.9,30946.0
+1268,Bedazzled,90376224,48000000.0,2000,Comedy,Harold Ramis,4.9,5.9,30946.0
 1269,Body of Lies,108394666,67500000.0,2008,Thriller/Suspense,Ridley Scott,5.2,7.2,53921.0
 1270,Blood Diamond,171377916,100000000.0,2006,Action,Edward Zwick,6.2,8.0,118925.0
 1271,Mr. Bean's Holiday,229736344,25000000.0,2007,Comedy,,5.0,6.0,28950.0
-1272,Beautiful,3134509,9000000.0,1900,Drama,Sally Field,1.5,4.4,2238.0
+1272,Beautiful,3134509,9000000.0,2000,Drama,Sally Field,1.5,4.4,2238.0
 1273,Beavis and Butt-head Do America,63118386,12000000.0,1996,Comedy,Mike Judge,7.1,6.6,22918.0
 1274,Bend it Like Beckham,76583333,5000000.0,2003,Drama,Gurinder Chadha,,6.9,41052.0
 1275,In the Bedroom,43430604,1700000.0,2001,Drama,Todd Field,9.3,7.5,20888.0
@@ -1294,12 +1294,12 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1293,The Big Hit,27066941,13000000.0,1998,Action,,4.1,5.8,14157.0
 1294,Birthday Girl,8130727,13000000.0,2002,Romantic Comedy,,,6.0,13366.0
 1295,The Big Lebowski,46189568,15000000.0,1998,Comedy,Joel Coen,7.8,8.2,177960.0
-1296,Big Momma's House,173559438,33000000.0,1900,Comedy,Raja Gosnell,3.0,4.7,21318.0
+1296,Big Momma's House,173559438,33000000.0,2000,Comedy,Raja Gosnell,3.0,4.7,21318.0
 1297,Black Hawk Down,173638745,95000000.0,2001,Action,Ridley Scott,7.6,7.7,98653.0
-1298,Eye of the Beholder,18260865,15000000.0,1900,Thriller/Suspense,,,4.6,9992.0
+1298,Eye of the Beholder,18260865,15000000.0,2000,Thriller/Suspense,,,4.6,9992.0
 1299,The Big Bounce,6626115,50000000.0,2004,Comedy,,,4.8,9195.0
 1300,Big Trouble,8488871,45000000.0,2002,Comedy,Barry Sonnenfeld,4.8,6.3,11610.0
-1301,Billy Elliot,109280263,5000000.0,1900,Drama,Stephen Daldry,8.5,7.7,38403.0
+1301,Billy Elliot,109280263,5000000.0,2000,Drama,Stephen Daldry,8.5,7.7,38403.0
 1302,Bicentennial Man,87420776,90000000.0,1999,Drama,Chris Columbus,3.8,6.4,28827.0
 1303,Birth,14603001,20000000.0,2004,Drama,,3.9,6.3,25.0
 1304,Becoming Jane,37304637,16500000.0,2007,Romantic Comedy,,5.8,7.0,15167.0
@@ -1325,10 +1325,10 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1324,Blow,83282296,30000000.0,2001,Drama,Ted Demme,5.4,7.4,70218.0
 1325,Ballistic: Ecks vs. Sever,14294842,70000000.0,2002,Action,,,3.4,11112.0
 1326,Blue Crush,51327420,30000000.0,2002,Drama,,6.2,5.5,11699.0
-1327,Bamboozled,2373937,10000000.0,1900,Drama,Spike Lee,4.7,6.3,5958.0
+1327,Bamboozled,2373937,10000000.0,2000,Drama,Spike Lee,4.7,6.3,5958.0
 1328,A Beautiful Mind,316708996,78000000.0,2001,Drama,Ron Howard,7.8,8.0,126067.0
 1329,Big Momma's House 2,137047376,40000000.0,2006,Comedy,,0.6,4.0,11368.0
-1330,The Boondock Saints,250000,7000000.0,1900,Action,,1.9,7.8,86172.0
+1330,The Boondock Saints,250000,7000000.0,2000,Action,,1.9,7.8,86172.0
 1331,Bandidas,10496317,35000000.0,2006,Western,,6.2,5.6,12103.0
 1332,Bandits,71523271,75000000.0,2001,Comedy,Barry Levinson,6.3,6.5,30732.0
 1333,Bobby,20597806,14000000.0,2006,Drama,Emilio Estevez,4.6,7.1,23262.0
@@ -1346,7 +1346,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1345,The Bourne Ultimatum,442161562,130000000.0,2007,Action,Paul Greengrass,9.3,8.2,146025.0
 1346,The Borrowers,54045832,29000000.0,1998,Comedy,Peter Hewitt,,5.6,4340.0
 1347,My Boss's Daughter,15549702,14000000.0,2003,Romantic Comedy,David Zucker,0.9,4.3,10919.0
-1348,Bounce,53399300,35000000.0,1900,Drama,,5.1,5.5,10702.0
+1348,Bounce,53399300,35000000.0,2000,Drama,,5.1,5.5,10702.0
 1349,Bowling for Columbine,58576018,3000000.0,2002,Documentary,Michael Moore,9.6,8.2,76928.0
 1350,Boys Don't Cry,20741000,2000000.0,1999,Drama,Kimberly Peirce,8.8,7.6,34435.0
 1351,The Boy in the Striped Pyjamas,39830581,12500000.0,2008,Drama,,,7.8,21683.0
@@ -1366,7 +1366,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1365,The Break Up,202944203,52000000.0,2006,Romantic Comedy,Peyton Reed,,5.9,38285.0
 1366,An Alan Smithee Film: Burn Hollywood Burn,45779,10000000.0,1998,Comedy,Arthur Hiller,,3.5,2152.0
 1367,Brooklyn Rules,458232,8000000.0,2007,Drama,,,6.4,2797.0
-1368,Boiler Room,28773637,9000000.0,1900,Drama,,6.7,6.9,22979.0
+1368,Boiler Room,28773637,9000000.0,2000,Drama,,6.7,6.9,22979.0
 1369,The Brothers Solomon,900926,10000000.0,2007,Comedy,,1.5,5.2,6044.0
 1370,The Brothers,27958191,6000000.0,2001,Comedy,,6.3,2.8,153.0
 1371,Brown Sugar,28315272,8000000.0,2002,Romantic Comedy,,6.4,6.0,2745.0
@@ -1376,12 +1376,12 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1375,The Brown Bunny,630427,10000000.0,2004,Drama,Vincent Gallo,,4.9,7465.0
 1376,Barbershop 2: Back in Business,65842412,18000000.0,2004,Comedy,,,5.5,4848.0
 1377,Barbershop,77081642,12000000.0,2002,Comedy,Tim Story,8.2,6.2,11164.0
-1378,Best in Show,20695413,6000000.0,1900,Comedy,Christopher Guest,9.4,7.4,24484.0
+1378,Best in Show,20695413,6000000.0,2000,Comedy,Christopher Guest,9.4,7.4,24484.0
 1379,Bad Santa,60063017,18000000.0,2003,Comedy,Terry Zwigoff,7.7,7.3,45022.0
 1380,Inglourious Basterds,320389438,70000000.0,2009,Action,Quentin Tarantino,8.8,8.4,178742.0
 1381,Blue Streak,117448157,36000000.0,1999,Action,Les Mayfield,3.5,5.9,23545.0
 1382,The Butterfly Effect,96046844,13000000.0,2004,Thriller/Suspense,,3.3,7.8,102982.0
-1383,"O Brother, Where Art Thou",65976782,26000000.0,1900,Comedy,Joel Coen,,,
+1383,"O Brother, Where Art Thou",65976782,26000000.0,2000,Comedy,Joel Coen,,,
 1384,Batman & Robin,238317814,125000000.0,1997,Action,Joel Schumacher,1.1,3.5,81283.0
 1385,Boat Trip,14933713,15000000.0,2003,Comedy,,0.7,4.7,13258.0
 1386,Bubba Ho-Tep,1239183,1000000.0,2003,Comedy,,,7.3,23110.0
@@ -1404,31 +1404,31 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1403,Disney's A Christmas Carol,323743744,190000000.0,2009,Drama,Robert Zemeckis,5.3,,
 1404,The Rage: Carrie 2,17760244,21000000.0,1999,Horror,,1.6,4.3,7235.0
 1405,Cars,461923762,70000000.0,2006,Comedy,John Lasseter,7.4,7.5,66809.0
-1406,Cast Away,427230516,85000000.0,1900,Drama,Robert Zemeckis,8.9,7.5,102936.0
+1406,Cast Away,427230516,85000000.0,2000,Drama,Robert Zemeckis,8.9,7.5,102936.0
 1407,Catch Me if You Can,351106800,52000000.0,2002,Drama,Steven Spielberg,9.6,5.7,224.0
 1408,The Cat in the Hat,133818283,109000000.0,2003,Comedy,,,3.4,15318.0
 1409,Cats Don't Dance,3588602,32000000.0,1997,Musical,Mark Dindal,6.7,6.9,1663.0
 1410,Catwoman,82102379,100000000.0,2004,Action,,1.0,3.2,34651.0
-1411,Cecil B. Demented,1953882,10000000.0,1900,Black Comedy,John Waters,5.1,5.9,7565.0
+1411,Cecil B. Demented,1953882,10000000.0,2000,Black Comedy,John Waters,5.1,5.9,7565.0
 1412,The Country Bears,16988996,20000000.0,2002,Adventure,,2.7,3.8,2021.0
-1413,Center Stage,17200925,18000000.0,1900,Drama,,4.2,6.2,7968.0
+1413,Center Stage,17200925,18000000.0,2000,Drama,,4.2,6.2,7968.0
 1414,The Corpse Bride,117359111,30000000.0,2005,Adventure,Tim Burton,,,
 1415,Critical Care,220175,12000000.0,1997,,Sidney Lumet,5.3,6.0,895.0
 1416,Connie & Carla,8047525,20000000.0,2004,Comedy,Michael Lembeck,4.4,6.0,4359.0
 1417,Collateral Damage,78353508,85000000.0,2002,Action,Andrew Davis,,5.2,24358.0
 1418,Crocodile Dundee in Los Angeles,39393111,25000000.0,2001,Adventure,Simon Wincer,1.2,4.6,7082.0
 1419,Celebrity,6200000,12000000.0,1998,Comedy,Woody Allen,4.1,6.1,10978.0
-1420,The Cell,61280963,35000000.0,1900,Thriller/Suspense,,4.6,6.2,36961.0
+1420,The Cell,61280963,35000000.0,2000,Thriller/Suspense,,4.6,6.2,36961.0
 1421,Cellular,45261739,45000000.0,2004,Thriller/Suspense,David R. Ellis,5.4,6.5,32534.0
 1422,City of Ember,11817059,38000000.0,2008,Adventure,Gil Kenan,5.3,6.4,14905.0
 1423,Charlie and the Chocolate Factory,474459076,150000000.0,2005,Comedy,Tim Burton,8.2,7.1,102437.0
 1424,Catch a Fire,5699773,14000000.0,2006,Thriller/Suspense,Phillip Noyce,7.6,6.8,5959.0
 1425,Charlie's Angels: Full Throttle,227200000,120000000.0,2003,Action,Joseph McGinty Nichol,,4.7,43942.0
-1426,Charlie's Angels,263200000,90000000.0,1900,Adventure,Joseph McGinty Nichol,6.7,5.5,60791.0
+1426,Charlie's Angels,263200000,90000000.0,2000,Adventure,Joseph McGinty Nichol,6.7,5.5,60791.0
 1427,Chasing Amy,15155095,250000.0,1997,Romantic Comedy,Kevin Smith,9.1,7.5,63591.0
 1428,Chicago,307687518,30000000.0,2002,Musical,Rob Marshall,8.8,7.2,82650.0
 1429,Chicken Little,314432738,60000000.0,2005,Adventure,Mark Dindal,3.6,5.8,17415.0
-1430,Chicken Run,227793915,42000000.0,1900,Adventure,Nick Park,9.6,7.3,48307.0
+1430,Chicken Run,227793915,42000000.0,2000,Adventure,Nick Park,9.6,7.3,48307.0
 1431,Cheaper by the Dozen,189714544,40000000.0,2003,Comedy,Shawn Levy,2.4,5.6,24283.0
 1432,Cheaper by the Dozen 2,135015330,60000000.0,2005,Comedy,Adam Shankman,0.7,5.2,11858.0
 1433,Cheri,2715657,23000000.0,2009,Drama,Stephen Frears,5.4,6.1,3307.0
@@ -1438,11 +1438,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1437,Children of Men,69450202,76000000.0,2006,Thriller/Suspense,Alfonso Cuaron,9.3,8.1,158125.0
 1438,Chloe,9675172,13000000.0,2010,Thriller/Suspense,Atom Egoyan,,6.5,8772.0
 1439,Love in the Time of Cholera,31077418,45000000.0,2007,Drama,Mike Newell,2.7,6.2,8580.0
-1440,Chocolat,152500343,25000000.0,1900,Drama,Lasse Hallstrom,6.2,7.3,56176.0
+1440,Chocolat,152500343,25000000.0,2000,Drama,Lasse Hallstrom,6.2,7.3,56176.0
 1441,The Children of Huang Shi,5527507,20000000.0,2008,Drama,,3.1,6.9,4100.0
 1442,Les Choristes,83529758,5500000.0,2004,Drama,,,7.8,16391.0
 1443,Chairman of the Board,306715,7000000.0,1998,Comedy,,1.4,2.1,3164.0
-1444,Chuck&Buck,1157672,250000.0,1900,Drama,Chris Weitz,,6.5,3455.0
+1444,Chuck&Buck,1157672,250000.0,2000,Drama,Chris Weitz,,6.5,3455.0
 1445,The Chumscrubber,49526,6800000.0,2005,Drama,,3.4,7.0,10449.0
 1446,Charlotte's Web,143985708,82500000.0,2006,Drama,Gary Winick,7.8,6.7,8028.0
 1447,Cinderella Man,108539911,88000000.0,2005,Drama,Ron Howard,8.0,8.0,63111.0
@@ -1451,7 +1451,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1450,A Civil Action,56709981,60000000.0,1998,Drama,Steven Zaillian,6.1,6.4,14244.0
 1451,CJ7,47300771,20000000.0,2008,Comedy,Stephen Chow,,,
 1452,The Cookout,11540112,16000000.0,2004,Comedy,,0.5,3.2,1659.0
-1453,The Claim,622023,13000000.0,1900,Western,,6.3,6.5,3681.0
+1453,The Claim,622023,13000000.0,2000,Western,,6.3,6.5,3681.0
 1454,The Santa Clause 2,172825854,65000000.0,2002,Comedy,Michael Lembeck,,5.5,9061.0
 1455,Cold Mountain,161632614,80000000.0,2003,Drama,Anthony Minghella,7.0,7.3,51083.0
 1456,Clean,138711,10000.0,2006,Drama,,,,
@@ -1464,7 +1464,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1463,It's Complicated,224614744,75000000.0,2009,Romantic Comedy,Nancy Meyers,5.7,6.7,17748.0
 1464,The Company,3396508,15000000.0,2003,Drama,Robert Altman,6.9,6.2,3649.0
 1465,Constantine,230884728,75000000.0,2005,Action,Francis Lawrence,4.6,6.7,78705.0
-1466,The Contender,17804273,9000000.0,1900,Drama,Rod Lurie,7.6,6.9,13709.0
+1466,The Contender,17804273,9000000.0,2000,Drama,Rod Lurie,7.6,6.9,13709.0
 1467,Die Fâ€°lscher,19416495,6250000.0,2008,Drama,,,7.6,16525.0
 1468,Control,5645350,6400000.0,2007,Drama,,8.7,7.8,19466.0
 1469,Centurion,119621,15000000.0,2010,,,5.5,6.5,8997.0
@@ -1495,10 +1495,10 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1494,Crash,3357324,10000000.0,1996,Drama,David Cronenberg,6.5,6.1,20886.0
 1495,The Crazies,43027734,20000000.0,2010,Horror,,7.1,6.7,21135.0
 1496,Crazy in Alabama,1954202,15000000.0,1999,Drama,Antonio Banderas,3.1,5.7,3991.0
-1497,The Crew,13019253,23000000.0,1900,Comedy,,1.9,6.0,1307.0
+1497,The Crew,13019253,23000000.0,2000,Comedy,,1.9,6.0,1307.0
 1498,Cradle 2 the Grave,56434942,25000000.0,2003,Horror,Andrzej Bartkowiak,2.6,5.4,14834.0
 1499,Crocodile Hunter: Collision Course,33436931,12500000.0,2002,Comedy,,,,
-1500,The In Crowd,5217498,15000000.0,1900,Thriller/Suspense,,0.2,4.2,2720.0
+1500,The In Crowd,5217498,15000000.0,2000,Thriller/Suspense,,0.2,4.2,2720.0
 1501,The Corruptor,15164492,10000000.0,1999,Action,James Foley,4.8,5.8,9008.0
 1502,Man cheng jin dai huang jin jia,75566773,45000000.0,2006,Action,Yimou Zhang,,7.0,17975.0
 1503,Crash,98387109,6500000.0,2005,Drama,Paul Haggis,7.5,6.1,20886.0
@@ -1519,7 +1519,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1518,City of Ghosts,325491,17500000.0,2003,Drama,Matt Dillon,,5.9,2880.0
 1519,City by the Sea,22433915,40000000.0,2002,Drama,Michael Caton-Jones,4.8,6.1,13487.0
 1520,The Cube,489220,250000.0,1998,,,,7.1,202.0
-1521,Coyote Ugly,115786269,45000000.0,1900,Drama,,2.1,5.3,33808.0
+1521,Coyote Ugly,115786269,45000000.0,2000,Drama,,2.1,5.3,33808.0
 1522,Curious George,70114174,50000000.0,2006,Comedy,,6.9,6.7,5393.0
 1523,Cursed,25114901,35000000.0,2005,Horror,Wes Craven,,4.8,14425.0
 1524,Civil Brand,254293,500000.0,2003,Drama,,,4.9,340.0
@@ -1549,7 +1549,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1548,Deep Blue Sea,165048228,60000000.0,1999,Action,Renny Harlin,5.7,5.6,44191.0
 1549,Drive Me Crazy,22591451,8000000.0,1999,Comedy,John Schultz,2.6,5.1,6968.0
 1550,Dave Chappelle's Block Party,12051924,3000000.0,2006,Documentary,Michel Gondry,,,
-1551,Dancer in the Dark,45557491,12500000.0,1900,Musical,,6.8,7.8,36542.0
+1551,Dancer in the Dark,45557491,12500000.0,2000,Musical,,6.8,7.8,36542.0
 1552,Diary of the Dead,4726656,2750000.0,2008,Horror,George A. Romero,,6.0,20792.0
 1553,Dear John,112014842,25000000.0,2010,Drama,Lasse Hallstrom,2.8,7.0,246.0
 1554,Dear Wendy,446438,8000000.0,2005,Drama,Thomas Vinterberg,3.7,6.6,5574.0
@@ -1574,7 +1574,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1573,The Lords of Dogtown,11354893,25000000.0,2005,Action,Catherine Hardwicke,,,
 1574,Dick,6276869,13000000.0,1999,Comedy,Andrew Fleming,7.0,6.1,10451.0
 1575,Live Free or Die Hard,383531464,110000000.0,2007,Action,Len Wiseman,8.2,7.5,130559.0
-1576,Digimon: The Movie,16628751,5000000.0,1900,Adventure,,,4.6,1727.0
+1576,Digimon: The Movie,16628751,5000000.0,2000,Adventure,,,4.6,1727.0
 1577,Dirty Work,10020081,13000000.0,1998,Comedy,,1.7,4.8,207.0
 1578,Banlieue 13,11208291,15000000.0,2006,Action,Pierre Morel,,7.1,21427.0
 1579,Disaster Movie,34690901,20000000.0,2008,Comedy,Jason Friedberg,0.2,1.7,34928.0
@@ -1586,11 +1586,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1585,De-Lovely,18396382,4000000.0,2004,Drama,,4.9,6.5,6086.0
 1586,Madea's Family Reunion,63308879,10000000.0,2006,Comedy,Tyler Perry,2.6,3.9,5369.0
 1587,Dead Man on Campus,15064948,14000000.0,1998,Black Comedy,,1.5,5.6,7109.0
-1588,Drowning Mona,15427192,16000000.0,1900,Comedy,,2.9,5.3,7606.0
+1588,Drowning Mona,15427192,16000000.0,2000,Comedy,,2.9,5.3,7606.0
 1589,Diamonds,81897,11900000.0,1999,,,2.6,5.3,976.0
 1590,Doomsday,21621188,33000000.0,2008,Action,,4.8,6.0,34035.0
 1591,Donkey Punch,19367,750000.0,2009,Thriller/Suspense,,,5.4,4551.0
-1592,Dinosaur,356148063,127500000.0,1900,Adventure,,6.5,6.2,13962.0
+1592,Dinosaur,356148063,127500000.0,2000,Adventure,,6.5,6.2,13962.0
 1593,DOA: Dead or Alive,2670860,30000000.0,2007,Action,Corey Yuen,3.4,4.9,16646.0
 1594,Doogal,26942802,20000000.0,2006,Adventure,,,2.5,2709.0
 1595,Dogma,43948865,10000000.0,1999,Comedy,Kevin Smith,6.8,7.3,100476.0
@@ -1604,10 +1604,10 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1603,The Deep End,8823109,3000000.0,2001,Thriller/Suspense,,8.1,6.6,6734.0
 1604,Deep Impact,349464664,80000000.0,1998,Adventure,Mimi Leder,4.7,6.0,54160.0
 1605,The Departed,290539042,90000000.0,2006,Drama,Martin Scorsese,9.3,8.5,264148.0
-1606,Dracula 2000,33000377,28000000.0,1900,Horror,,1.5,4.8,14077.0
+1606,Dracula 2000,33000377,28000000.0,2000,Horror,,1.5,4.8,14077.0
 1607,Death Race,72516819,65000000.0,2008,Action,Paul Anderson,4.1,6.6,40611.0
 1608,Drag Me To Hell,85724728,30000000.0,2009,Horror,Sam Raimi,9.2,7.1,51343.0
-1609,"Crouching Tiger, Hidden Dragon",213200000,15000000.0,1900,Drama,Ang Lee,,,
+1609,"Crouching Tiger, Hidden Dragon",213200000,15000000.0,2000,Drama,Ang Lee,,,
 1610,Derailed,54962616,22000000.0,2005,Action,,2.0,3.4,3317.0
 1611,Doctor Dolittle 2,176101721,72000000.0,2001,Comedy,Steve Carr,,6.0,2993.0
 1612,Doctor Dolittle,294156605,71500000.0,1998,Comedy,Betty Thomas,,5.2,25648.0
@@ -1616,13 +1616,13 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1615,Driving Lessons,239962,4700000.0,2006,,,4.8,6.7,5380.0
 1616,Driven,54616869,72000000.0,2001,Action,Renny Harlin,1.3,4.2,18795.0
 1617,Darkness,34409206,10600000.0,2004,Horror,,0.4,5.3,9979.0
-1618,I Dreamed of Africa,6543194,34000000.0,1900,Drama,Hugh Hudson,0.9,5.2,2298.0
+1618,I Dreamed of Africa,6543194,34000000.0,2000,Drama,Hugh Hudson,0.9,5.2,2298.0
 1619,Dreamcatcher,75685268,68000000.0,2003,Drama,Lawrence Kasdan,3.0,5.3,34141.0
 1620,Dreamgirls,154965956,75000000.0,2006,Musical,Bill Condon,7.8,6.6,28016.0
 1621,Detroit Rock City,4217115,16000000.0,1999,Comedy,,4.7,6.4,15092.0
 1622,Drop Dead Gorgeous,10571408,10000000.0,1999,Comedy,,4.5,6.2,16344.0
 1623,Drumline,56398162,20000000.0,2002,Comedy,,8.1,5.2,18165.0
-1624,The Legend of Drunken Master,11546543,2000000.0,1900,Action,,,,
+1624,The Legend of Drunken Master,11546543,2000000.0,2000,Action,,,,
 1625,Dinner Rush,1075504,2000000.0,2001,Drama,,,7.2,2991.0
 1626,The Descent,57029609,7000000.0,2006,Thriller/Suspense,,,7.4,58176.0
 1627,DysFunkTional Family,2255000,3000000.0,2003,Concert/Performance,,4.3,5.9,501.0
@@ -1631,15 +1631,15 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1630,Disturbia,117573043,20000000.0,2007,Thriller/Suspense,D.J. Caruso,6.8,7.0,72231.0
 1631,Double Take,29823162,24000000.0,2001,Action,,1.2,6.8,162.0
 1632,Death at a Funeral,34743644,20000000.0,2007,Comedy,Frank Oz,6.1,5.1,6628.0
-1633,Deterrence,371647,800000.0,1900,Thriller/Suspense,,4.5,6.3,1776.0
+1633,Deterrence,371647,800000.0,2000,Thriller/Suspense,,4.5,6.3,1776.0
 1634,Dirty Pretty Things,13904766,10000000.0,2003,Drama,Stephen Frears,,7.5,18554.0
 1635,Dudley Do-Right,9818792,22000000.0,1999,Comedy,Hugh Wilson,1.4,3.6,4628.0
-1636,Duets,4734235,16000000.0,1900,Drama,,2.1,5.7,5340.0
+1636,Duets,4734235,16000000.0,2000,Drama,,2.1,5.7,5340.0
 1637,The Dukes of Hazzard,110570227,53000000.0,2005,Comedy,Jay Chandrasekhar,1.3,4.7,27016.0
 1638,Duma,994790,12000000.0,2005,Adventure,,9.3,7.2,2966.0
 1639,Dumb and Dumberer: When Harry Met Lloyd,26214846,30000000.0,2003,Comedy,,1.0,3.3,14813.0
 1640,Dungeons & Dragons 2: The Elemental Might,909822,15000000.0,2005,,,,,
-1641,Dungeons and Dragons,33771965,35000000.0,1900,Adventure,,,3.6,16954.0
+1641,Dungeons and Dragons,33771965,35000000.0,2000,Adventure,,,3.6,16954.0
 1642,Duplex,10070651,40000000.0,2003,Comedy,Danny De Vito,,5.7,19238.0
 1643,"You, Me and Dupree",130402010,54000000.0,2006,Comedy,,2.1,6.1,164.0
 1644,Devil's Advocate,153007424,57000000.0,1997,Drama,Taylor Hackford,,,
@@ -1647,14 +1647,14 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1646,D-War,79915361,32000000.0,2007,Action,,,3.8,14081.0
 1647,Deuces Wild,6044618,10000000.0,2002,Drama,,0.3,5.3,4010.0
 1648,Down to Earth,71172251,30000000.0,2001,Comedy,Paul Weitz,1.9,5.0,9193.0
-1649,Down to You,20035310,9000000.0,1900,Romantic Comedy,,0.3,4.4,7095.0
+1649,Down to You,20035310,9000000.0,2000,Romantic Comedy,,0.3,4.4,7095.0
 1650,I'm Not There,11498547,20000000.0,2007,Drama,Todd Haynes,7.6,7.1,23078.0
 1651,Easy A,22156221,8000000.0,2010,Comedy,,8.0,7.7,483.0
 1652,The Eclipse,133411,3000000.0,2010,,,,6.2,790.0
 1653,Edge of Darkness,78739628,60000000.0,2010,Drama,Martin Campbell,5.5,6.7,24174.0
 1654,EDtv,35319689,60000000.0,1999,Comedy,Ron Howard,6.2,6.0,21734.0
 1655,An Education,14134502,7500000.0,2009,Drama,,9.4,7.5,22855.0
-1656,East is East,4170647,3000000.0,1900,Comedy,,,6.7,8351.0
+1656,East is East,4170647,3000000.0,2000,Comedy,,,6.7,8351.0
 1657,8 Heads in a Duffel Bag,4002884,3000000.0,1997,Black Comedy,,1.1,4.8,5127.0
 1658,Eagle Eye,178066569,80000000.0,2008,Thriller/Suspense,D.J. Caruso,2.7,6.6,52336.0
 1659,8MM,96398826,40000000.0,1999,Thriller/Suspense,Joel Schumacher,2.2,6.3,47753.0
@@ -1670,7 +1670,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1669,Empire,18495444,3500000.0,2002,Drama,,2.1,6.5,63.0
 1670,La marche de l'empereur,129437223,3400000.0,2005,Documentary,,,7.8,23674.0
 1671,Employee of the Month,38117718,10000000.0,2006,Comedy,,2.0,5.4,17845.0
-1672,The Emperor's New Groove,169296573,100000000.0,1900,Adventure,Mark Dindal,8.5,7.4,23355.0
+1672,The Emperor's New Groove,169296573,100000000.0,2000,Adventure,Mark Dindal,8.5,7.4,23355.0
 1673,Enchanted,340384141,85000000.0,2007,Romantic Comedy,Kevin Lima,9.2,7.5,55697.0
 1674,The End of the Affair,10660147,23000000.0,1999,Drama,Neil Jordan,6.7,6.9,9969.0
 1675,End of Days,212026975,100000000.0,1999,Action,Peter Hyams,1.1,5.4,43513.0
@@ -1682,7 +1682,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1681,Envy,14566246,20000000.0,2004,Comedy,Barry Levinson,0.7,4.6,15655.0
 1682,Epic Movie,86858578,20000000.0,2007,Comedy,Jason Friedberg,0.2,2.2,48975.0
 1683,Eragon,249488115,100000000.0,2006,Adventure,,1.6,5.0,43555.0
-1684,Erin Brockovich,258400000,50000000.0,1900,Drama,Steven Soderbergh,8.3,7.2,54977.0
+1684,Erin Brockovich,258400000,50000000.0,2000,Drama,Steven Soderbergh,8.3,7.2,54977.0
 1685,Elizabethtown,50719373,54000000.0,2005,Drama,Cameron Crowe,2.8,6.4,31775.0
 1686,Eat Pray Love,81846373,60000000.0,2010,Drama,,3.7,4.7,3019.0
 1687,Eternal Sunshine of the Spotless Mind,47066518,20000000.0,2004,Comedy,Michel Gondry,9.3,8.5,219986.0
@@ -1694,7 +1694,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1693,Ever After: A Cinderella Story,65705772,26000000.0,1998,Drama,Andy Tennant,,,
 1694,Evita,151947179,55000000.0,1996,Musical,Alan Parker,6.1,6.1,16769.0
 1695,Evolution,98341932,80000000.0,2001,Comedy,Ivan Reitman,4.2,5.9,39590.0
-1696,An Everlasting Piece,75078,4000000.0,1900,,Barry Levinson,4.9,6.0,1097.0
+1696,An Everlasting Piece,75078,4000000.0,2000,,Barry Levinson,4.9,6.0,1097.0
 1697,Fong juk,51957,4500000.0,2007,Action,,,7.3,3699.0
 1698,Exit Wounds,79958599,33000000.0,2001,Action,Andrzej Bartkowiak,3.3,5.2,14528.0
 1699,The Exorcism of Emily Rose,144216468,18000000.0,2005,Thriller/Suspense,Scott Derrickson,4.5,6.8,32425.0
@@ -1706,11 +1706,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1705,Eyes Wide Shut,86257553,65000000.0,1999,Drama,Stanley Kubrick,7.8,7.2,93880.0
 1706,The Faculty,40283321,15000000.0,1998,Horror,Robert Rodriguez,5.1,6.3,36139.0
 1707,Failure to Launch,128402901,50000000.0,2006,Romantic Comedy,Tom Dey,2.5,5.6,20324.0
-1708,Keeping the Faith,45336404,29000000.0,1900,Romantic Comedy,,6.8,6.5,25485.0
+1708,Keeping the Faith,45336404,29000000.0,2000,Romantic Comedy,,6.8,6.5,25485.0
 1709,Fame,77956957,18000000.0,2009,Musical,,2.5,4.5,4973.0
 1710,The Family Stone,91762868,18000000.0,2005,Comedy,,5.2,6.3,24434.0
 1711,Lisa Picard is Famous,113433,1000000.0,2001,Comedy,Griffin Dunne,,,
-1712,Fantasia 2000 (Theatrical Release),9103630,80000000.0,1900,Musical,,,,
+1712,Fantasia 2000 (Theatrical Release),9103630,80000000.0,2000,Musical,,,,
 1713,Far From Heaven,29027914,13500000.0,2002,Drama,Todd Haynes,8.9,7.5,20239.0
 1714,Fascination,83356,5000000.0,2005,Thriller/Suspense,,,2.5,1016.0
 1715,Father's Day,35681080,85000000.0,1997,Comedy,Ivan Reitman,,4.8,6654.0
@@ -1724,7 +1724,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1723,Feast,341808,3200000.0,2006,Horror,,5.5,6.4,12023.0
 1724,The Fifth Element,263900000,95000000.0,1997,Action,Luc Besson,7.2,7.4,131252.0
 1725,Femme Fatale,6592103,35000000.0,2002,Thriller/Suspense,Brian De Palma,4.8,6.3,16693.0
-1726,Bring it On,90453550,10000000.0,1900,Comedy,Peyton Reed,6.3,5.9,30309.0
+1726,Bring it On,90453550,10000000.0,2000,Comedy,Peyton Reed,6.3,5.9,30309.0
 1727,Fantastic Four,330579719,87500000.0,2005,Action,Tim Story,2.7,5.7,71675.0
 1728,54,16757163,13000000.0,1998,Drama,,1.3,5.6,15023.0
 1729,2 Fast 2 Furious,236220058,76000000.0,2003,Action,John Singleton,3.6,5.1,44151.0
@@ -1736,13 +1736,13 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1735,Fido,419801,8000000.0,2007,Horror,,,6.9,11683.0
 1736,Fight Club,100853753,65000000.0,1999,Drama,David Fincher,8.1,8.8,382470.0
 1737,Final Fantasy: The Spirits Within,85131830,137000000.0,2001,Adventure,,,6.4,36227.0
-1738,Finding Forrester,80013623,43000000.0,1900,Drama,Gus Van Sant,7.4,7.2,35966.0
+1738,Finding Forrester,80013623,43000000.0,2000,Drama,Gus Van Sant,7.4,7.2,35966.0
 1739,Freddy Got Fingered,14249005,15000000.0,2001,Comedy,,1.1,4.0,25033.0
 1740,Firestorm,8123860,19000000.0,1998,Action,,,4.4,2118.0
 1741,Fish Tank,374675,3000000.0,2010,,,,7.5,5940.0
 1742,Felicia's Journey,1970268,15000000.0,1999,Drama,Atom Egoyan,8.8,6.9,4790.0
 1743,From Justin to Kelly,4922166,12000000.0,2003,Musical,,0.8,1.6,17596.0
-1744,Final Destination,112802314,23000000.0,1900,Horror,James Wong,3.1,6.8,52618.0
+1744,Final Destination,112802314,23000000.0,2000,Horror,James Wong,3.1,6.8,52618.0
 1745,Flags of Our Fathers,61902376,53000000.0,2006,Drama,Clint Eastwood,7.3,7.2,42788.0
 1746,Flawless,4485485,27000000.0,1999,Drama,Joel Schumacher,4.3,6.7,8125.0
 1747,Flammen og Citronen,1635241,9000000.0,2009,Thriller/Suspense,,,7.2,4182.0
@@ -1754,7 +1754,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1753,Flyboys,14816379,60000000.0,2006,Drama,Tony Bill,3.3,6.5,13934.0
 1754,Fly Me To the Moon,40098231,25000000.0,2008,Adventure,,1.7,4.7,1653.0
 1755,Find Me Guilty,1788077,13000000.0,2006,Drama,Sidney Lumet,6.0,7.1,12800.0
-1756,The Family Man,124715863,60000000.0,1900,Comedy,Brett Ratner,5.2,6.6,34090.0
+1756,The Family Man,124715863,60000000.0,2000,Comedy,Brett Ratner,5.2,6.6,34090.0
 1757,Friends with Money,15328368,6500000.0,2006,Comedy,,7.1,6.1,11087.0
 1758,Finding Nemo,867894287,94000000.0,2003,Adventure,Andrew Stanton,9.8,8.2,165006.0
 1759,Finishing the Game,52850,500000.0,2007,Comedy,Justin Lin,3.5,,
@@ -1767,9 +1767,9 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1766,Frailty,17423030,11000000.0,2002,Thriller/Suspense,,7.4,7.3,27629.0
 1767,The Forbidden Kingdom,129075270,55000000.0,2008,Action,Rob Minkoff,6.4,6.7,36548.0
 1768,Freedom Writers,43090741,21000000.0,2007,Drama,Richard LaGravenese,6.9,7.5,18065.0
-1769,Next Friday,59675307,9500000.0,1900,Comedy,Steve Carr,2.1,5.3,10176.0
+1769,Next Friday,59675307,9500000.0,2000,Comedy,Steve Carr,2.1,5.3,10176.0
 1770,Freaky Friday,160822438,26000000.0,2003,Comedy,Mark Waters,8.8,6.5,29137.0
-1771,Frequency,68079671,31000000.0,1900,Drama,,6.9,7.3,35968.0
+1771,Frequency,68079671,31000000.0,2000,Drama,,6.9,7.3,35968.0
 1772,Serenity,38514517,39000000.0,2005,Action,Joss Whedon,8.1,8.0,106648.0
 1773,The Forgotton,111311892,50000000.0,2004,Thriller/Suspense,Joseph Ruben,,4.9,1169.0
 1774,Jason X,16951798,14000000.0,2002,Horror,,2.1,4.4,17964.0
@@ -1815,12 +1815,12 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1814,The Glass House,22861785,22000000.0,2001,Thriller/Suspense,,2.1,5.6,10629.0
 1815,Ghost Rider,237702596,120000000.0,2007,Action,Mark Steven Johnson,2.6,5.2,63235.0
 1816,Ghost Town,26612350,20000000.0,2008,Romantic Comedy,David Koepp,8.5,4.7,310.0
-1817,The Gift,44567606,10000000.0,1900,Thriller/Suspense,Sam Raimi,5.6,6.7,28488.0
+1817,The Gift,44567606,10000000.0,2000,Thriller/Suspense,Sam Raimi,5.6,6.7,28488.0
 1818,Gigli,7266209,54000000.0,2003,Romantic Comedy,Martin Brest,0.6,2.4,29031.0
 1819,G.I.Jane,48169156,50000000.0,1997,Drama,Ridley Scott,,5.5,23807.0
 1820,G.I. Joe: The Rise of Cobra,302469019,175000000.0,2009,Action,Stephen Sommers,,5.8,47052.0
 1821,"Girl, Interrupted",28871190,24000000.0,1999,Drama,James Mangold,5.3,,
-1822,Gladiator,457683805,103000000.0,1900,Action,Ridley Scott,7.7,8.3,279512.0
+1822,Gladiator,457683805,103000000.0,2000,Action,Ridley Scott,7.7,8.3,279512.0
 1823,Glitter,4273372,8500000.0,2001,Musical,Vondie Curtis-Hall,0.7,2.0,13778.0
 1824,Gloria,4967493,30000000.0,1999,Drama,Sidney Lumet,1.9,4.7,2726.0
 1825,Good Luck Chuck,59183821,25000000.0,2007,Romantic Comedy,,0.5,5.6,29013.0
@@ -1830,22 +1830,22 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1829,"Gandhi, My Father",1375194,5000000.0,2007,Drama,,4.0,8.1,50881.0
 1830,Good Night and Good Luck,54601218,7000000.0,2005,Drama,George Clooney,,7.7,42797.0
 1831,The General's Daughter,149705852,60000000.0,1999,Drama,Simon West,2.2,6.1,23570.0
-1832,Gun Shy,1638202,10000000.0,1900,Comedy,,2.4,5.4,3607.0
+1832,Gun Shy,1638202,10000000.0,2000,Comedy,,2.4,5.4,3607.0
 1833,Go!,28383441,6500000.0,1999,Black Comedy,Doug Liman,9.2,,
 1834,Goal!,27610873,33000000.0,2006,Drama,,,6.9,16809.0
-1835,Godzilla 2000,10037390,1000000.0,1900,Action,,,,
+1835,Godzilla 2000,10037390,1000000.0,2000,Action,,,,
 1836,Godsend,16910708,30000000.0,2004,Thriller/Suspense,,0.4,4.7,13866.0
 1837,Godzilla,376000000,125000000.0,1998,Action,Roland Emmerich,2.5,4.8,59455.0
-1838,Smiling Fish and Goat on Fire,277233,40000.0,1900,,,,,
-1839,Gone in 60 Seconds,232643008,103300000.0,1900,,,,6.4,2940.0
+1838,Smiling Fish and Goat on Fire,277233,40000.0,2000,,,,,
+1839,Gone in 60 Seconds,232643008,103300000.0,2000,,,,6.4,2940.0
 1840,Good,27276,16000000.0,2008,Drama,,3.4,6.2,1926.0
 1841,Good Will Hunting,225933435,10000000.0,1987,Drama,Gus Van Sant,9.7,8.1,150415.0
 1842,Gosford Park,41300105,18000000.0,2001,Comedy,Robert Altman,8.6,7.3,36648.0
-1843,Gossip,12591270,14000000.0,1900,Drama,,2.8,,
+1843,Gossip,12591270,14000000.0,2000,Drama,,2.8,,
 1844,The Game Plan,147914546,22000000.0,2007,Comedy,Andy Fickman,2.7,6.3,14984.0
 1845,Girl with a Pearl Earring,22106210,12000000.0,2003,Drama,Peter Webber,7.1,7.1,23493.0
 1846,Galaxy Quest,90523726,45000000.0,1999,Comedy,,8.9,7.2,52507.0
-1847,Saving Grace,24325623,4000000.0,1900,Comedy,,6.3,6.8,8543.0
+1847,Saving Grace,24325623,4000000.0,2000,Comedy,,6.3,6.8,8543.0
 1848,Gracie,3036736,9000000.0,2007,Drama,,5.9,6.2,2084.0
 1849,The Great Raid,10597070,60000000.0,2005,Action,John Dahl,3.6,6.8,8894.0
 1850,The Grand,115879,3000000.0,2008,Comedy,Zak Penn,,6.1,3346.0
@@ -1856,18 +1856,18 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1855,George Of The Jungle,174463257,55000000.0,1997,Comedy,,5.4,5.3,19685.0
 1856,The Brothers Grimm,105299638,80000000.0,2005,Adventure,Terry Gilliam,3.7,5.9,43532.0
 1857,The Girl Next Door,18589444,25000000.0,2004,Romantic Comedy,Luke Greenfield,5.6,7.0,5614.0
-1858,How the Grinch Stole Christmas,345141403,123000000.0,1900,Comedy,Ron Howard,5.3,5.7,40310.0
+1858,How the Grinch Stole Christmas,345141403,123000000.0,2000,Comedy,Ron Howard,5.3,5.7,40310.0
 1859,Grindhouse,50187789,53000000.0,2007,Horror,Robert Rodriguez,,7.9,82770.0
 1860,Get Rich or Die Tryin',46437122,40000000.0,2005,Drama,Jim Sheridan,1.6,4.0,18126.0
 1861,Wallace & Gromit: The Curse of the Were-Rabbit,185724838,30000000.0,2005,Adventure,Nick Park,9.5,7.9,38158.0
-1862,Groove,1167524,500000.0,1900,Comedy,,5.6,5.8,2486.0
+1862,Groove,1167524,500000.0,2000,Comedy,,5.6,5.8,2486.0
 1863,Grosse Point Blank,28084357,15000000.0,1997,Black Comedy,,,7.4,41523.0
 1864,The Grudge 2,68643839,20000000.0,2006,Horror,,1.0,4.6,16024.0
 1865,The Grudge,187281115,10000000.0,2004,Horror,,3.9,5.7,43218.0
 1866,Grown Ups,250294625,75000000.0,2010,Comedy,,0.9,5.8,13488.0
-1867,Ghost Dog: Way of the Samurai,6030230,2000000.0,1900,Drama,Jim Jarmusch,,,
+1867,Ghost Dog: Way of the Samurai,6030230,2000000.0,2000,Drama,Jim Jarmusch,,,
 1868,Guess Who,102115888,35000000.0,2005,Comedy,,4.3,5.7,15789.0
-1869,Get Carter,19417182,40000000.0,1900,Drama,,1.2,4.8,14196.0
+1869,Get Carter,19417182,40000000.0,2000,Drama,,1.2,4.8,14196.0
 1870,Get Over It,11560259,10000000.0,2001,Romantic Comedy,,4.5,5.5,9350.0
 1871,Veronica Guerin,9438074,17000000.0,2003,Drama,Joel Schumacher,5.4,6.8,8778.0
 1872,The Guru,23788368,11000000.0,2003,Comedy,,,5.5,9239.0
@@ -1877,7 +1877,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1876,Hairspray,202823091,75000000.0,2007,Musical,Adam Shankman,9.1,7.2,41511.0
 1877,Half Baked,17394881,8000000.0,1998,Comedy,,2.9,6.3,18791.0
 1878,Hamlet,7129670,18000000.0,1996,Drama,,9.4,6.0,5147.0
-1879,Hamlet,2288841,2000000.0,1900,Drama,,7.1,6.0,5147.0
+1879,Hamlet,2288841,2000000.0,2000,Drama,,7.1,6.0,5147.0
 1880,Hancock,624346274,150000000.0,2008,Action,Peter Berg,4.0,6.5,100822.0
 1881,Happily N'Ever After,38344430,47000000.0,2007,Comedy,,,3.9,4678.0
 1882,The Happening,163403799,60000000.0,2008,Thriller/Suspense,M. Night Shyamalan,1.8,5.2,72259.0
@@ -1904,13 +1904,13 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1903,Raising Helen,43340302,50000000.0,2004,Comedy,Garry Marshall,2.2,5.7,10526.0
 1904,A Home at the End of the World,1033810,6500000.0,2004,Drama,,4.8,6.7,7180.0
 1905,Jet Li's Hero,177352140,17000000.0,2004,Action,Yimou Zhang,,,
-1906,Here on Earth,10845127,15000000.0,1900,Drama,,1.8,4.6,4929.0
+1906,Here on Earth,10845127,15000000.0,2000,Drama,,1.8,4.6,4929.0
 1907,House of Flying Daggers,92863945,12000000.0,2004,Action,Yimou Zhang,,,
 1908,Head Over Heels,10397365,14000000.0,2001,Romantic Comedy,Mark Waters,0.9,4.8,6574.0
 1909,The Haunting,180188905,80000000.0,1999,Horror,Jan De Bont,1.7,4.6,31808.0
 1910,High Crimes,63781100,42000000.0,2002,Thriller/Suspense,Carl Franklin,3.1,6.1,14428.0
-1911,High Fidelity,47881663,20000000.0,1900,Comedy,Stephen Frears,9.2,7.6,69740.0
-1912,Highlander: Endgame,12801190,15000000.0,1900,Action,,,4.3,8421.0
+1911,High Fidelity,47881663,20000000.0,2000,Comedy,Stephen Frears,9.2,7.6,69740.0
+1912,Highlander: Endgame,12801190,15000000.0,2000,Action,,,4.3,8421.0
 1913,High Heels and Low Lifes,226792,10000000.0,2001,,,2.0,6.1,2205.0
 1914,High School Musical 3: Senior Year,251056401,11000000.0,2008,Musical,,6.6,3.7,18587.0
 1915,The History Boys,13425589,3700000.0,2006,Comedy,,6.3,6.7,10293.0
@@ -1919,7 +1919,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1918,Hitman,99965792,17500000.0,2007,Action,,1.4,6.8,520.0
 1919,Harold & Kumar Escape from Guantanamo Bay,43231984,12000000.0,2008,Comedy,,5.4,6.7,42358.0
 1920,Harold & Kumar Go to White Castle,18225165,9000000.0,2004,Comedy,,7.4,7.2,56030.0
-1921,Held Up,4714090,8000000.0,1900,Comedy,,1.7,4.7,1840.0
+1921,Held Up,4714090,8000000.0,2000,Comedy,,1.7,4.7,1840.0
 1922,The Hills Have Eyes II,37466538,15000000.0,2007,Horror,,,5.0,17948.0
 1923,The Hills Have Eyes,69623713,17000000.0,2006,Horror,Alexandre Aja,4.9,6.5,43747.0
 1924,How to Lose Friends & Alienate People,12031443,28000000.0,2008,Comedy,,3.6,6.7,25756.0
@@ -1933,11 +1933,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1932,Home on the Range,76482461,110000000.0,2004,Comedy,,5.4,5.4,4772.0
 1933,Hannibal Rising,80583311,50000000.0,2007,Thriller/Suspense,Peter Webber,1.5,6.0,28690.0
 1934,The Hangover,465132119,35000000.0,2009,Comedy,Todd Phillips,7.8,7.9,127634.0
-1935,Hanging Up,51867723,40000000.0,1900,Comedy,,1.2,4.3,6098.0
+1935,Hanging Up,51867723,40000000.0,2000,Comedy,,1.2,4.3,6098.0
 1936,The Hoax,7164995,25000000.0,2007,Drama,Lasse Hallstrom,8.5,6.9,9171.0
 1937,Holes,72383924,20000000.0,2003,Drama,Andrew Davis,7.7,7.1,19388.0
 1938,The Holiday,205190324,85000000.0,2006,Romantic Comedy,Nancy Meyers,4.7,6.9,48215.0
-1939,Hollow Man,191200000,90000000.0,1900,Horror,Paul Verhoeven,2.8,5.5,41499.0
+1939,Hollow Man,191200000,90000000.0,2000,Horror,Paul Verhoeven,2.8,5.5,41499.0
 1940,Holy Girl,1261792,1400000.0,2005,Drama,,,,
 1941,Home Fries,10513979,15000000.0,1998,Black Comedy,,3.1,4.7,4806.0
 1942,Honey,62192232,18000000.0,2003,Drama,Bille Woodruff,2.0,4.6,13026.0
@@ -1974,7 +1974,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1973,The Hitchhiker's Guide to the Galaxy,104019112,45000000.0,2005,Comedy,,6.0,6.6,61513.0
 1974,High Tension,5208449,2850000.0,2005,Horror,,,5.4,165.0
 1975,Hot Fuzz,79197493,16000000.0,2007,Comedy,Edgar Wright,9.1,8.0,129779.0
-1976,Human Traffic,5422740,3300000.0,1900,,,,6.6,9455.0
+1976,Human Traffic,5422740,3300000.0,2000,,,,6.6,9455.0
 1977,How to Train Your Dragon,491581231,165000000.0,2010,Comedy,,9.8,8.2,28556.0
 1978,I Heart Huckabees,14584713,22000000.0,2004,Comedy,,6.2,6.8,35878.0
 1979,Hulk,245360480,137000000.0,2003,Action,Ang Lee,6.2,5.7,70844.0
@@ -1987,7 +1987,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 1986,Starsky & Hutch,170200225,60000000.0,2004,Comedy,Todd Phillips,6.4,6.2,48935.0
 1987,Hollywood Ending,14839383,16000000.0,2002,Romantic Comedy,Woody Allen,4.6,6.3,10486.0
 1988,Hollywood Homicide,51107785,75000000.0,2003,Action,Ron Shelton,3.0,5.2,16452.0
-1989,Whatever it Takes,8735529,15000000.0,1900,Romantic Comedy,,1.6,5.2,4192.0
+1989,Whatever it Takes,8735529,15000000.0,2000,Romantic Comedy,,1.6,5.2,4192.0
 1990,Ice Age: The Meltdown,651899282,75000000.0,2006,Adventure,Carlos Saldanha,,6.9,50981.0
 1991,Ice Age: Dawn of the Dinosaurs,886685941,90000000.0,2009,Adventure,Carlos Saldanha,,7.1,33289.0
 1992,Ice Age,383257136,65000000.0,2002,Adventure,Chris Wedge,7.7,7.4,75552.0
@@ -2005,7 +2005,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2004,I Know What You Did Last Summer,125250091,17000000.0,1997,Horror,,3.6,5.4,36807.0
 2005,"I Love You, Beth Cooper",16382538,18000000.0,2009,Comedy,Chris Columbus,,5.9,179.0
 2006,The Illusionist,84276175,16500000.0,2006,Drama,,7.4,7.7,92040.0
-2007,But I'm a Cheerleader,2595216,1200000.0,1900,Comedy,,,6.1,10073.0
+2007,But I'm a Cheerleader,2595216,1200000.0,2000,Comedy,,,6.1,10073.0
 2008,The Imaginarium of Doctor Parnassus,58692979,30000000.0,2009,Adventure,Terry Gilliam,6.4,7.1,33374.0
 2009,Imagine Me & You,972243,7900000.0,2006,Romantic Comedy,,,6.7,9534.0
 2010,Imagine That,16123323,55000000.0,2009,Comedy,Karey Kirkpatrick,3.8,5.4,3092.0
@@ -2036,7 +2036,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2035,The Iron Giant,31333917,50000000.0,1999,Adventure,Brad Bird,9.7,7.9,38791.0
 2036,Obsluhoval jsem anglickÃˆho krÂ·le,7174984,4900000.0,2008,Black Comedy,,,7.4,3048.0
 2037,The Island,163018913,120000000.0,2005,Action,Michael Bay,4.0,6.9,82601.0
-2038,Isn't She Great,2954405,36000000.0,1900,Comedy,Andrew Bergman,2.5,4.9,1426.0
+2038,Isn't She Great,2954405,36000000.0,2000,Comedy,Andrew Bergman,2.5,4.9,1426.0
 2039,I Spy,33561137,70000000.0,2002,Action,Betty Thomas,1.5,5.3,18061.0
 2040,The Italian Job,175826012,60000000.0,2003,Adventure,F. Gary Gray,7.3,6.9,76835.0
 2041,I Think I Love My Wife,13205411,14000000.0,2007,Romantic Comedy,Chris Rock,1.9,5.5,8643.0
@@ -2079,14 +2079,14 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2078,Joy Ride,21973182,23000000.0,2001,Thriller/Suspense,John Dahl,,5.4,118.0
 2079,Jerry Maguire,274000000,50000000.0,1996,Romantic Comedy,Cameron Crowe,8.4,7.2,78603.0
 2080,Jay and Silent Bob Strike Back,33762400,22000000.0,2001,Comedy,Kevin Smith,5.3,6.8,62692.0
-2081,Jesus' Son,1687548,2500000.0,1900,Drama,,,6.7,4620.0
+2081,Jesus' Son,1687548,2500000.0,2000,Drama,,,6.7,4620.0
 2082,Being Julia,11039049,18000000.0,2004,Drama,,7.6,7.1,7067.0
 2083,Julie & Julia,126646119,40000000.0,2009,Comedy,Nora Ephron,7.5,7.2,22269.0
 2084,Jumper,222117068,82500000.0,2008,Adventure,Doug Liman,1.7,5.9,69161.0
 2085,Junebug,2678010,1000000.0,2005,Drama,,8.6,7.1,11457.0
 2086,Juno,230327671,7000000.0,2007,Comedy,Jason Reitman,9.3,7.9,149855.0
 2087,Jurassic Park 3,365900000,93000000.0,2001,Action,Joe Johnston,,7.9,151365.0
-2088,Just Looking,39852,3000000.0,1900,,Jason Alexander,,6.3,949.0
+2088,Just Looking,39852,3000000.0,2000,,Jason Alexander,,6.3,949.0
 2089,Just Married,56127162,19000000.0,2003,Romantic Comedy,Shawn Levy,2.0,5.1,19508.0
 2090,Juwanna Man,13771817,15600000.0,2002,Comedy,,,4.1,3062.0
 2091,Freddy vs. Jason,114326122,25000000.0,2003,Horror,Ronny Yu,4.1,5.8,39182.0
@@ -2095,7 +2095,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2094,Kama Sutra,4109095,3000000.0,1997,Drama,Mira Nair,,,
 2095,Kangaroo Jack,90723216,60000000.0,2003,Comedy,,,4.1,9994.0
 2096,Kick-Ass,76252166,28000000.0,2010,Action,Matthew Vaughn,7.5,8.1,86990.0
-2097,The Original Kings of Comedy,38236338,3000000.0,1900,Concert/Performance,Spike Lee,8.6,6.2,3258.0
+2097,The Original Kings of Comedy,38236338,3000000.0,2000,Concert/Performance,Spike Lee,8.6,6.2,3258.0
 2098,Kiss of the Dragon,36833473,25000000.0,2001,Action,Chris Nahon,5.1,6.3,22087.0
 2099,Kung Fu Hustle,101004669,20000000.0,2005,Action,Stephen Chow,8.9,,
 2100,The Karate Kid,350591618,40000000.0,2010,Adventure,,6.7,6.1,20039.0
@@ -2131,7 +2131,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2130,Lady in the Water,72785169,75000000.0,2006,Drama,M. Night Shyamalan,2.4,5.8,47535.0
 2131,The Lake House,114830111,40000000.0,2006,Drama,,3.6,6.8,36613.0
 2132,Lakeview Terrace,44263506,20000000.0,2008,Thriller/Suspense,Neil LaBute,4.6,6.3,18547.0
-2133,The Ladies Man,13719474,11000000.0,1900,Comedy,,1.1,4.7,6556.0
+2133,The Ladies Man,13719474,11000000.0,2000,Comedy,,1.1,4.7,6556.0
 2134,Land of the Lost,69548641,100000000.0,2009,Comedy,Brad Silberling,2.6,5.3,16830.0
 2135,Changing Lanes,66790248,45000000.0,2002,Thriller/Suspense,,7.7,6.5,29222.0
 2136,Lars and the Real Girl,10553442,12500000.0,2007,Comedy,,8.1,7.5,32423.0
@@ -2176,13 +2176,13 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2175,Lions for Lambs,63211088,35000000.0,2007,Drama,Robert Redford,2.7,6.2,22264.0
 2176,London,12667,2000000.0,2006,Drama,,,7.7,181.0
 2177,How to Lose a Guy in 10 Days,177079973,50000000.0,2003,Romantic Comedy,Donald Petrie,4.3,6.1,33866.0
-2178,Loser,18250106,20000000.0,1900,Romantic Comedy,Amy Heckerling,2.5,5.0,12877.0
+2178,Loser,18250106,20000000.0,2000,Romantic Comedy,Amy Heckerling,2.5,5.0,12877.0
 2179,The Losers,23591432,25000000.0,2010,Action,Sylvain White,4.8,,
 2180,The Lost City,3650302,9600000.0,2006,Drama,Andy Garcia,,6.6,5790.0
 2181,Lost In Space,136117629,80000000.0,1998,Adventure,Stephen Hopkins,2.6,4.8,31611.0
 2182,Lost and Found,6552255,14000000.0,1999,Romantic Comedy,,1.3,4.8,118.0
 2183,Lottery Ticket,23602581,17000000.0,2010,Comedy,,3.2,,
-2184,Love and Basketball,27709625,15000000.0,1900,Drama,Gina Prince-Bythewood,8.1,6.7,5835.0
+2184,Love and Basketball,27709625,15000000.0,2000,Drama,Gina Prince-Bythewood,8.1,6.7,5835.0
 2185,Love Jones,12554569,10000000.0,1997,Drama,,6.7,6.7,1165.0
 2186,The Love Letter,8322608,15000000.0,1999,Romantic Comedy,,3.3,5.1,2446.0
 2187,Lovely and Amazing,4695781,250000.0,2002,Drama,,,6.8,3936.0
@@ -2200,7 +2200,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2199,Love Stinks,2793776,4000000.0,1999,Comedy,,1.9,5.3,3228.0
 2200,Lost in Translation,106454000,4000000.0,2003,Drama,Sofia Coppola,9.4,7.9,130998.0
 2201,Last Orders,2326407,12000000.0,2002,Drama,Fred Schepisi,,7.0,3463.0
-2202,Lost Souls,31320293,28000000.0,1900,Thriller/Suspense,,0.7,4.5,6639.0
+2202,Lost Souls,31320293,28000000.0,2000,Thriller/Suspense,,0.7,4.5,6639.0
 2203,The Last Station,6616974,18000000.0,2010,Drama,,,7.0,3465.0
 2204,The Lost World: Jurassic Park,786686679,75000000.0,1997,Action,Steven Spielberg,,6.0,77124.0
 2205,License to Wed,70799818,35000000.0,2007,Romantic Comedy,Ken Kwapis,0.7,5.1,15422.0
@@ -2210,11 +2210,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2209,Little Man,101636047,64000000.0,2006,Comedy,Keenen Ivory Wayans,1.2,5.7,97.0
 2210,The Lucky Ones,266967,14000000.0,2008,Drama,,3.6,7.1,4719.0
 2211,Lucky You,6521829,55000000.0,2007,Drama,Curtis Hanson,2.8,5.9,9870.0
-2212,Luminarias,428535,1000000.0,1900,Comedy,,,4.3,467.0
+2212,Luminarias,428535,1000000.0,2000,Comedy,,,4.3,467.0
 2213,Se jie,65696051,15000000.0,2007,Drama,Ang Lee,,7.6,15440.0
 2214,Luther,29465190,35000000.0,2003,Drama,,4.4,6.8,5909.0
 2215,Love Actually,247967903,45000000.0,2003,Romantic Comedy,,6.3,7.9,97921.0
-2216,The Little Vampire,13555988,22000000.0,1900,Comedy,,5.3,5.3,2202.0
+2216,The Little Vampire,13555988,22000000.0,2000,Comedy,,5.3,5.3,2202.0
 2217,The Lovely Bones,94702568,65000000.0,2009,Drama,Peter Jackson,3.2,6.6,32049.0
 2218,Herbie: Fully Loaded,144110682,50000000.0,2005,Comedy,Angela Robinson,4.2,4.7,14178.0
 2219,For Love of the Game,46112640,50000000.0,1999,Drama,Sam Raimi,6.4,6.2,13612.0
@@ -2272,13 +2272,13 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2271,Mean Girls,128947227,18000000.0,2004,Comedy,Mark Waters,8.3,7.0,63607.0
 2272,Mean Machine,92723,4500000.0,2002,,,,6.3,12754.0
 2273,Meet the Deedles,4356126,24000000.0,1998,Comedy,,0.4,3.4,1379.0
-2274,"Me, Myself & Irene",149270999,51000000.0,1900,Romantic Comedy,Bobby Farrelly,4.8,6.9,215.0
+2274,"Me, Myself & Irene",149270999,51000000.0,2000,Romantic Comedy,Bobby Farrelly,4.8,6.9,215.0
 2275,Memoirs of a Geisha,161510853,85000000.0,2005,Drama,Rob Marshall,3.6,7.1,38695.0
 2276,Men in Black,587790539,90000000.0,1997,Adventure,Barry Sonnenfeld,9.1,7.0,119704.0
-2277,Men of Honor,82339483,32000000.0,1900,Drama,,4.1,6.8,30630.0
+2277,Men of Honor,82339483,32000000.0,2000,Drama,,4.1,6.8,30630.0
 2278,Memento,39665950,5000000.0,2001,Drama,Christopher Nolan,,8.7,274524.0
 2279,Mercury Rising,32983332,60000000.0,1998,Thriller/Suspense,Harold Becker,1.7,5.8,21449.0
-2280,Mercy Streets,173599,600000.0,1900,Drama,,1.4,4.9,307.0
+2280,Mercy Streets,173599,600000.0,2000,Drama,,1.4,4.9,307.0
 2281,Joyeux NoÃŽl,1054361,22000000.0,2006,Drama,,,7.8,9363.0
 2282,Message in a Bottle,52880016,30000000.0,1999,Drama,,3.1,5.6,13108.0
 2283,Meet Joe Black,44650003,85000000.0,1998,Drama,Martin Brest,5.0,6.9,56067.0
@@ -2289,11 +2289,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2288,Marilyn Hotchkiss' Ballroom Dancing and Charm School,399114,2500000.0,2006,Musical,,,6.6,1351.0
 2289,Men in Black 2,441818803,140000000.0,2002,Action,Barry Sonnenfeld,,7.4,467.0
 2290,Micmacs,11734498,42000000.0,2010,,Jean-Pierre Jeunet,,,
-2291,The House of Mirth,3041803,10000000.0,1900,Drama,,8.1,6.8,4489.0
+2291,The House of Mirth,3041803,10000000.0,2000,Drama,,8.1,6.8,4489.0
 2292,Miss Congeniality 2: Armed and Fabulous,101382396,60000000.0,2005,Comedy,John Pasquin,,4.7,14297.0
-2293,Mission: Impossible 2,546209889,120000000.0,1900,Action,John Woo,,6.9,86222.0
+2293,Mission: Impossible 2,546209889,120000000.0,2000,Action,John Woo,,6.9,86222.0
 2294,Mission: Impossible III,397501348,150000000.0,2006,Action,J.J. Abrams,7.0,6.9,74174.0
-2295,Miss Congeniality,212100000,45000000.0,1900,Comedy,Donald Petrie,4.1,6.1,42323.0
+2295,Miss Congeniality,212100000,45000000.0,2000,Comedy,Donald Petrie,4.1,6.1,42323.0
 2296,The Missing,38253433,65000000.0,2003,Western,Ron Howard,5.9,7.4,19068.0
 2297,Mighty Joe Young,50632037,80000000.0,1998,Adventure,,5.2,5.4,9187.0
 2298,The Majestic,37306334,72000000.0,2001,Drama,Frank Darabont,4.1,6.8,24809.0
@@ -2301,7 +2301,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2300,Malibu's Most Wanted,34499204,15000000.0,2003,Comedy,,3.0,4.8,8159.0
 2301,Must Love Dogs,58894863,35000000.0,2005,Romantic Comedy,,3.5,5.9,13491.0
 2302,My Life Without Me,9476113,2500000.0,2003,,,6.4,7.6,11022.0
-2303,Mission to Mars,106000000,90000000.0,1900,Adventure,Brian De Palma,2.4,5.1,32449.0
+2303,Mission to Mars,106000000,90000000.0,2000,Adventure,Brian De Palma,2.4,5.1,32449.0
 2304,MirrorMask,864959,4000000.0,2005,Drama,,5.3,7.0,10398.0
 2305,Mumford,4559569,28700000.0,1999,Comedy,Lawrence Kasdan,5.5,6.7,6303.0
 2306,Mindhunters,16566235,27000000.0,2005,Thriller/Suspense,Renny Harlin,2.6,6.2,23357.0
@@ -2329,7 +2329,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2328,Moulin Rouge,179213196,53000000.0,2001,Musical,Baz Luhrmann,,7.3,2105.0
 2329,Me and Orson Welles,1190003,25000000.0,2009,Drama,Richard Linklater,8.4,7.1,2417.0
 2330,Meet the Fockers,516567575,60000000.0,2004,Comedy,Jay Roach,3.8,6.4,69613.0
-2331,Meet the Parents,301500000,55000000.0,1900,Comedy,Jay Roach,8.4,7.0,84924.0
+2331,Meet the Parents,301500000,55000000.0,2000,Comedy,Jay Roach,8.4,7.0,84924.0
 2332,Mr. 3000,21827296,30000000.0,2004,Comedy,,5.5,5.6,6202.0
 2333,The Miracle,64445708,28000000.0,2004,Drama,,,6.1,126.0
 2334,Minority Report,358824714,102000000.0,2002,Action,Steven Spielberg,9.1,7.7,135142.0
@@ -2370,8 +2370,8 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2369,A Mighty Wind,18552708,6000000.0,2003,Comedy,Christopher Guest,8.8,7.2,13602.0
 2370,The Mexican,147808615,40000000.0,2001,Action,Gore Verbinski,5.5,5.9,37696.0
 2371,My Best Friend's Wedding,287200000,46000000.0,1997,Comedy,P.J. Hogan,7.2,6.2,37287.0
-2372,"Dude, Where's My Car?",73180297,14000000.0,1900,Comedy,,1.9,,
-2373,My Dog Skip,35512760,7000000.0,1900,Drama,Jay Russell,7.2,6.9,9029.0
+2372,"Dude, Where's My Car?",73180297,14000000.0,2000,Comedy,,1.9,,
+2373,My Dog Skip,35512760,7000000.0,2000,Drama,Jay Russell,7.2,6.9,9029.0
 2374,My Date With Drew,181041,1100.0,2005,Documentary,,,6.5,2961.0
 2375,Me and You and Everyone We Know,5409058,2000000.0,2005,Drama,,8.2,7.4,17135.0
 2376,My Favorite Martian,36850101,60000000.0,1999,Comedy,Donald Petrie,1.3,4.5,4918.0
@@ -2395,17 +2395,17 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2394,Not Easily Broken,10572742,5000000.0,2009,Drama,Bill Duke,3.5,5.2,1010.0
 2395,The New Guy,28972187,13000000.0,2002,Comedy,,0.7,5.4,14268.0
 2396,The Newton Boys,10341093,27000000.0,1998,Drama,Richard Linklater,6.1,5.7,4443.0
-2397,The Next Best Thing,24355762,25000000.0,1900,Drama,John Schlesinger,1.9,4.4,6104.0
+2397,The Next Best Thing,24355762,25000000.0,2000,Drama,John Schlesinger,1.9,4.4,6104.0
 2398,Northfork,1445140,1900000.0,2003,Drama,Michael Polish,5.7,6.3,3776.0
 2399,In Good Company,63489752,26000000.0,2004,Comedy,Paul Weitz,8.4,6.8,25695.0
 2400,Notting Hill,363728226,42000000.0,1999,Romantic Comedy,,8.2,6.9,66362.0
-2401,Little Nicky,58270391,80000000.0,1900,Comedy,,2.1,5.0,35082.0
+2401,Little Nicky,58270391,80000000.0,2000,Comedy,,2.1,5.0,35082.0
 2402,Nicholas Nickleby,1562800,10000000.0,2002,Drama,,7.7,7.3,4968.0
 2403,Nim's Island,94081683,37000000.0,2008,Adventure,,5.0,6.0,10391.0
 2404,Ninja Assassin,57422883,50000000.0,2009,Action,James McTeigue,2.5,6.3,20078.0
-2405,The Ninth Gate,58394308,38000000.0,1900,Thriller/Suspense,Roman Polanski,,6.6,50510.0
+2405,The Ninth Gate,58394308,38000000.0,2000,Thriller/Suspense,Roman Polanski,,6.6,50510.0
 2406,Never Let Me Go,186830,15000000.0,2010,Drama,,6.2,7.3,252.0
-2407,Lucky Numbers,10014234,65000000.0,1900,Comedy,Nora Ephron,2.3,4.9,5461.0
+2407,Lucky Numbers,10014234,65000000.0,2000,Comedy,Nora Ephron,2.3,4.9,5461.0
 2408,Night at the Museum: Battle of the Smithsonian,413054631,150000000.0,2009,Comedy,Shawn Levy,,5.9,25631.0
 2409,Nick and Norah's Infinite Playlist,31487293,10000000.0,2008,Drama,Peter Sollett,7.3,6.8,24021.0
 2410,Notorious,44473591,19000000.0,2009,Drama,,5.0,6.3,9811.0
@@ -2426,9 +2426,9 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2425,The Night Listener,10547755,4000000.0,2006,Drama,,4.0,5.9,8437.0
 2426,The International,53850527,50000000.0,2009,Thriller/Suspense,Tom Tykwer,5.9,,
 2427,The Number 23,76593167,32000000.0,2007,Thriller/Suspense,Joel Schumacher,0.8,6.2,59174.0
-2428,Nurse Betty,27732366,24000000.0,1900,Black Comedy,Neil LaBute,8.4,6.4,20354.0
+2428,Nurse Betty,27732366,24000000.0,2000,Black Comedy,Neil LaBute,8.4,6.4,20354.0
 2429,Jimmy Neutron: Boy Genius,102992536,25000000.0,2001,Adventure,,,5.9,5379.0
-2430,Nutty Professor II: The Klumps,161600000,84000000.0,1900,Comedy,Peter Segal,,4.3,17075.0
+2430,Nutty Professor II: The Klumps,161600000,84000000.0,2000,Comedy,Peter Segal,,4.3,17075.0
 2431,Never Again,307631,500000.0,2002,Romantic Comedy,,,5.8,511.0
 2432,Finding Neverland,118676606,25000000.0,2004,Drama,Marc Forster,8.2,7.9,86828.0
 2433,Into the Wild,53813837,20000000.0,2007,Drama,Sean Penn,8.2,8.2,99464.0
@@ -2495,17 +2495,17 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2494,Pirates of the Caribbean: Dead Man's Chest,1065659812,225000000.0,2006,Adventure,Gore Verbinski,5.4,7.3,150446.0
 2495,Pirates of the Caribbean: At World's End,960996492,300000000.0,2007,Adventure,Gore Verbinski,4.5,7.0,133241.0
 2496,The Chronicles of Riddick,107212751,120000000.0,2004,Adventure,David Twohy,2.9,6.4,49383.0
-2497,Pitch Black,53182088,23000000.0,1900,Horror,David Twohy,5.5,7.0,55217.0
+2497,Pitch Black,53182088,23000000.0,2000,Horror,David Twohy,5.5,7.0,55217.0
 2498,Play it to the Bone,8427204,24000000.0,1999,Comedy,Ron Shelton,,5.1,6039.0
-2499,Screwed,6982680,12000000.0,1900,Comedy,,1.3,5.1,4411.0
+2499,Screwed,6982680,12000000.0,2000,Comedy,,1.3,5.1,4411.0
 2500,Percy Jackson & the Olympians: The Lightning Thief,226435277,95000000.0,2010,Adventure,Chris Columbus,5.0,5.8,20451.0
 2501,"Paris, je t'aime",4857374,13000000.0,2007,Drama,Gurinder Chadha,,6.6,175.0
 2502,Princess Kaiulani,883454,9000000.0,2010,Drama,,,5.3,224.0
 2503,Lake Placid,31770413,27000000.0,1999,Thriller/Suspense,Steve Miner,3.8,5.3,19382.0
 2504,The Back-up Plan,77090007,35000000.0,2010,Romantic Comedy,,2.0,4.4,6981.0
 2505,The Pledge,29406132,45000000.0,2001,Drama,Sean Penn,7.7,6.9,22609.0
-2506,Proof of Life,62761005,65000000.0,1900,Action,Taylor Hackford,3.9,6.1,23099.0
-2507,Pollock,10557291,6000000.0,1900,Drama,Ed Harris,8.2,7.1,9669.0
+2506,Proof of Life,62761005,65000000.0,2000,Action,Taylor Hackford,3.9,6.1,23099.0
+2507,Pollock,10557291,6000000.0,2000,Drama,Ed Harris,8.2,7.1,9669.0
 2508,Planet of the Apes,362211740,100000000.0,2001,Adventure,Tim Burton,4.4,5.5,72763.0
 2509,Please Give,4028339,3000000.0,2010,,,8.8,7.4,1023.0
 2510,Planet 51,108005745,50000000.0,2009,Adventure,,2.2,6.1,9645.0
@@ -2517,7 +2517,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2516,Pandaemonium,0,15000000.0,2001,,,,6.5,496.0
 2517,Pandorum,17033431,40000000.0,2009,Horror,,2.8,6.9,29428.0
 2518,The Punisher,54664370,33000000.0,2004,Action,,3.0,6.4,50482.0
-2519,Pokemon 2000,133946923,30000000.0,1900,Adventure,,,,
+2519,Pokemon 2000,133946923,30000000.0,2000,Adventure,,,,
 2520,Pokemon 3: The Movie,68452128,3000000.0,2001,Adventure,,2.3,3.5,2577.0
 2521,The Polar Express,305420597,170000000.0,2004,Adventure,Robert Zemeckis,5.6,6.7,28550.0
 2522,Along Came Polly,170360435,42000000.0,2004,Romantic Comedy,,2.6,5.8,38276.0
@@ -2554,9 +2554,9 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2553,The Prestige,107896006,40000000.0,2006,Thriller/Suspense,Christopher Nolan,7.5,8.4,207322.0
 2554,The Party's Over,0,1000000.0,2003,,,,,
 2555,The Postman,17650704,80000000.0,1997,Action,Kevin Costner,1.0,5.5,24045.0
-2556,Psycho Beach Party,267972,4000000.0,1900,Comedy,,5.5,6.0,3085.0
+2556,Psycho Beach Party,267972,4000000.0,2000,Comedy,,5.5,6.0,3085.0
 2557,Psycho,37226218,20000000.0,1998,Horror,Gus Van Sant,3.5,4.5,19769.0
-2558,The Patriot,215300000,110000000.0,1900,Drama,Roland Emmerich,6.2,6.9,78302.0
+2558,The Patriot,215300000,110000000.0,2000,Drama,Roland Emmerich,6.2,6.9,78302.0
 2559,Public Enemies,210379983,102500000.0,2009,Drama,Michael Mann,6.8,7.1,71323.0
 2560,The Powerpuff Girls,16425701,25000000.0,2002,Adventure,,,5.9,3234.0
 2561,Pulse,29771485,7500000.0,2006,Horror,,1.1,5.0,846.0
@@ -2565,7 +2565,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2564,Push,44411527,38000000.0,2009,Thriller/Suspense,,2.3,6.0,26623.0
 2565,Pushing Tin,8408835,33000000.0,1999,Comedy,Mike Newell,4.9,5.9,16160.0
 2566,The Painted Veil,15118795,19400000.0,2006,Drama,,7.4,7.6,26331.0
-2567,Pay it Forward,33508922,40000000.0,1900,Drama,Mimi Leder,4.0,6.8,36762.0
+2567,Pay it Forward,33508922,40000000.0,2000,Drama,Mimi Leder,4.0,6.8,36762.0
 2568,Queen of the Damned,30307804,35000000.0,2002,Horror,,1.7,4.7,20268.0
 2569,The Quiet American,12987647,20000000.0,2002,Drama,Phillip Noyce,8.7,7.2,14285.0
 2570,All the Queen's Men,22723,15000000.0,2002,Comedy,,,3.5,1591.0
@@ -2579,7 +2579,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2578,The Rainmaker,45916769,40000000.0,1997,Drama,Francis Ford Coppola,8.4,6.9,20514.0
 2579,Rambo,116754105,47500000.0,2008,Action,Sylvester Stallone,,7.3,82600.0
 2580,Random Hearts,63200000,64000000.0,1999,Drama,Sydney Pollack,1.5,4.8,11100.0
-2581,Rugrats in Paris,103284813,30000000.0,1900,Adventure,,,,
+2581,Rugrats in Paris,103284813,30000000.0,2000,Adventure,,,,
 2582,Rugrats Go Wild,55443032,25000000.0,2003,Adventure,,4.0,5.0,1847.0
 2583,Ratatouille,620495432,150000000.0,2007,Comedy,Brad Bird,9.6,8.1,131929.0
 2584,Ray,125305995,40000000.0,2004,Drama,Taylor Hackford,8.1,,
@@ -2587,11 +2587,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2586,Rollerball,25852508,70000000.0,2002,Action,John McTiernan,0.3,2.8,13827.0
 2587,Robin Hood,310885538,210000000.0,2010,Action,Ridley Scott,4.3,6.9,34501.0
 2588,Robots,260700012,80000000.0,2005,Adventure,Chris Wedge,6.4,6.4,27361.0
-2589,A Room for Romeo Brass,20097,5250000.0,1900,,Shane Meadows,,7.6,2393.0
+2589,A Room for Romeo Brass,20097,5250000.0,2000,,Shane Meadows,,7.6,2393.0
 2590,Runaway Bride,308007919,70000000.0,1999,Romantic Comedy,Garry Marshall,4.5,5.2,28497.0
 2591,Racing Stripes,93772522,30000000.0,2005,Comedy,,3.5,5.2,5086.0
 2592,Rocky Balboa,155720088,24000000.0,2006,Drama,Sylvester Stallone,7.6,7.4,63717.0
-2593,The Road to El Dorado,65700000,95000000.0,1900,Adventure,David Silverman,4.9,6.4,8876.0
+2593,The Road to El Dorado,65700000,95000000.0,2000,Adventure,David Silverman,4.9,6.4,8876.0
 2594,Riding Giants,3216111,2600000.0,2004,Documentary,,9.3,7.7,2193.0
 2595,Red Dragon,206455420,78000000.0,2002,Thriller/Suspense,Brett Ratner,6.8,7.3,66386.0
 2596,The Reader,106107610,33000000.0,2008,Drama,Stephen Daldry,6.1,7.7,46984.0
@@ -2606,24 +2606,24 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2605,Remember Me,55343435,16000000.0,2010,Drama,,2.8,7.0,16319.0
 2606,"Remember Me, My Love",223878,6700000.0,2004,Comedy,Gabriele Muccino,,7.0,16319.0
 2607,Rent,31670620,40000000.0,2005,Musical,Chris Columbus,4.7,6.9,22605.0
-2608,The Replacements,50054511,50000000.0,1900,Comedy,Howard Deutch,3.9,6.2,21542.0
+2608,The Replacements,50054511,50000000.0,2000,Comedy,Howard Deutch,3.9,6.2,21542.0
 2609,The Replacement Killers,19035741,30000000.0,1998,Action,Antoine Fuqua,3.9,5.9,13905.0
 2610,Resident Evil: Apocalypse,128940078,50000000.0,2004,Horror,,,5.8,52753.0
 2611,Resident Evil: Extinction,146162920,45000000.0,2007,Action,Russell Mulcahy,2.2,6.2,49502.0
 2612,Resident Evil: Afterlife 3D  ,149568993,57500000.0,2010,Horror,Paul Anderson,,,
 2613,Resident Evil,103787401,35000000.0,2002,Horror,Paul Anderson,3.4,6.4,68342.0
-2614,Return to Me,32662299,24000000.0,1900,Romantic Comedy,,6.1,6.6,9565.0
+2614,Return to Me,32662299,24000000.0,2000,Romantic Comedy,,6.1,6.6,9565.0
 2615,Revolutionary Road,76989671,35000000.0,2008,Drama,Sam Mendes,6.8,7.6,45887.0
 2616,Be Kind Rewind,28505302,20000000.0,2008,Comedy,Michel Gondry,6.5,6.6,42470.0
 2617,Reign of Fire,82150183,60000000.0,2002,Action,,4.0,5.9,38414.0
-2618,Reindeer Games,23360779,36000000.0,1900,Action,John Frankenheimer,,5.5,16822.0
+2618,Reindeer Games,23360779,36000000.0,2000,Action,John Frankenheimer,,5.5,16822.0
 2619,Rachel Getting Married,13326280,12000000.0,2008,Drama,Jonathan Demme,8.6,6.9,20451.0
 2620,The Rugrats Movie,140894685,28000000.0,1998,Adventure,,5.7,5.4,4857.0
 2621,Riding in Cars with Boys,29781453,47000000.0,2001,Drama,Penny Marshall,4.8,6.2,11895.0
 2622,Ride With the Devil,630779,35000000.0,1999,Western,Ang Lee,6.3,6.4,1873.0
 2623,The Ring Two,161941727,50000000.0,2005,Horror,,2.0,5.1,28408.0
 2624,Rize,4462763,700000.0,2005,Documentary,,,6.8,2052.0
-2625,The Adventures of Rocky & Bullwinkle,35129610,76000000.0,1900,Comedy,,4.2,4.1,10320.0
+2625,The Adventures of Rocky & Bullwinkle,35129610,76000000.0,2000,Comedy,,4.2,4.1,10320.0
 2626,All the Real Girls,703020,1000000.0,2003,Drama,David Gordon Green,7.1,7.1,5632.0
 2627,Real Women Have Curves,5853194,3000000.0,2002,Comedy,,8.3,7.0,4396.0
 2628,Son of Rambow: A Home Movie,10573083,2000000.0,2008,Comedy,,,,
@@ -2635,20 +2635,20 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2634,Rock Star,19317765,38000000.0,2001,Drama,Stephen Herek,5.2,5.8,15806.0
 2635,The Rookie,80693537,22000000.0,2002,Drama,,8.2,5.5,8453.0
 2636,Roll Bounce,17500866,10000000.0,2005,Comedy,Malcolm D. Lee,6.4,5.0,3167.0
-2637,Romeo Must Die,91036760,25000000.0,1900,Action,Andrzej Bartkowiak,3.3,5.9,25309.0
+2637,Romeo Must Die,91036760,25000000.0,2000,Action,Andrzej Bartkowiak,3.3,5.9,25309.0
 2638,Ronin,41610884,55000000.0,1998,Action,John Frankenheimer,6.8,7.2,57484.0
 2639,The Ballad of Jack and Rose,712294,1500000.0,2005,Drama,,,6.8,5223.0
-2640,Red Planet,33463969,80000000.0,1900,Action,,1.2,5.3,20989.0
-2641,Requiem for a Dream,7390108,4500000.0,1900,Drama,Darren Aronofsky,7.8,8.5,185226.0
+2640,Red Planet,33463969,80000000.0,2000,Action,,1.2,5.3,20989.0
+2641,Requiem for a Dream,7390108,4500000.0,2000,Drama,Darren Aronofsky,7.8,8.5,185226.0
 2642,Rat Race,86607223,48000000.0,2001,Comedy,Jerry Zucker,4.3,6.4,40087.0
 2643,Rescue Dawn,7037886,10000000.0,2007,Action,Werner Herzog,,7.5,37764.0
 2644,The Real Cancun,3816594,4000000.0,2003,Documentary,,3.5,2.3,3211.0
 2645,Restless,0,15000000.0,2011,,,,6.7,300.0
-2646,Remember the Titans,136706683,30000000.0,1900,Drama,Boaz Yakin,7.2,7.5,49844.0
+2646,Remember the Titans,136706683,30000000.0,2000,Drama,Boaz Yakin,7.2,7.5,49844.0
 2647,Righteous Kill,76781410,60000000.0,2008,Thriller/Suspense,Jon Avnet,2.0,6.0,34641.0
-2648,Road Trip,119739110,16000000.0,1900,Comedy,Todd Phillips,5.9,6.4,44702.0
+2648,Road Trip,119739110,16000000.0,2000,Comedy,Todd Phillips,5.9,6.4,44702.0
 2649,The Ruins,22177122,25000000.0,2008,Horror,,4.7,6.0,23752.0
-2650,Rules of Engagement,71719931,60000000.0,1900,Thriller/Suspense,William Friedkin,3.7,6.2,18462.0
+2650,Rules of Engagement,71719931,60000000.0,2000,Thriller/Suspense,William Friedkin,3.7,6.2,18462.0
 2651,The Rundown,80831893,85000000.0,2003,Action,Peter Berg,,6.6,30855.0
 2652,Running Scared,8345277,17000000.0,2006,Action,,4.0,7.5,39447.0
 2653,Running With Scissors,7213629,12000000.0,2006,Comedy,,3.0,6.0,12926.0
@@ -2691,7 +2691,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2690,The Score,113542091,68000000.0,2001,Thriller/Suspense,Frank Oz,7.4,6.8,42616.0
 2691,Scream,173046663,15000000.0,1996,Horror,Wes Craven,8.1,2.9,217.0
 2692,Scream 2,101363301,24000000.0,1997,Horror,Wes Craven,8.0,5.9,48196.0
-2693,Scream 3,161838076,40000000.0,1900,Horror,Wes Craven,3.8,5.3,38230.0
+2693,Scream 3,161838076,40000000.0,2000,Horror,Wes Craven,3.8,5.3,38230.0
 2694,The Scorpion King,164529000,60000000.0,2002,Action,Chuck Russell,4.0,5.3,30359.0
 2695,George A. Romero's Survival of the Dead,101740,4200000.0,2010,Horror,,,,
 2696,Stardust,135556675,70000000.0,2007,Adventure,Matthew Vaughn,7.6,7.9,87883.0
@@ -2708,10 +2708,10 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2707,Something's Gotta Give,266685242,80000000.0,2003,Romantic Comedy,Nancy Meyers,7.0,6.8,36303.0
 2708,Sugar Town,178095,250000.0,1999,Comedy,,6.7,5.6,566.0
 2709,Shade,22183,6800000.0,2004,,,,6.3,950.0
-2710,Shadow of the Vampire,8279017,8000000.0,1900,Drama,E. Elias Merhige,8.1,6.8,18221.0
-2711,Shaft,107190108,53012938.0,1900,Action,John Singleton,6.8,5.9,32881.0
+2710,Shadow of the Vampire,8279017,8000000.0,2000,Drama,E. Elias Merhige,8.1,6.8,18221.0
+2711,Shaft,107190108,53012938.0,2000,Action,John Singleton,6.8,5.9,32881.0
 2712,The Shaggy Dog,87123569,60000000.0,2006,Comedy,Brian Robbins,2.7,4.1,6116.0
-2713,Scary Movie,277200000,19000000.0,1900,Comedy,Keenen Ivory Wayans,5.3,6.0,68541.0
+2713,Scary Movie,277200000,19000000.0,2000,Comedy,Keenen Ivory Wayans,5.3,6.0,68541.0
 2714,Shaun of the Dead,29629128,5000000.0,2004,Comedy,Edgar Wright,9.1,8.0,134693.0
 2715,Shortbus,1985292,2000000.0,2006,Comedy,,6.6,6.7,14276.0
 2716,She's All That,63465522,10000000.0,1999,Romantic Comedy,,3.8,5.4,28498.0
@@ -2745,10 +2745,10 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2744,The Sixth Sense,672806292,40000000.0,1999,Thriller/Suspense,M. Night Shyamalan,8.5,8.2,238745.0
 2745,Super Size Me,29529368,65000.0,2004,Documentary,Morgan Spurlock,,7.6,33805.0
 2746,The Skeleton Key,92907715,40000000.0,2005,Horror,Iain Softley,3.8,6.5,29810.0
-2747,The Skulls,35007180,15000000.0,1900,Thriller/Suspense,Rob Cohen,0.8,5.3,14903.0
+2747,The Skulls,35007180,15000000.0,2000,Thriller/Suspense,Rob Cohen,0.8,5.3,14903.0
 2748,Sky High,81627454,60000000.0,2005,Adventure,,7.3,6.6,20923.0
 2749,Slackers,4814244,11000000.0,2002,Comedy,,1.1,4.9,7934.0
-2750,Ready to Rumble,12372410,24000000.0,1900,Comedy,Brian Robbins,2.5,,
+2750,Ready to Rumble,12372410,24000000.0,2000,Comedy,Brian Robbins,2.5,,
 2751,Soldier,14623082,75000000.0,1998,Action,Paul Anderson,,,
 2752,Sleepy Hollow,207068340,70000000.0,1999,Horror,Tim Burton,6.8,7.5,107511.0
 2753,Lucky Number Slevin,55495466,27000000.0,2006,Thriller/Suspense,Paul McGuigan,5.1,7.8,91145.0
@@ -2777,12 +2777,12 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2776,See No Evil,15387513,8000000.0,2006,Horror,,0.9,5.0,10035.0
 2777,The Shipping News,24405825,35000000.0,2001,Drama,Lasse Hallstrom,5.5,6.7,17338.0
 2778,Shanghai Knights,60470220,50000000.0,2003,Adventure,David Dobkin,6.6,6.2,24893.0
-2779,Shanghai Noon,71189835,55000000.0,1900,Western,Tom Dey,7.8,6.6,32446.0
+2779,Shanghai Noon,71189835,55000000.0,2000,Western,Tom Dey,7.8,6.6,32446.0
 2780,Snow Dogs,115010692,32000000.0,2002,Comedy,Brian Levant,2.3,4.9,7561.0
 2781,Snow Falling on Cedars,14378353,36000000.0,1999,Drama,,4.0,6.7,8444.0
 2782,Sunshine,32030610,40000000.0,2007,Thriller/Suspense,Danny Boyle,7.4,7.3,74535.0
-2783,Snatch,83593107,10000000.0,1900,Black Comedy,Guy Ritchie,,8.2,173919.0
-2784,Snow Day,62452927,13000000.0,1900,Comedy,,2.6,4.4,4611.0
+2783,Snatch,83593107,10000000.0,2000,Black Comedy,Guy Ritchie,,8.2,173919.0
+2784,Snow Day,62452927,13000000.0,2000,Comedy,,2.6,4.4,4611.0
 2785,Sorority Boys,12516222,12000000.0,2002,Comedy,,1.3,5.1,7392.0
 2786,Solaris,14970038,47000000.0,2002,Drama,Steven Soderbergh,6.5,6.2,33151.0
 2787,Solitary Man,4354546,12500000.0,2010,Drama,,,6.7,1936.0
@@ -2800,7 +2800,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2799,Superbad,169863226,17500000.0,2007,Comedy,Greg Mottola,8.7,7.8,134212.0
 2800,SpongeBob SquarePants,140416609,30000000.0,2004,Adventure,,,,
 2801,Space Chimps,59517784,37000000.0,2008,Adventure,,3.6,4.5,4324.0
-2802,Space Cowboys,128874043,65000000.0,1900,Adventure,Clint Eastwood,7.9,6.3,29983.0
+2802,Space Cowboys,128874043,65000000.0,2000,Adventure,Clint Eastwood,7.9,6.3,29983.0
 2803,Spider,1641788,10000000.0,2003,Drama,David Cronenberg,,7.8,560.0
 2804,Speed Racer,93394462,120000000.0,2008,Action,Andy Wachowski,3.8,6.3,32672.0
 2805,The Spiderwick Chronicles,162839667,92500000.0,2008,Adventure,Mark Waters,7.9,6.8,18715.0
@@ -2814,7 +2814,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2813,Scott Pilgrim vs. The World,43149143,85000000.0,2010,Comedy,Edgar Wright,8.1,8.1,17461.0
 2814,See Spot Run,43057552,16000000.0,2001,Comedy,,2.4,4.9,3673.0
 2815,Superman Returns,391120000,232000000.0,2006,Adventure,Bryan Singer,7.6,6.6,102751.0
-2816,Supernova,14218868,60000000.0,1900,Action,Francis Ford Coppola,1.0,6.8,127.0
+2816,Supernova,14218868,60000000.0,2000,Action,Francis Ford Coppola,1.0,6.8,127.0
 2817,Spirited Away,274949886,19000000.0,2002,Adventure,Hayao Miyazaki,,,
 2818,Spun,1022649,4500000.0,2003,,,,6.6,16011.0
 2819,Spy Game,143049560,90000000.0,2001,Action,Tony Scott,6.5,6.9,44850.0
@@ -2834,7 +2834,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2833,Starship Troopers,121100000,100000000.0,1997,Action,Paul Verhoeven,6.0,7.1,83516.0
 2834,The Station Agent,7773824,500000.0,2003,Drama,,9.5,7.8,22274.0
 2835,Stay Alive,23187506,20000000.0,2006,Horror,,0.9,4.5,13658.0
-2836,Small Time Crooks,29934477,18000000.0,1900,Comedy,Woody Allen,6.6,6.5,15636.0
+2836,Small Time Crooks,29934477,18000000.0,2000,Comedy,Woody Allen,6.6,6.5,15636.0
 2837,Steel,1686429,16000000.0,1997,Action,,1.2,2.7,4409.0
 2838,How Stella Got Her Groove Back,37672944,20000000.0,1998,Drama,,4.9,5.1,3080.0
 2839,The Stepford Wives,96221971,100000000.0,2004,Comedy,Frank Oz,2.6,5.1,26712.0
@@ -2853,7 +2853,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2852,The Statement,1545064,27000000.0,2003,Thriller/Suspense,Norman Jewison,2.3,6.0,2735.0
 2853,Stolen Summer,119841,1500000.0,2002,,,3.5,6.4,1733.0
 2854,Stop-Loss,11179472,25000000.0,2008,Drama,Kimberly Peirce,,6.5,9268.0
-2855,The Perfect Storm,328711434,120000000.0,1900,Drama,Wolfgang Petersen,4.7,6.2,55716.0
+2855,The Perfect Storm,328711434,120000000.0,2000,Drama,Wolfgang Petersen,4.7,6.2,55716.0
 2856,The Story of Us,27100030,50000000.0,1999,Romantic Comedy,Rob Reiner,2.8,5.6,10720.0
 2857,The Stepfather,29227561,20000000.0,2009,Thriller/Suspense,,1.1,5.3,6263.0
 2858,State of Play,91445389,60000000.0,2009,Thriller/Suspense,Kevin MacDonald,8.4,7.3,34067.0
@@ -2909,7 +2909,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2908,Taxman,9871,3500000.0,1999,Comedy,,,6.8,520.0
 2909,Thunderbirds,28231444,55000000.0,2004,Adventure,Jonathan Frakes,1.9,4.0,5397.0
 2910,The Best Man,34572780,9000000.0,1999,Romantic Comedy,Malcolm D. Lee,7.1,6.1,2019.0
-2911,Book of Shadows: Blair Witch 2,47721314,15000000.0,1900,Horror,,,4.0,16122.0
+2911,Book of Shadows: Blair Witch 2,47721314,15000000.0,2000,Horror,,,4.0,16122.0
 2912,The Cave,27147991,30000000.0,2005,Horror,,1.2,4.8,13025.0
 2913,This Christmas,49778552,13000000.0,2007,Drama,,5.5,5.4,3351.0
 2914,The Core,74132631,85000000.0,2003,Action,Jon Amiel,4.2,5.3,27375.0
@@ -2919,7 +2919,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2918,Team America: World Police,50274834,20000000.0,2004,Comedy,Trey Parker,,7.3,58763.0
 2919,Tea with Mussolini,14395874,14000000.0,1999,Drama,Franco Zeffirelli,6.7,6.7,5435.0
 2920,Tears of the Sun,85632458,75000000.0,2003,Action,Antoine Fuqua,3.4,6.4,34304.0
-2921,The Big Tease,185577,4000000.0,1900,Comedy,,,6.1,1610.0
+2921,The Big Tease,185577,4000000.0,2000,Comedy,,,6.1,1610.0
 2922,Not Another Teen Movie,62401343,15000000.0,2001,Comedy,,2.8,5.5,36678.0
 2923,Teeth,2300349,2000000.0,2008,Comedy,,,5.5,18.0
 2924,Bridge to Terabithia,136934139,25000000.0,2007,Drama,,8.5,7.4,34482.0
@@ -2931,7 +2931,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2930,The Greatest Game Ever Played,15425073,25000000.0,2005,Drama,Bill Paxton,6.2,7.3,7876.0
 2931,The Ghost Writer,63241549,45000000.0,2010,Thriller/Suspense,Roman Polanski,8.4,7.6,22875.0
 2932,Joheunnom nabbeunnom isanghannom,42226657,10000000.0,2010,Action,,,7.4,5548.0
-2933,The Beach,39778599,50000000.0,1900,Drama,Danny Boyle,1.9,4.5,229.0
+2933,The Beach,39778599,50000000.0,2000,Drama,Danny Boyle,1.9,4.5,229.0
 2934,The Box,26341896,25000000.0,2009,Thriller/Suspense,Richard Kelly,4.5,6.8,418.0
 2935,The Wild Thornberrys,60694737,25000000.0,2002,Adventure,,,6.7,1104.0
 2936,Bug,7006708,4000000.0,2007,Drama,William Friedkin,,6.0,14164.0
@@ -2939,8 +2939,8 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2938,The Eye,56706727,12000000.0,2008,Thriller/Suspense,,2.2,5.3,17304.0
 2939,The Fog,37048526,18000000.0,2005,Horror,Rupert Wainwright,0.5,3.3,15760.0
 2940,The Thin Red Line,36400491,52000000.0,1998,Drama,Terrence Malick,7.8,7.5,60966.0
-2941,Thirteen Days,66554547,80000000.0,1900,Drama,Roger Donaldson,8.2,7.3,23578.0
-2942,The Kid,69688384,65000000.0,1900,Comedy,Jon Turteltaub,4.9,5.9,14927.0
+2941,Thirteen Days,66554547,80000000.0,2000,Drama,Roger Donaldson,8.2,7.3,23578.0
+2942,The Kid,69688384,65000000.0,2000,Comedy,Jon Turteltaub,4.9,5.9,14927.0
 2943,The Man,10393696,20000000.0,2005,Comedy,Les Mayfield,1.1,5.4,9356.0
 2944,House on Haunted Hill,40846082,19000000.0,1999,Horror,William Malone,2.5,5.2,22795.0
 2945,The One,43905746,49000000.0,2001,Action,James Wong,1.3,5.6,24416.0
@@ -2950,11 +2950,11 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2949,The Thirteenth Floor,11810854,16000000.0,1999,Thriller/Suspense,,2.8,6.7,19939.0
 2950,The 13th Warrior,61698899,125000000.0,1999,Action,John McTiernan,3.3,6.3,36151.0
 2951,The Tuxedo,50586000,60000000.0,2002,Action,,2.2,5.0,19370.0
-2952,The Tigger Movie,55159800,20000000.0,1900,Adventure,,6.1,6.0,2986.0
+2952,The Tigger Movie,55159800,20000000.0,2000,Adventure,,6.1,6.0,2986.0
 2953,Timeline,26703184,80000000.0,2003,Adventure,Richard Donner,1.1,5.3,19318.0
 2954,The Adventures of Tintin: Secret of the Unicorn,0,130000000.0,2011,Adventure,Steven Spielberg,,,
 2955,Thirteen,6302406,2000000.0,2003,Drama,Catherine Hardwicke,,7.0,31482.0
-2956,Titan A.E.,36751979,75000000.0,1900,Adventure,Don Bluth,5.1,6.4,22286.0
+2956,Titan A.E.,36751979,75000000.0,2000,Adventure,Don Bluth,5.1,6.4,22286.0
 2957,Titanic,1842879955,200000000.0,1997,Thriller/Suspense,James Cameron,8.2,7.4,240732.0
 2958,The Kids Are All Right,20553799,4000000.0,2010,Comedy,,9.6,7.8,3093.0
 2959,The League of Extraordinary Gentlemen,179265204,78000000.0,2003,Adventure,Stephen Norrington,1.7,5.5,50710.0
@@ -2975,8 +2975,8 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 2974,Toy Story 3,1046340665,200000000.0,2010,Adventure,,9.9,8.9,67380.0
 2975,The Taking of Pelham 123,148989667,110000000.0,2009,Action,Tony Scott,,6.5,33452.0
 2976,Treasure Planet,91800000,100000000.0,2002,Adventure,,6.9,6.6,12099.0
-2977,Traffic,208300000,48000000.0,1900,Drama,Steven Soderbergh,9.1,7.8,85759.0
-2978,Thomas and the Magic Railroad,15911332,19000000.0,1900,Adventure,,1.9,2.7,1613.0
+2977,Traffic,208300000,48000000.0,2000,Drama,Steven Soderbergh,9.1,7.8,85759.0
+2978,Thomas and the Magic Railroad,15911332,19000000.0,2000,Adventure,,1.9,2.7,1613.0
 2979,Training Day,104505362,45000000.0,2001,Drama,Antoine Fuqua,7.2,7.6,82057.0
 2980,Traitor,27664173,22000000.0,2008,Thriller/Suspense,,6.1,7.1,22468.0
 2981,Trapped,6916869,30000000.0,2002,Thriller/Suspense,,1.8,6.0,10685.0
@@ -3021,14 +3021,14 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3020,Tom yum goong,43044087,5700000.0,2006,Action,,,6.9,13929.0
 3021,Thank You For Smoking,39232211,7500000.0,2006,Black Comedy,Jason Reitman,,7.8,65340.0
 3022,U2 3D,22664070,15000000.0,2008,Concert/Performance,Catherine Owens,,8.3,2090.0
-3023,U-571,127630030,62000000.0,1900,Action,Jonathan Mostow,6.8,6.4,32528.0
+3023,U-571,127630030,62000000.0,2000,Action,Jonathan Mostow,6.8,6.4,32528.0
 3024,Undercover Brother,38230435,25000000.0,2002,Comedy,Malcolm D. Lee,7.6,5.7,14237.0
 3025,Underclassman,5654777,25000000.0,2005,Thriller/Suspense,,,3.3,3249.0
 3026,Dodgeball: A True Underdog Story,167726736,30000000.0,2004,Comedy,,,6.6,65329.0
 3027,The Ugly Truth,203115214,38000000.0,2009,Romantic Comedy,Robert Luketic,1.4,6.4,27888.0
 3028,Ultraviolet,20722064,30000000.0,2006,Action,,0.9,4.0,28547.0
 3029,Unaccompanied Minors,21949214,25000000.0,2006,Comedy,,,3.7,4133.0
-3030,Unbreakable,248099143,73243106.0,1900,Thriller/Suspense,M. Night Shyamalan,6.8,7.3,97324.0
+3030,Unbreakable,248099143,73243106.0,2000,Thriller/Suspense,M. Night Shyamalan,6.8,7.3,97324.0
 3031,The Unborn,77208315,16000000.0,2009,Horror,David Goyer,1.1,4.5,15331.0
 3032,Undead,187847,750000.0,2005,Horror,,,5.6,6957.0
 3033,Underworld,95708457,22000000.0,2003,Action,Len Wiseman,3.0,6.7,65690.0
@@ -3045,13 +3045,13 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3044,Up in the Air,166077420,30000000.0,2009,Drama,Jason Reitman,9.0,,
 3045,The Upside of Anger,27361993,12000000.0,2005,Drama,Mike Binder,,7.0,12317.0
 3046,Urban Legend,72571864,14000000.0,1998,Horror,,2.1,5.2,19113.0
-3047,Urban Legends: Final Cut,38574362,15000000.0,1900,Horror,,0.9,3.7,7609.0
-3048,Urbania,1032075,225000.0,1900,Drama,,7.3,6.7,2218.0
+3047,Urban Legends: Final Cut,38574362,15000000.0,2000,Horror,,0.9,3.7,7609.0
+3048,Urbania,1032075,225000.0,2000,Drama,,7.3,6.7,2218.0
 3049,Valkyrie,198686497,75000000.0,2008,Thriller/Suspense,Bryan Singer,6.1,7.3,54343.0
 3050,Valiant,61746888,35000000.0,2005,Adventure,,3.0,5.6,7158.0
 3051,Valentine,20384136,10000000.0,2001,Horror,,0.9,4.3,11435.0
 3052,Cirque du Freak: The Vampire's Assistant,34372469,40000000.0,2009,Action,Paul Weitz,3.7,6.1,9539.0
-3053,The Legend of Bagger Vance,39235486,60000000.0,1900,Drama,Robert Redford,4.3,6.4,21995.0
+3053,The Legend of Bagger Vance,39235486,60000000.0,2000,Drama,Robert Redford,4.3,6.4,21995.0
 3054,Raising Victor Vargas,2811439,800000.0,2003,Drama,Peter Sollett,,7.1,3719.0
 3055,In the Valley of Elah,24489150,23000000.0,2007,Drama,Paul Haggis,7.3,7.4,27529.0
 3056,Venom,881745,25000000.0,2005,Horror,,1.0,4.6,4220.0
@@ -3061,17 +3061,17 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3060,The Velocity of Gary,34145,4000000.0,1999,,,,,
 3061,Van Helsing,300150546,170000000.0,2004,Action,Stephen Sommers,2.2,5.5,68846.0
 3062,The Village,260197520,71682975.0,2004,Thriller/Suspense,M. Night Shyamalan,4.2,6.6,88928.0
-3063,The Virgin Suicides,4859475,6000000.0,1900,Black Comedy,Sofia Coppola,,7.2,49110.0
+3063,The Virgin Suicides,4859475,6000000.0,2000,Black Comedy,Sofia Coppola,,7.2,49110.0
 3064,Virus,30626690,75000000.0,1999,Action,,0.9,4.5,10487.0
 3065,The Visitor,16194905,4000000.0,2008,Comedy,,9.0,6.8,318.0
 3066,A Very Long Engagement,59606587,55000000.0,2004,Drama,Jean-Pierre Jeunet,,,
-3067,Vertical Limit,213500000,75000000.0,1900,Action,Martin Campbell,4.7,5.6,24294.0
+3067,Vertical Limit,213500000,75000000.0,2000,Action,Martin Campbell,4.7,5.6,24294.0
 3068,Vampires,20268825,20000000.0,1998,Horror,John Carpenter,3.3,6.8,54.0
 3069,Vanilla Sky,202726605,70000000.0,2001,Thriller/Suspense,Cameron Crowe,3.9,6.9,87820.0
 3070,Volcano,120100000,90000000.0,1997,Action,Mick Jackson,4.2,5.2,21313.0
 3071,Volver,85599867,9400000.0,2006,Comedy,Pedro Almodovar,9.2,4.4,288.0
 3072,Kurtlar vadisi - Irak,24906717,8300000.0,2006,Action,,,5.7,7936.0
-3073,The Flintstones in Viva Rock Vegas,59431365,58000000.0,1900,Comedy,Brian Levant,2.4,3.3,5491.0
+3073,The Flintstones in Viva Rock Vegas,59431365,58000000.0,2000,Comedy,Brian Levant,2.4,3.3,5491.0
 3074,Varsity Blues,54294169,16000000.0,1999,Drama,Brian Robbins,3.9,6.0,18066.0
 3075,Valentine's Day,215771698,52000000.0,2010,Romantic Comedy,Garry Marshall,1.7,5.7,17599.0
 3076,National Lampoon's Van Wilder,37975553,6000000.0,2002,Comedy,,,,
@@ -3090,7 +3090,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3089,Waitress,22202180,1500000.0,2007,Romantic Comedy,Adrienne Shelly,8.9,7.2,20384.0
 3090,The Wendell Baker Story,127188,8000000.0,2007,Comedy,Luke Wilson,,5.5,3535.0
 3091,Winter's Bone,5951693,2000000.0,2010,Drama,,9.5,8.2,1704.0
-3092,Wonder Boys,33422485,35000000.0,1900,Comedy,Curtis Hanson,8.1,7.5,31572.0
+3092,Wonder Boys,33422485,35000000.0,2000,Comedy,Curtis Hanson,8.1,7.5,31572.0
 3093,Waltz with Bashir,11125664,2000000.0,2008,Documentary,,,,
 3094,White Chicks,111448997,20000000.0,2004,Comedy,Keenen Ivory Wayans,1.5,5.0,25970.0
 3095,Wolf Creek,27649774,1100000.0,2005,Horror,,,6.3,22594.0
@@ -3108,8 +3108,8 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3107,What a Girl Wants,35990505,25000000.0,2003,Comedy,Dennie Gordon,3.4,5.7,12561.0
 3108,Whale Rider,38833352,4300000.0,2003,Drama,,9.0,7.7,21814.0
 3109,Walk Hard: The Dewey Cox Story,20575121,35000000.0,2007,Comedy,,7.4,6.7,28032.0
-3110,Where the Heart Is,40862054,15000000.0,1900,Drama,,3.4,6.4,13302.0
-3111,Whipped,4142507,3000000.0,1900,Comedy,,1.3,4.2,2973.0
+3110,Where the Heart Is,40862054,15000000.0,2000,Drama,,3.4,6.4,13302.0
+3111,Whipped,4142507,3000000.0,2000,Comedy,,1.3,4.2,2973.0
 3112,Whip It,13043363,15000000.0,2009,Comedy,Drew Barrymore,8.4,7.1,14068.0
 3113,Welcome Home Roscoe Jenkins,43607627,27500000.0,2008,Comedy,Malcolm D. Lee,2.3,4.5,5700.0
 3114,When a Stranger Calls,66966987,15000000.0,2006,Horror,Simon West,0.9,4.7,16505.0
@@ -3124,7 +3124,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3123,Wing Commander,11578022,30000000.0,1999,Action,,1.1,3.7,9460.0
 3124,Without Limits,780326,25000000.0,1998,Drama,,7.8,6.9,3369.0
 3125,What Just Happened,2412123,27000000.0,2008,Comedy,Barry Levinson,,5.9,12537.0
-3126,What Lies Beneath,288693989,90000000.0,1900,Thriller/Suspense,Robert Zemeckis,4.5,6.5,45633.0
+3126,What Lies Beneath,288693989,90000000.0,2000,Thriller/Suspense,Robert Zemeckis,4.5,6.5,45633.0
 3127,Walk the Line,184319402,29000000.0,2005,Drama,James Mangold,8.2,7.9,85235.0
 3128,A Walk to Remember,46060915,11000000.0,2002,Drama,Adam Shankman,2.8,7.1,38045.0
 3129,Willard,6882696,20000000.0,2003,Horror,,6.5,6.2,7702.0
@@ -3132,7 +3132,7 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3131,White Noise 2: The Light,8243567,10000000.0,2008,Horror,,8.6,5.9,5647.0
 3132,White Noise,92094360,10000000.0,2005,Drama,,0.9,,
 3133,Wanted,340934768,75000000.0,2008,Action,Timur Bekmambetov,7.1,6.4,1089.0
-3134,Woman on Top,10192613,8000000.0,1900,Romantic Comedy,,3.5,4.9,4743.0
+3134,Woman on Top,10192613,8000000.0,2000,Romantic Comedy,,3.5,4.9,4743.0
 3135,The Wolf Man,142422252,150000000.0,2010,Horror,Joe Johnston,,7.4,6099.0
 3136,X-Men Origins: Wolverine,374825760,150000000.0,2009,Action,Gavin Hood,,6.7,79499.0
 3137,The Women,50042410,16000000.0,2008,Comedy,,1.3,7.9,5519.0
@@ -3141,31 +3141,31 @@ ID,Title,Gross,Budget,Date,Genre,Director,RTRating,IMDBRating,IMDBVotes
 3140,Without a Paddle,65121280,30000000.0,2004,Comedy,,1.5,5.7,17207.0
 3141,What's the Worst That Could Happen?,38462071,30000000.0,2001,Comedy,,1.0,5.0,6727.0
 3142,Winter Passing,113783,3500000.0,2006,Drama,,4.0,6.4,4360.0
-3143,What Planet Are You From?,6291602,50000000.0,1900,Comedy,Mike Nichols,4.2,5.4,5304.0
+3143,What Planet Are You From?,6291602,50000000.0,2000,Comedy,Mike Nichols,4.2,5.4,5304.0
 3144,Wordplay,3177636,500000.0,2006,Documentary,,,7.4,2222.0
 3145,The Wrestler,43236603,6000000.0,2008,Drama,Darren Aronofsky,9.8,8.2,93301.0
 3146,Walking Tall,47313824,56000000.0,2004,Action,Kevin Bray,2.5,6.0,20517.0
 3147,World Trade Center,163278893,65000000.0,2006,Drama,Oliver Stone,6.9,6.2,34341.0
-3148,The Watcher,47267829,33000000.0,1900,Thriller/Suspense,,1.0,3.7,959.0
+3148,The Watcher,47267829,33000000.0,2000,Thriller/Suspense,,1.0,3.7,959.0
 3149,The Weather Man,15466961,20000000.0,2005,Drama,Gore Verbinski,5.8,6.9,35394.0
 3150,Sky Captain and the World of Tomorrow,49730854,70000000.0,2004,Adventure,,7.2,6.3,40281.0
 3151,Whiteout,12254746,35000000.0,2009,Thriller/Suspense,Dominic Sena,0.7,5.3,10044.0
 3152,The Waterboy,190191646,23000000.0,1998,Comedy,Frank Coraci,3.2,5.7,43251.0
 3153,Wrong Turn,28649556,10000000.0,2003,Horror,,4.0,5.8,119.0
-3154,What Women Want,372100000,65000000.0,1900,Romantic Comedy,Nancy Meyers,5.3,6.3,54525.0
-3155,The Way of the Gun,13061935,9000000.0,1900,Action,,4.8,6.5,17513.0
+3154,What Women Want,372100000,65000000.0,2000,Romantic Comedy,Nancy Meyers,5.3,6.3,54525.0
+3155,The Way of the Gun,13061935,9000000.0,2000,Action,,4.8,6.5,17513.0
 3156,The X-Files: I Want to Believe,68369434,35000000.0,2008,Action,,,5.9,35433.0
 3157,The X Files: Fight the Future,189176423,66000000.0,1998,Action,,,,
 3158,Extraordinary Measures,12697741,31000000.0,2010,Drama,Tom Vaughan,2.7,6.4,3770.0
-3159,X-Men,334627820,75000000.0,1900,Action,Bryan Singer,8.2,7.4,120706.0
+3159,X-Men,334627820,75000000.0,2000,Action,Bryan Singer,8.2,7.4,120706.0
 3160,X2,407711549,125000000.0,2003,Action,Bryan Singer,,7.8,112320.0
 3161,X-Men: The Last Stand,459359555,150000000.0,2006,Action,Brett Ratner,5.7,6.9,109125.0
 3162,The Exploding Girl,25572,40000.0,2010,,Bradley Rust Grey,,6.2,260.0
 3163,The Expendables,240484023,82000000.0,2010,Action,Sylvester Stallone,4.0,7.1,42427.0
 3164,XXX: State of the Union,71073932,60000000.0,2005,Action,Lee Tamahori,,4.1,19527.0
-3165,The Yards,2282710,20000000.0,1900,Drama,James Gray,6.4,6.3,8784.0
+3165,The Yards,2282710,20000000.0,2000,Drama,James Gray,6.4,6.3,8784.0
 3166,The Divine Secrets of the Ya-Ya Sisterhood,73826768,27000000.0,2002,Comedy,,,,
-3167,You Can Count on Me,11005992,1200000.0,1900,Drama,,9.5,7.7,14261.0
+3167,You Can Count on Me,11005992,1200000.0,2000,Drama,,9.5,7.7,14261.0
 3168,Year One,57604723,60000000.0,2009,Comedy,Harold Ramis,1.4,5.0,23091.0
 3169,Yes,661221,1700000.0,2005,Drama,,,,
 3170,Yes Man,225990976,50000000.0,2008,Comedy,Peyton Reed,4.3,7.0,62150.0
