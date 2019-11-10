@@ -1,11 +1,5 @@
 import pandas as pd
 import numpy as np
-from pandas import Series, DataFrame
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-import seaborn as sns
-import scipy as sp
-from scipy import stats
 
 df = pd.read_csv('movies.csv')
 
@@ -41,5 +35,6 @@ df.Gross = df['Gross'].astype(int)
 df.RTRating = df['RTRating'].apply(lambda x: x/10)
 
 #to csv
-df.to_csv('results.csv', index_label = 'ID')
-print(df.sort_values('Date'))
+df.to_csv('cleandata_movies.csv', index_label = 'ID')
+
+print(df)
