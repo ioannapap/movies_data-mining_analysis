@@ -6,13 +6,13 @@
 
 import pandas as pd
 import numpy as np
-import math
+import itertools
 from pandas import Series, DataFrame
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
-#import scipy as sp
-#from scipy import stats
+import scipy as sp
+from scipy import stats
 
 df = pd.read_csv('movies.csv')
 
@@ -79,7 +79,7 @@ df.RTRating = df['RTRating'].apply(lambda x: x/10)
 # In[9]:
 
 
-#making a genres Dataframe splitting the column to 2 (links movies ID's with the genres) 
+#making a genres Dataframe splitting the one column to two (has movies ID's with the genres) 
 #helpful 
 genres_df = df['Genre'].dropna()
 genres_df = genres_df.str.split('/', expand = True)
@@ -88,7 +88,7 @@ genres_df.columns = ['First', 'Second']
 second_genre_df = genres_df['Second'].dropna()
 
 
-# In[10]:
+# In[32]:
 
 
 #constructing a dictionary for Genre (key = genre : value = number of movies)
@@ -114,18 +114,15 @@ for i in second_genre_df:
     else:
 
         genres_hash[i] += 1
-        
-
-        
-print(genres_hash)
 
 
-# In[11]:
+# In[31]:
 
 
-genre_numbers_df = pd.DataFrame.from_dict(genres_hash, orient='index')
+#making the Genre Number Dataframe so as to make the bar plot later
+genre_numbers_df = pd.DataFrame.from_dict(genres_hash, orient = 'index')
 genre_numbers_df.columns = ['Number of Movies']
-print(genre_numbers_df)
+genre_numbers_df['Genre'] = genres_hash.keys()
 
 
 # In[12]:
@@ -187,18 +184,22 @@ plt.savefig('IMDBRating_Histogram.png')
 #making IMDB Votes histogram
 imdbv_df = df['IMDBVotes'].dropna()
 
-sns.distplot(imdbv_df, kde=False, color='black', bins=25)
-plt.title('IMDB Votes',color='black', fontsize=18)
-plt.xlabel('Number of Votes', fontsize=14)
-plt.ylabel('Number of Movies', fontsize=14)
+sns.distplot(imdbv_df, kde = False, color = 'black', bins = 25)
+plt.title('IMDB Votes',color='black', fontsize = 18)
+plt.xlabel('Number of Votes', fontsize = 14)
+plt.ylabel('Number of Movies', fontsize = 14)
 
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[ ]:
+# In[30]:
 
 
+#making Genres bar plot
+sns.barplot(x ='Number of Movies', y='Genre', data = genre_numbers_df)
+plt.title('Major Genre', color='black', fontsize = 18)
 
+plt.savefig('num_movie_genre_barplot.png')
 
 
 # In[ ]:
