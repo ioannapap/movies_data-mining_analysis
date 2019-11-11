@@ -116,19 +116,20 @@ for i in second_genre_df:
         genres_hash[i] += 1
 
 
-# In[25]:
+# In[26]:
 
 
 #making the Genre Number Dataframe so as to make the bar plot later
 genre_numbers_df = pd.DataFrame.from_dict(genres_hash, orient = 'index')
-genre_numbers_df.reset_index()
-genre_numbers_df.index = range(len(genre_numbers_df))
 genre_numbers_df.columns = ['Number of Movies']
 genre_numbers_df.insert(0, 'Genre', genres_hash.keys())
+genre_numbers_df.sort_values('Number of Movies', ascending = False, inplace = True)
+genre_numbers_df.reset_index()
+genre_numbers_df.index = range(len(genre_numbers_df))
 print(genre_numbers_df)
 
 
-# In[12]:
+# In[27]:
 
 
 #to csv
@@ -136,7 +137,7 @@ df.to_csv('cleandata_movies.csv', index_label = 'ID')
 print(df)
 
 
-# In[13]:
+# In[28]:
 
 
 #making Worldwide Gross histogram
@@ -152,7 +153,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[14]:
+# In[29]:
 
 
 #making Rotten Tomatoes Rating histogram
@@ -166,7 +167,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[15]:
+# In[30]:
 
 
 #making IMDB Rating histogram
@@ -181,7 +182,7 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[16]:
+# In[33]:
 
 
 #making IMDB Votes histogram
@@ -195,7 +196,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[17]:
+# In[34]:
 
 
 #making Genres bar plot
