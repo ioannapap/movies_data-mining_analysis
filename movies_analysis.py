@@ -79,7 +79,7 @@ df.RTRating = df['RTRating'].apply(lambda x: x/10)
 # In[9]:
 
 
-#making a genres Dataframe splitting the one column to two (has movies ID's with the genres) 
+#making a genres Dataframe splitting the one column to two (Columns: ID, First, Second)
 #helpful 
 genres_df = df['Genre'].dropna()
 genres_df = genres_df.str.split('/', expand = True)
@@ -88,7 +88,7 @@ genres_df.columns = ['First', 'Second']
 second_genre_df = genres_df['Second'].dropna()
 
 
-# In[32]:
+# In[10]:
 
 
 #constructing a dictionary for Genre (key = genre : value = number of movies)
@@ -116,13 +116,16 @@ for i in second_genre_df:
         genres_hash[i] += 1
 
 
-# In[31]:
+# In[25]:
 
 
 #making the Genre Number Dataframe so as to make the bar plot later
 genre_numbers_df = pd.DataFrame.from_dict(genres_hash, orient = 'index')
+genre_numbers_df.reset_index()
+genre_numbers_df.index = range(len(genre_numbers_df))
 genre_numbers_df.columns = ['Number of Movies']
-genre_numbers_df['Genre'] = genres_hash.keys()
+genre_numbers_df.insert(0, 'Genre', genres_hash.keys())
+print(genre_numbers_df)
 
 
 # In[12]:
@@ -140,12 +143,12 @@ print(df)
 sns.set_context('paper')
 sns.set_style('white')
 
-sns.distplot(df['Gross']/1000000, kde=False, color='darkgreen', bins=80)
+sns.distplot(df['Gross'] / 1000000, kde = False, color = 'darkgreen', bins = 80)
 plt.ylim(0,1700)
 plt.xlim(0,600)
-plt.title('Worldwide Gross', color='darkgreen', fontsize=18)
-plt.xlabel('Millions', fontsize=14)
-plt.ylabel('Number of Movies', fontsize=14)
+plt.title('Worldwide Gross', color = 'darkgreen', fontsize = 18)
+plt.xlabel('Millions', fontsize = 14)
+plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
@@ -155,11 +158,11 @@ plt.savefig('WorldwideGross_Histogram.png')
 #making Rotten Tomatoes Rating histogram
 rtr_df = df['RTRating'].dropna()
 
-sns.distplot(rtr_df, kde=False, color='darkred', bins=10)
-plt.title('Rotten Tomatoes Rating',color='darkred', fontsize=18)
-plt.xlabel('Rating', fontsize=14)
-plt.ylabel('Number of Movies', fontsize=14)
-
+sns.distplot(rtr_df, kde = False, color='darkred', bins = 10)
+plt.title('Rotten Tomatoes Rating',color = 'darkred', fontsize = 18)
+plt.xlabel('Rating', fontsize = 14)
+plt.ylabel('Number of Movies', fontsize = 14)
+ 
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
@@ -169,10 +172,10 @@ plt.savefig('RottenTomatoesRating_Histogram.png')
 #making IMDB Rating histogram
 imdbr_df = df['IMDBRating'].dropna()
 
-sns.distplot(imdbr_df, kde=False, color='goldenrod', bins=8)
+sns.distplot(imdbr_df, kde = False, color='goldenrod', bins = 8)
 plt.xlim(0, 10)
-plt.title('IMDB Rating',color='goldenrod', fontsize=18)
-plt.xlabel('Rating', fontsize=14)
+plt.title('IMDB Rating',color = 'goldenrod', fontsize = 18)
+plt.xlabel('Rating', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize=14)
 
 plt.savefig('IMDBRating_Histogram.png')
@@ -185,19 +188,19 @@ plt.savefig('IMDBRating_Histogram.png')
 imdbv_df = df['IMDBVotes'].dropna()
 
 sns.distplot(imdbv_df, kde = False, color = 'black', bins = 25)
-plt.title('IMDB Votes',color='black', fontsize = 18)
+plt.title('IMDB Votes',color = 'black', fontsize = 18)
 plt.xlabel('Number of Votes', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[30]:
+# In[17]:
 
 
 #making Genres bar plot
-sns.barplot(x ='Number of Movies', y='Genre', data = genre_numbers_df)
-plt.title('Major Genre', color='black', fontsize = 18)
+sns.barplot(x = 'Number of Movies', y = 'Genre', data = genre_numbers_df)
+plt.title('Major Genre', color = 'black', fontsize = 18)
 
 plt.savefig('num_movie_genre_barplot.png')
 
