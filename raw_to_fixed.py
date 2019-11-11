@@ -38,3 +38,4 @@ df.RTRating = df['RTRating'].apply(lambda x: x/10)
 df.to_csv('cleandata_movies.csv', index_label = 'ID')
 
 print(df)
+
