@@ -111,12 +111,6 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[ ]:
-
-
-
-
-
 # In[12]:
 
 
@@ -144,10 +138,52 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[ ]:
+# In[14]:
+
+
+genres_df = df['Genre'].dropna()
+
+genres_df = genres_df.str.split('/', expand = True)
+genres_df.columns = ['First', 'Second']
+
+
+print(genres_df)
+
+#to csv
+genres_df.to_csv('movie_genres.csv', index_label = 'ID')
 
 
 
+second_genre_df = genres_df['Second'].dropna()
+
+#constructing dictionary for movie Genres
+genres_hash = {}
+
+for i in genres_df['First']:
+    
+    if i not in genres_hash:
+        
+        genres_hash[i] = 1
+    
+    else:
+        
+        genres_hash[i] += 1
+        
+print(genres_hash)
+print(len(genres_hash))
+
+for i in second_genre_df:
+
+    if i not in genres_hash:
+        
+        genres_hash[i] = 1
+    
+    else:
+        
+        genres_hash[i] += 1
+    
+print(genres_hash)
+print(len(genres_hash))
 
 
 # In[ ]:
