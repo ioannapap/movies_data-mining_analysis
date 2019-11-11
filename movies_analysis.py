@@ -13,6 +13,7 @@ import matplotlib as mpl
 import seaborn as sns
 #import scipy as sp
 #from scipy import stats
+
 df = pd.read_csv('movies.csv')
 
 
@@ -78,14 +79,67 @@ df.RTRating = df['RTRating'].apply(lambda x: x/10)
 # In[9]:
 
 
-#to csv
-df.to_csv('cleandata_movies.csv', index_label = 'ID')
-print(df)
+#making a genres Dataframe splitting the column to 2 (links movies ID's with the genres) 
+#helpful 
+genres_df = df['Genre'].dropna()
+genres_df = genres_df.str.split('/', expand = True)
+genres_df.columns = ['First', 'Second']
+
+second_genre_df = genres_df['Second'].dropna()
 
 
 # In[10]:
 
 
+#constructing a dictionary for Genre (key = genre : value = number of movies)
+genres_hash = {}
+
+for i in genres_df['First']:
+
+    if i not in genres_hash:
+
+        genres_hash[i] = 1
+
+    else:
+
+        genres_hash[i] += 1
+
+
+for i in second_genre_df:
+
+    if i not in genres_hash:
+
+        genres_hash[i] = 1
+
+    else:
+
+        genres_hash[i] += 1
+        
+
+        
+print(genres_hash)
+
+
+# In[11]:
+
+
+genre_numbers_df = pd.DataFrame.from_dict(genres_hash, orient='index')
+genre_numbers_df.columns = ['Number of Movies']
+print(genre_numbers_df)
+
+
+# In[12]:
+
+
+#to csv
+df.to_csv('cleandata_movies.csv', index_label = 'ID')
+print(df)
+
+
+# In[13]:
+
+
+#making Worldwide Gross histogram
 sns.set_context('paper')
 sns.set_style('white')
 
@@ -98,9 +152,10 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[11]:
+# In[14]:
 
 
+#making Rotten Tomatoes Rating histogram
 rtr_df = df['RTRating'].dropna()
 
 sns.distplot(rtr_df, kde=False, color='darkred', bins=10)
@@ -111,9 +166,10 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[12]:
+# In[15]:
 
 
+#making IMDB Rating histogram
 imdbr_df = df['IMDBRating'].dropna()
 
 sns.distplot(imdbr_df, kde=False, color='goldenrod', bins=8)
@@ -125,9 +181,10 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[13]:
+# In[16]:
 
 
+#making IMDB Votes histogram
 imdbv_df = df['IMDBVotes'].dropna()
 
 sns.distplot(imdbv_df, kde=False, color='black', bins=25)
@@ -138,52 +195,10 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[14]:
-
-
-genres_df = df['Genre'].dropna()
-
-genres_df = genres_df.str.split('/', expand = True)
-genres_df.columns = ['First', 'Second']
-
-
-print(genres_df)
-
-#to csv
-genres_df.to_csv('movie_genres.csv', index_label = 'ID')
+# In[ ]:
 
 
 
-second_genre_df = genres_df['Second'].dropna()
-
-#constructing dictionary for movie Genres
-genres_hash = {}
-
-for i in genres_df['First']:
-    
-    if i not in genres_hash:
-        
-        genres_hash[i] = 1
-    
-    else:
-        
-        genres_hash[i] += 1
-        
-print(genres_hash)
-print(len(genres_hash))
-
-for i in second_genre_df:
-
-    if i not in genres_hash:
-        
-        genres_hash[i] = 1
-    
-    else:
-        
-        genres_hash[i] += 1
-    
-print(genres_hash)
-print(len(genres_hash))
 
 
 # In[ ]:
