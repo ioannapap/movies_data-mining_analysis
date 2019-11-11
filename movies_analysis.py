@@ -6,6 +6,7 @@
 
 import pandas as pd
 import numpy as np
+import math
 from pandas import Series, DataFrame
 import matplotlib.pyplot as plt
 import matplotlib as mpl
@@ -79,26 +80,25 @@ df.RTRating = df['RTRating'].apply(lambda x: x/10)
 
 #to csv
 df.to_csv('cleandata_movies.csv', index_label = 'ID')
+print(df)
 
-print(df.sort_values('Gross', ascending = False))
 
-
-# In[74]:
+# In[10]:
 
 
 sns.set_context('paper')
 sns.set_style('white')
 
-sns.distplot(df['Gross']/1000000, kde=False, color='darkgreen', bins=100)
-plt.ylim(0,1600)
-plt.xlim(0,400)
+sns.distplot(df['Gross']/1000000, kde=False, color='darkgreen', bins=80)
+plt.ylim(0,1700)
+plt.xlim(0,600)
 plt.title('Worldwide Gross', color='darkgreen', fontsize=18)
 plt.xlabel('Millions', fontsize=14)
 plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[67]:
+# In[11]:
 
 
 rtr_df = df['RTRating'].dropna()
@@ -111,12 +111,19 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[78]:
+# In[ ]:
+
+
+
+
+
+# In[12]:
 
 
 imdbr_df = df['IMDBRating'].dropna()
 
-sns.distplot(imdbr_df, kde=True, color='goldenrod', bins=10)
+sns.distplot(imdbr_df, kde=False, color='goldenrod', bins=8)
+plt.xlim(0, 10)
 plt.title('IMDB Rating',color='goldenrod', fontsize=18)
 plt.xlabel('Rating', fontsize=14)
 plt.ylabel('Number of Movies', fontsize=14)
@@ -124,19 +131,23 @@ plt.ylabel('Number of Movies', fontsize=14)
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[99]:
+# In[13]:
 
 
 imdbv_df = df['IMDBVotes'].dropna()
 
-sns.distplot(imdbv_df, kde=True, color='black', bins=100)
-plt.ylim(0,0.00006)
-plt.xlim(0,100000)
+sns.distplot(imdbv_df, kde=False, color='black', bins=25)
 plt.title('IMDB Votes',color='black', fontsize=18)
-plt.xlabel('Votes', fontsize=14)
+plt.xlabel('Number of Votes', fontsize=14)
 plt.ylabel('Number of Movies', fontsize=14)
 
 plt.savefig('IMDBVotes_Histogram.png')
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
