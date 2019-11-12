@@ -116,7 +116,7 @@ for i in second_genre_df:
         genres_hash[i] += 1
 
 
-# In[26]:
+# In[11]:
 
 
 #making the Genre Number Dataframe so as to make the bar plot later
@@ -129,7 +129,7 @@ genre_numbers_df.index = range(len(genre_numbers_df))
 print(genre_numbers_df)
 
 
-# In[27]:
+# In[12]:
 
 
 #to csv
@@ -137,23 +137,26 @@ df.to_csv('cleandata_movies.csv', index_label = 'ID')
 print(df)
 
 
-# In[28]:
+# In[13]:
 
 
 #making Worldwide Gross histogram
 sns.set_context('paper')
 sns.set_style('white')
 
-sns.distplot(df['Gross'] / 1000000, kde = False, color = 'darkgreen', bins = 80)
-plt.ylim(0,1700)
-plt.xlim(0,600)
+gross_df = df['Gross']
+
+sns.distplot( gross_df, kde = False, color = 'darkgreen', bins = 100)
+
+plt.xscale('log')
 plt.title('Worldwide Gross', color = 'darkgreen', fontsize = 18)
-plt.xlabel('Millions', fontsize = 14)
+plt.xlabel('Dollars', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
+
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[29]:
+# In[14]:
 
 
 #making Rotten Tomatoes Rating histogram
@@ -163,26 +166,35 @@ sns.distplot(rtr_df, kde = False, color='darkred', bins = 10)
 plt.title('Rotten Tomatoes Rating',color = 'darkred', fontsize = 18)
 plt.xlabel('Rating', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
- 
+
+mean = rtr_df.mean()
+plt.axvline(mean, color='r', linestyle='--')
+plt.legend({'Mean':mean})
+
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[30]:
+# In[15]:
 
 
 #making IMDB Rating histogram
 imdbr_df = df['IMDBRating'].dropna()
 
 sns.distplot(imdbr_df, kde = False, color='goldenrod', bins = 8)
+
 plt.xlim(0, 10)
 plt.title('IMDB Rating',color = 'goldenrod', fontsize = 18)
 plt.xlabel('Rating', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize=14)
 
+mean = imdbr_df.mean()
+plt.axvline(mean, color='r', linestyle='--')
+plt.legend({'Mean':mean})
+
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[33]:
+# In[16]:
 
 
 #making IMDB Votes histogram
@@ -193,10 +205,14 @@ plt.title('IMDB Votes',color = 'black', fontsize = 18)
 plt.xlabel('Number of Votes', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
+mean = imdbv_df.mean()
+plt.axvline(mean, color='r', linestyle='--')
+plt.legend({'Mean':mean})
+
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[34]:
+# In[17]:
 
 
 #making Genres bar plot
@@ -204,6 +220,34 @@ sns.barplot(x = 'Number of Movies', y = 'Genre', data = genre_numbers_df)
 plt.title('Major Genre', color = 'black', fontsize = 18)
 
 plt.savefig('num_movie_genre_barplot.png')
+
+
+# In[18]:
+
+
+#merging Gross with Votes 
+gross_votes_df = pd.merge(pd.DataFrame(gross_df), pd.DataFrame(imdbv_df), left_index = True, right_index = True)
+#gross_votes_df = gross_votes_df.dropna()
+print(gross_votes_df)
+
+
+# In[77]:
+
+
+#
+sns.distplot(gross_votes_df['Gross'] , color = 'darkgreen', label = 'Gross', bins = 100)
+sns.distplot(gross_votes_df['IMDBVotes'] , color = 'skyblue', label = 'IMDBVotes', bins = 100)
+plt.xscale('log')
+plt.yscale('log')
+
+print(gross_votes_df['IMDBVotes'].mean(skipna = True))
+print(gross_votes_df['Gross'].mean(skipna = True))
+
+plt.title('Gross - IMDB Votes ',color = 'black', fontsize = 18)
+plt.xlabel('Mean number (dollars, votes)', fontsize = 14)
+plt.ylabel('Number of Movies', fontsize = 14)
+
+plt.savefig('IMDBVotes_Histogram.png')
 
 
 # In[ ]:
