@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
@@ -17,7 +17,7 @@ from scipy import stats
 df = pd.read_csv('movies.csv')
 
 
-# In[2]:
+# In[3]:
 
 
 #removing unnecessary columns
@@ -27,7 +27,7 @@ df.drop(['Unnamed: 0', 'Unnamed: 0.1', 'US Gross', 'US DVD Sales', 'MPAA Rating'
 df.rename(columns = {'Worldwide Gross' : 'Gross', 'Production Budget' : 'Budget', 'Release Date' : 'Date', 'Major Genre' : 'Genre', 'Rotten Tomatoes Rating' : 'RTRating', 'IMDB Rating' : 'IMDBRating', 'IMDB Votes' : 'IMDBVotes'}, inplace = True)
 
 
-# In[3]:
+# In[4]:
 
 
 #cropping unnecessary info from Date
@@ -35,7 +35,7 @@ df.Date = df['Date'].str.rstrip()
 df.Date = df['Date'].str[-2:]
 
 
-# In[4]:
+# In[5]:
 
 
 #pruning unwanted rows from Date
@@ -45,14 +45,14 @@ df = df[df['Date'].str.isdecimal() == True]
 df = df[df['Gross'] != 'Unknown']
 
 
-# In[5]:
+# In[6]:
 
 
 #fixing indices after pruning (starting from 1 instead of 0)
 df.index = np.arange(1, len(df) + 1)
 
 
-# In[6]:
+# In[7]:
 
 
 #fixing Date format
@@ -62,21 +62,21 @@ df.Date = df['Date'].apply(lambda x:'20'+x if 0 <= int(x) <= 19 else '19'+x)
 df.Date = df['Date'].astype(int)
 
 
-# In[7]:
+# In[8]:
 
 
 #converting Gross from str to float
 df.Gross = df['Gross'].astype(float)
 
 
-# In[8]:
+# In[9]:
 
 
 #fixing scale climax on RTRating
 df.RTRating = df['RTRating'].apply(lambda x: x/10)
 
 
-# In[9]:
+# In[10]:
 
 
 #making a genres Dataframe splitting the one column to two (Columns: ID, First, Second)
@@ -88,7 +88,7 @@ genres_df.columns = ['First', 'Second']
 second_genre_df = genres_df['Second'].dropna()
 
 
-# In[10]:
+# In[11]:
 
 
 #constructing a dictionary for Genre (key = genre : value = number of movies)
@@ -116,7 +116,7 @@ for i in second_genre_df:
         genres_hash[i] += 1
 
 
-# In[11]:
+# In[12]:
 
 
 #making the Genre Number Dataframe so as to make the bar plot later
@@ -129,7 +129,7 @@ genre_numbers_df.index = range(len(genre_numbers_df))
 print(genre_numbers_df)
 
 
-# In[12]:
+# In[13]:
 
 
 #to csv
@@ -137,7 +137,7 @@ df.to_csv('cleandata_movies.csv', index_label = 'ID')
 print(df)
 
 
-# In[13]:
+# In[59]:
 
 
 #making Worldwide Gross histogram
@@ -147,7 +147,6 @@ sns.set_style('white')
 gross_df = df['Gross']
 
 sns.distplot( gross_df, kde = False, color = 'darkgreen', bins = 100)
-
 plt.xscale('log')
 plt.title('Worldwide Gross', color = 'darkgreen', fontsize = 18)
 plt.xlabel('Dollars', fontsize = 14)
@@ -156,7 +155,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[14]:
+# In[15]:
 
 
 #making Rotten Tomatoes Rating histogram
@@ -174,7 +173,7 @@ plt.legend({'Mean':mean})
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[15]:
+# In[16]:
 
 
 #making IMDB Rating histogram
@@ -194,7 +193,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[16]:
+# In[17]:
 
 
 #making IMDB Votes histogram
@@ -212,7 +211,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[17]:
+# In[18]:
 
 
 #making Genres bar plot
@@ -222,7 +221,7 @@ plt.title('Major Genre', color = 'black', fontsize = 18)
 plt.savefig('num_movie_genre_barplot.png')
 
 
-# In[18]:
+# In[19]:
 
 
 #merging Gross with Votes 
@@ -231,23 +230,53 @@ gross_votes_df = pd.merge(pd.DataFrame(gross_df), pd.DataFrame(imdbv_df), left_i
 print(gross_votes_df)
 
 
-# In[77]:
+# In[56]:
 
 
-#
-sns.distplot(gross_votes_df['Gross'] , color = 'darkgreen', label = 'Gross', bins = 100)
-sns.distplot(gross_votes_df['IMDBVotes'] , color = 'skyblue', label = 'IMDBVotes', bins = 100)
+#NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDS EDIT
+sns.distplot(gross_votes_df['Gross'], kde = False, color = 'darkgreen', label = 'Gross', bins = 100)
+
+plt.xscale('log')
+plt.yscale('log')
+#.mean(skipna = True)
+
+plt.title('Worldwide Gross',color = 'black', fontsize = 18)
+plt.xlabel('Dollars (mean number) ', fontsize = 14)
+plt.ylabel('Number of Movies', fontsize = 14)
+
+plt.savefig('Grosslog_Histogram.png')
+
+
+# In[65]:
+
+
+#NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDS EDIT
+sns.distplot(gross_votes_df['IMDBVotes'] , kde = False, color = 'black', label = 'IMDBVotes', bins = 20)
+
 plt.xscale('log')
 plt.yscale('log')
 
-print(gross_votes_df['IMDBVotes'].mean(skipna = True))
-print(gross_votes_df['Gross'].mean(skipna = True))
-
-plt.title('Gross - IMDB Votes ',color = 'black', fontsize = 18)
-plt.xlabel('Mean number (dollars, votes)', fontsize = 14)
+plt.title('IMDB Votes',color = 'black', fontsize = 18)
+plt.xlabel('Votes (mean number) ', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
-plt.savefig('IMDBVotes_Histogram.png')
+plt.savefig('Voteslog_Histogram.png')
+
+
+# In[104]:
+
+
+#making Worldwide Gross and IMDB Votes Scatterplot
+
+sns.scatterplot(x = 'IMDBVotes', y = 'Gross', data = gross_votes_df, facecolor = 'goldenrod' )
+
+plt.xscale('log')
+plt.title('IMDB Votes - Worldwide Gross',color = 'black', fontsize = 18)
+
+plt.xlabel('Votes', fontsize = 14)
+plt.ylabel('Gross', fontsize = 14)
+
+plt.savefig('VotesGross_Scatterplot.png')
 
 
 # In[ ]:
