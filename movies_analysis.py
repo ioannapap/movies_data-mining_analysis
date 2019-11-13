@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[28]:
 
 
 import pandas as pd
@@ -13,11 +13,12 @@ import matplotlib as mpl
 import seaborn as sns
 import scipy as sp
 from scipy import stats
+from statsmodels.stats import weightstats as stests
 
 df = pd.read_csv('movies.csv')
 
 
-# In[3]:
+# In[29]:
 
 
 #removing unnecessary columns
@@ -27,7 +28,7 @@ df.drop(['Unnamed: 0', 'Unnamed: 0.1', 'US Gross', 'US DVD Sales', 'MPAA Rating'
 df.rename(columns = {'Worldwide Gross' : 'Gross', 'Production Budget' : 'Budget', 'Release Date' : 'Date', 'Major Genre' : 'Genre', 'Rotten Tomatoes Rating' : 'RTRating', 'IMDB Rating' : 'IMDBRating', 'IMDB Votes' : 'IMDBVotes'}, inplace = True)
 
 
-# In[4]:
+# In[30]:
 
 
 #cropping unnecessary info from Date
@@ -35,7 +36,7 @@ df.Date = df['Date'].str.rstrip()
 df.Date = df['Date'].str[-2:]
 
 
-# In[5]:
+# In[31]:
 
 
 #pruning unwanted rows from Date
@@ -45,14 +46,14 @@ df = df[df['Date'].str.isdecimal() == True]
 df = df[df['Gross'] != 'Unknown']
 
 
-# In[6]:
+# In[32]:
 
 
 #fixing indices after pruning (starting from 1 instead of 0)
 df.index = np.arange(1, len(df) + 1)
 
 
-# In[7]:
+# In[33]:
 
 
 #fixing Date format
@@ -62,21 +63,21 @@ df.Date = df['Date'].apply(lambda x:'20'+x if 0 <= int(x) <= 19 else '19'+x)
 df.Date = df['Date'].astype(int)
 
 
-# In[8]:
+# In[34]:
 
 
 #converting Gross from str to float
 df.Gross = df['Gross'].astype(float)
 
 
-# In[9]:
+# In[35]:
 
 
 #fixing scale climax on RTRating
 df.RTRating = df['RTRating'].apply(lambda x: x/10)
 
 
-# In[10]:
+# In[36]:
 
 
 #making a genres Dataframe splitting the one column to two (Columns: ID, First, Second)
@@ -88,7 +89,7 @@ genres_df.columns = ['First', 'Second']
 second_genre_df = genres_df['Second'].dropna()
 
 
-# In[11]:
+# In[37]:
 
 
 #constructing a dictionary for Genre (key = genre : value = number of movies)
@@ -116,7 +117,7 @@ for i in second_genre_df:
         genres_hash[i] += 1
 
 
-# In[12]:
+# In[38]:
 
 
 #making the Genre Number Dataframe so as to make the bar plot later
@@ -129,7 +130,7 @@ genre_numbers_df.index = range(len(genre_numbers_df))
 print(genre_numbers_df)
 
 
-# In[13]:
+# In[39]:
 
 
 #to csv
@@ -137,7 +138,7 @@ df.to_csv('cleandata_movies.csv', index_label = 'ID')
 print(df)
 
 
-# In[59]:
+# In[40]:
 
 
 #making Worldwide Gross histogram
@@ -155,7 +156,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[15]:
+# In[41]:
 
 
 #making Rotten Tomatoes Rating histogram
@@ -173,7 +174,7 @@ plt.legend({'Mean':mean})
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[16]:
+# In[42]:
 
 
 #making IMDB Rating histogram
@@ -193,7 +194,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[17]:
+# In[43]:
 
 
 #making IMDB Votes histogram
@@ -211,7 +212,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[18]:
+# In[44]:
 
 
 #making Genres bar plot
@@ -221,7 +222,7 @@ plt.title('Major Genre', color = 'black', fontsize = 18)
 plt.savefig('num_movie_genre_barplot.png')
 
 
-# In[19]:
+# In[45]:
 
 
 #merging Gross with Votes 
@@ -230,7 +231,7 @@ gross_votes_df = pd.merge(pd.DataFrame(gross_df), pd.DataFrame(imdbv_df), left_i
 print(gross_votes_df)
 
 
-# In[56]:
+# In[46]:
 
 
 #NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDS EDIT
@@ -247,7 +248,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('Grosslog_Histogram.png')
 
 
-# In[65]:
+# In[47]:
 
 
 #NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDS EDIT
@@ -263,7 +264,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('Voteslog_Histogram.png')
 
 
-# In[104]:
+# In[48]:
 
 
 #making Worldwide Gross and IMDB Votes Scatterplot
@@ -274,9 +275,41 @@ plt.xscale('log')
 plt.title('IMDB Votes - Worldwide Gross',color = 'black', fontsize = 18)
 
 plt.xlabel('Votes', fontsize = 14)
-plt.ylabel('Gross', fontsize = 14)
+plt.ylabel('Gross ($)', fontsize = 14)
 
 plt.savefig('VotesGross_Scatterplot.png')
+
+
+# In[49]:
+
+
+#Pearson correlation: Worldwide Gross and IMDB Votes
+gross_votes_df.corr(method = 'pearson')
+
+
+# In[50]:
+
+
+#Spearman correlation: Worldwide Gross and IMDB Votes
+gross_votes_df.corr(method = 'spearman')
+
+
+# In[63]:
+
+
+#2 sample z-test: Worldwide Gross and IMDB Votes
+print('HO: People vote movies with high gross\n ')
+print('H1:People vote movies no matter their gross\n')
+ztest, pval = stests.ztest(gross_votes_df['Gross'], x2 = gross_votes_df['IMDBVotes'], value = 0, alternative = 'two-sided')
+print('p-value: ', pval)
+
+if pval<0.05:
+    
+    print('\nReject Null Hypothesis (H0)')
+
+else:
+    
+    print('\nAccept Null Hypothesis (H0)')
 
 
 # In[ ]:
