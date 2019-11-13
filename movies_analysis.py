@@ -283,24 +283,24 @@ plt.savefig('VotesGross_Scatterplot.png')
 # In[49]:
 
 
-#Pearson correlation: Worldwide Gross and IMDB Votes
+#Pearson Correlation Coefficient: Worldwide Gross and IMDB Votes
 gross_votes_df.corr(method = 'pearson')
 
 
 # In[50]:
 
 
-#Spearman correlation: Worldwide Gross and IMDB Votes
+#Spearman Correlation Coefficient: Worldwide Gross and IMDB Votes
 gross_votes_df.corr(method = 'spearman')
 
 
-# In[63]:
+# In[65]:
 
 
 #2 sample z-test: Worldwide Gross and IMDB Votes
-print('HO: People vote movies with high gross\n ')
+print('H0: People vote movies with high gross\n ')
 print('H1:People vote movies no matter their gross\n')
-ztest, pval = stests.ztest(gross_votes_df['Gross'], x2 = gross_votes_df['IMDBVotes'], value = 0, alternative = 'two-sided')
+ztest, pval = stests.ztest(gross_votes_df['Gross'], x2 = gross_votes_df['IMDBVotes'], value = gross_votes_df['Gross'].mean(), alternative = 'two-sided')
 print('p-value: ', pval)
 
 if pval<0.05:
