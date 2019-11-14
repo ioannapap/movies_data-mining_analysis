@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[32]:
+# In[1]:
 
 
 import pandas as pd
@@ -19,7 +19,7 @@ from statsmodels.stats import weightstats as stests
 df = pd.read_csv('movies.csv')
 
 
-# In[33]:
+# In[2]:
 
 
 #keeping only the necessary columns
@@ -234,15 +234,17 @@ print(gross_votes_df)
 # In[19]:
 
 
-#NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDS EDIT
-sns.distplot(gross_votes_df['Gross'], kde = False, color = 'darkgreen', label = 'Gross', bins = 100)
+m = gross_votes_df['Gross'].mean()
+
+sns.distplot(gross_votes_df['Gross'], kde = False, color = 'darkgreen', label = 'Gross', bins = 90)
 
 plt.xscale('log')
 plt.yscale('log')
+plt.xlim(m)
 #.mean(skipna = True)
 
 plt.title('Worldwide Gross',color = 'black', fontsize = 18)
-plt.xlabel('Dollars (mean number) ', fontsize = 14)
+plt.xlabel('Dollars [0-mean()] ', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
 plt.savefig('Grosslog_Histogram.png')
@@ -251,14 +253,15 @@ plt.savefig('Grosslog_Histogram.png')
 # In[20]:
 
 
-#NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDS EDIT
-sns.distplot(gross_votes_df['IMDBVotes'] , kde = False, color = 'black', label = 'IMDBVotes', bins = 20)
+m = gross_votes_df['IMDBVotes'].mean()
+sns.distplot(gross_votes_df['IMDBVotes'] , kde = False, color = 'black', label = 'IMDBVotes', bins = 80)
 
 plt.xscale('log')
 plt.yscale('log')
+plt.xlim(m)
 
 plt.title('IMDB Votes',color = 'black', fontsize = 18)
-plt.xlabel('Votes (mean number) ', fontsize = 14)
+plt.xlabel('Votes [18-mean()] ', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
 plt.savefig('Voteslog_Histogram.png')
@@ -367,21 +370,21 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[133]:
+# In[30]:
 
 
 #merging Gross with Genres into one DataFrame
 gross_genre_df = df[['Gross']]
-gross_genre_df['Genre1'] = genres_df[['First']]
+gross_genre_df['Genre1'] = genres_df['First']
 gross_genre_df.dropna(inplace = True)
-gross_genre_df['Genre2'] = genres_df[['Second']]
+gross_genre_df['Genre2'] = genres_df['Second']
 gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex=True)
 print(gross_genre_df)
 
         
 
 
-# In[169]:
+# In[31]:
 
 
 a = {'dram':[1,2], 'hot': [3,5]}
@@ -390,7 +393,7 @@ x = list(a.get('dram'))[1]
 print(x)
 
 
-# In[177]:
+# In[32]:
 
 
 #creating a dictionary for Genre: total Gross per genre
