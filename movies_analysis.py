@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[32]:
 
 
 import pandas as pd
@@ -19,12 +19,11 @@ from statsmodels.stats import weightstats as stests
 df = pd.read_csv('movies.csv')
 
 
-# In[2]:
+# In[33]:
 
 
-#removing unnecessary columns
-df.drop(['Unnamed: 0', 'Unnamed: 0.1', 'US Gross', 'US DVD Sales', 'MPAA Rating', 'Running Time (min)', 'Distributor', 'Source', 'Creative Type'], axis = 1, inplace = True)
-
+#keeping only the necessary columns
+df = df[['Title', 'Worldwide Gross', 'Production Budget', 'Release Date', 'Major Genre', 'Director', 'Rotten Tomatoes Rating', 'IMDB Rating', 'IMDB Votes']]
 #renaming some columns
 df.rename(columns = {'Worldwide Gross' : 'Gross', 'Production Budget' : 'Budget', 'Release Date' : 'Date', 'Major Genre' : 'Genre', 'Rotten Tomatoes Rating' : 'RTRating', 'IMDB Rating' : 'IMDBRating', 'IMDB Votes' : 'IMDBVotes'}, inplace = True)
 
@@ -349,7 +348,7 @@ rtr_imdbr_df.corr(method = 'pearson')
 rtr_imdbr_df.corr(method = 'spearman')
 
 
-# In[32]:
+# In[29]:
 
 
 #2 sample z-test:  RTRating and IMDBRating
@@ -368,36 +367,85 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[41]:
+# In[133]:
 
 
-#merging Gross with Genre into one DataFrame
-gross_genre_df = df[['Gross','Genre']]
+#merging Gross with Genres into one DataFrame
+gross_genre_df = df[['Gross']]
+gross_genre_df['Genre1'] = genres_df[['First']]
 gross_genre_df.dropna(inplace = True)
+gross_genre_df['Genre2'] = genres_df[['Second']]
+gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex=True)
 print(gross_genre_df)
 
         
 
 
-# In[51]:
+# In[169]:
 
 
-#constructing another dictionary for Genre (key = genre : value = total gross)
-gen_hashmap = {}
-count_movies = 0
+a = {'dram':[1,2], 'hot': [3,5]}
+x = list(a.get('dram'))[1]
+#x = x[0][1]
+print(x)
 
- 
-for ID in zip(gross_genre_df['Gross'], gross_genre_df['Genre']):
+
+# In[177]:
+
+
+#creating a dictionary for Genre: total Gross per genre
+
+gross_hash ={}
+
+gross_list = gross_genre_df['Gross'].values
+genre1_list = gross_genre_df['Genre1'].values
+genre2_list = gross_genre_df['Genre2'].values
+
+for g in range(len(gross_list)):
+
+    
+    if genre1_list[g] != ' ':
+    
+        if genre1_list[g] not in gross_hash:
+            
+            
+            gross_hash[genre1_list[g]] = [gross_list[g], 1]
+
+           
+
+        else:
+            
+            gross_sum = float(list(gross_hash.get(genre1_list[g]))[0]) + gross_list[g]
+            counter_movies = int(list(gross_hash.get(genre1_list[g]))[1]) + 1
+            
+            gross_hash[genre1_list[g]] = [gross_sum, counter_movies]
+
+            
+            
+    if genre2_list[g] != ' ':
         
-    print(list(ID[1])
-    if ID not in gen_hashmap:
-                
-        #count_movies+=1
-        gen_hashmap = set(ID)
-                
-    else:
-                
-        gen_hashmap[gen] += [money, count_movies]
+        if genre2_list[g] not in gross_hash:
+
+            gross_hash[genre2_list[g]] = [gross_list[g], 1 ]
+          
+
+        else:
+            
+            gross_sum = float(list(gross_hash.get(genre2_list[g]))[0]) + gross_list[g]
+            counter_movies = int(list(gross_hash.get(genre2_list[g]))[1]) + 1
+                                  
+            gross_hash[genre2_list[g]] = [gross_sum, counter_movies]
+
+
+
+
+print(gross_hash)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
