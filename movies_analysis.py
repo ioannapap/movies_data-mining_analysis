@@ -13,6 +13,7 @@ import matplotlib as mpl
 import seaborn as sns
 import scipy as sp
 from scipy import stats
+from scipy.stats import sem, t
 from statsmodels.stats import weightstats as stests
 
 df = pd.read_csv('movies.csv')
@@ -268,7 +269,6 @@ plt.savefig('Voteslog_Histogram.png')
 
 
 #making Worldwide Gross and IMDB Votes Scatterplot
-
 sns.scatterplot(x = 'IMDBVotes', y = 'Gross', data = gross_votes_df, facecolor = 'goldenrod' )
 
 plt.xscale('log')
@@ -349,7 +349,7 @@ rtr_imdbr_df.corr(method = 'pearson')
 rtr_imdbr_df.corr(method = 'spearman')
 
 
-# In[29]:
+# In[32]:
 
 
 #2 sample z-test:  RTRating and IMDBRating
@@ -366,6 +366,38 @@ if pval<0.05:
 else:
     
     print('\nAccept Null Hypothesis (H0)')
+
+
+# In[41]:
+
+
+#merging Gross with Genre into one DataFrame
+gross_genre_df = df[['Gross','Genre']]
+gross_genre_df.dropna(inplace = True)
+print(gross_genre_df)
+
+        
+
+
+# In[51]:
+
+
+#constructing another dictionary for Genre (key = genre : value = total gross)
+gen_hashmap = {}
+count_movies = 0
+
+ 
+for ID in zip(gross_genre_df['Gross'], gross_genre_df['Genre']):
+        
+    print(list(ID[1])
+    if ID not in gen_hashmap:
+                
+        #count_movies+=1
+        gen_hashmap = set(ID)
+                
+    else:
+                
+        gen_hashmap[gen] += [money, count_movies]
 
 
 # In[ ]:
