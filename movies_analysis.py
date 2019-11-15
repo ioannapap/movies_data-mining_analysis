@@ -426,6 +426,8 @@ print(gross_genre_df)
 # In[33]:
 
 
+##neeeeeeeeeed it?or nahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
 #creating a dictionary for Genre: total Gross per genre
 
 gross_hash ={}
@@ -538,6 +540,24 @@ if pval<0.05:
 else:
     
     print('\nAccept Null Hypothesis (H1)')
+
+
+# In[40]:
+
+
+#
+ratings_dates_df = df[['RTRating', 'IMDBRating', 'Date']]
+
+ratings_dates_df.sort_values('Date', ascending = True, inplace = True)
+ratings_dates_df = ratings_dates_df.groupby((df.Date//10)*10).mean()
+print(ratings_dates_df)
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
