@@ -103,7 +103,8 @@ genres_df = df['Genre'].dropna()
 genres_df = genres_df.str.split('/', expand = True)
 genres_df.columns = ['First', 'Second']
 
-second_genre_df = genres_df['Second'].dropna()
+second_genre = genres_df['Second'].dropna()
+
 print(genres_df)
 
 
@@ -124,7 +125,7 @@ for i in genres_df['First']:
         genres_hash[i] += 1
 
 
-for i in second_genre_df:
+for i in second_genre:
 
     if i not in genres_hash:
 
@@ -141,10 +142,9 @@ for i in second_genre_df:
 #making the Genre Number Dataframe so as to make the bar plot later
 genre_numbers_df = pd.DataFrame.from_dict(genres_hash, orient = 'index')
 genre_numbers_df.columns = ['Number of Movies']
-genre_numbers_df.insert(0, 'Genre', genres_hash.keys())
 genre_numbers_df.sort_values('Number of Movies', ascending = False, inplace = True)
-genre_numbers_df.reset_index()
-genre_numbers_df.index = range(len(genre_numbers_df))
+genre_numbers_df.reset_index(level = 0, inplace = True)
+genre_numbers_df = genre_numbers_df.rename(columns = {'index' : 'Genre'})
 print(genre_numbers_df)
 
 
@@ -411,16 +411,40 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[58]:
+# In[55]:
 
 
-#merging Gross with Genres into one DataFrame
+#making one DataFrame with Genres (1 and 2 ) and Gross
 gross_genre_df = pd.DataFrame(df['Gross'])
 gross_genre_df['Genre1'] = genres_df[['First']]
 gross_genre_df.dropna(inplace = True)
 gross_genre_df['Genre2'] = genres_df[['Second']]
-gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex = True)
-print(gross_genre_df)
+
+
+# In[57]:
+
+
+#Grouping by genres and finding mean gross (in both genre dfs), then putting them all in one DataFrame
+m_gross_genre1_df = gross_genre_df.groupby('Genre1').mean().reset_index()
+m_gross_genre2_df = gross_genre_df.groupby('Genre2').mean().reset_index()
+m_gross_genre2_df = m_gross_genre2_df.rename(columns = {'Genre2' : 'Genre1'})
+
+m_gross_genre1_df = m_gross_genre1_df.append(m_gross_genre2_df, ignore_index = True)
+m_gross_genre1_df = m_gross_genre1_df.rename(columns = {'Genre1' : 'Genre', 'Gross' : 'Mean Gross'})
+print(m_gross_genre1_df)
+
+
+# In[58]:
+
+
+#Grouping by genres and finding std gross (in both genre dfs), then putting them all in one DataFrame
+std_gross_genre1_df = gross_genre_df.groupby('Genre1').std().reset_index()
+std_gross_genre2_df = gross_genre_df.groupby('Genre2').std().reset_index()
+std_gross_genre2_df = std_gross_genre2_df.rename(columns = {'Genre2' : 'Genre1'})
+
+std_gross_genre1_df = std_gross_genre1_df.append(gross_genre2_df, ignore_index = True)
+std_gross_genre1_df = std_gross_genre1_df.rename(columns = {'Genre1' : 'Genre', 'Gross' : 'Std Gross'})
+print(std_gross_genre1_df)
 
 
 # In[33]:
@@ -429,7 +453,7 @@ print(gross_genre_df)
 ##neeeeeeeeeed it?or nahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
 #creating a dictionary for Genre: total Gross per genre
-
+gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex = True)
 gross_hash ={}
 
 gross_list = gross_genre_df['Gross'].values
@@ -542,15 +566,16 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[53]:
+# In[39]:
 
 
 # making the DataFrame for the mean() RTRating and mean() IMDBRating per decade
 ratings_dates_df = df[['RTRating', 'IMDBRating', 'Date']]
 ratings_dates_df = ratings_dates_df.rename(columns = {'RTRating' : 'Rotten Tomatoes', 'IMDBRating': 'IMDB'})
-ratings_dates_df = ratings_dates_df.groupby((df.Date//10)*10).mean()
+ratings_dates_df = ratings_dates_df.groupby((ratings_dates_df.Date//10)*10).mean()
 
 ratings_dates_df = ratings_dates_df[['Rotten Tomatoes', 'IMDB']]
+print(ratings_dates_df)
 ratings_dates_df.reset_index(level = 0, inplace = True)
 ratings_dates_df = ratings_dates_df.rename(columns = {'Date' : 'Decade'})
 
@@ -558,7 +583,7 @@ ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Web
 print(ratings_dates_df)
 
 
-# In[49]:
+# In[40]:
 
 
 #creating catplot for mean ratings per decade
