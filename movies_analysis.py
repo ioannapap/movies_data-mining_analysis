@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas as pd
@@ -19,7 +19,7 @@ from statsmodels.stats import weightstats as stests
 df = pd.read_csv('movies.csv')
 
 
-# In[3]:
+# In[2]:
 
 
 #keeping only the necessary columns
@@ -28,7 +28,7 @@ df = df[['Title', 'Worldwide Gross', 'Production Budget', 'Release Date', 'Major
 df.rename(columns = {'Worldwide Gross' : 'Gross', 'Production Budget' : 'Budget', 'Release Date' : 'Date', 'Major Genre' : 'Genre', 'Rotten Tomatoes Rating' : 'RTRating', 'IMDB Rating' : 'IMDBRating', 'IMDB Votes' : 'IMDBVotes'}, inplace = True)
 
 
-# In[4]:
+# In[3]:
 
 
 #cropping unnecessary info from Date
@@ -36,7 +36,7 @@ df.Date = df['Date'].str.rstrip()
 df.Date = df['Date'].str[-2:]
 
 
-# In[5]:
+# In[4]:
 
 
 #pruning unwanted rows from Date
@@ -46,14 +46,14 @@ df = df[df['Date'].str.isdecimal() == True]
 df = df[df['Gross'] != 'Unknown']
 
 
-# In[6]:
+# In[5]:
 
 
 #fixing indices after pruning (starting from 1 instead of 0)
 df.index = np.arange(1, len(df) + 1)
 
 
-# In[7]:
+# In[6]:
 
 
 #fixing Date format
@@ -63,21 +63,21 @@ df.Date = df['Date'].apply(lambda x:'20'+x if 0 <= int(x) <= 19 else '19'+x)
 df.Date = df['Date'].astype(int)
 
 
-# In[8]:
+# In[7]:
 
 
 #converting Gross from str to float
 df.Gross = df['Gross'].astype(float)
 
 
-# In[9]:
+# In[8]:
 
 
 #fixing scale climax on RTRating
 df.RTRating = df['RTRating'].apply(lambda x: x/10)
 
 
-# In[10]:
+# In[9]:
 
 
 #to csv
@@ -85,7 +85,7 @@ df.to_csv('cleandata_movies.csv', index_label = 'ID')
 print(df)
 
 
-# In[11]:
+# In[10]:
 
 
 #making Production Budget and GrossDataframe ---my data mining problem ---
@@ -94,7 +94,7 @@ budget_gross_df = budget_gross_df.dropna()
 print(budget_gross_df)
 
 
-# In[12]:
+# In[11]:
 
 
 #making a genres Dataframe splitting the one column to two (Columns: ID, First, Second)
@@ -107,7 +107,7 @@ second_genre_df = genres_df['Second'].dropna()
 print(genres_df)
 
 
-# In[13]:
+# In[12]:
 
 
 #constructing a dictionary for Genre (key = genre : value = number of movies)
@@ -135,7 +135,7 @@ for i in second_genre_df:
         genres_hash[i] += 1
 
 
-# In[14]:
+# In[13]:
 
 
 #making the Genre Number Dataframe so as to make the bar plot later
@@ -148,7 +148,7 @@ genre_numbers_df.index = range(len(genre_numbers_df))
 print(genre_numbers_df)
 
 
-# In[15]:
+# In[14]:
 
 
 #making Worldwide Gross histogram
@@ -166,7 +166,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('WorldwideGross_Histogram.png')
 
 
-# In[16]:
+# In[15]:
 
 
 #making Rotten Tomatoes Rating histogram
@@ -184,7 +184,7 @@ plt.legend({'Mean':mean})
 plt.savefig('RottenTomatoesRating_Histogram.png')
 
 
-# In[17]:
+# In[16]:
 
 
 #making IMDB Rating histogram
@@ -204,7 +204,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBRating_Histogram.png')
 
 
-# In[18]:
+# In[17]:
 
 
 #making IMDB Votes histogram
@@ -222,7 +222,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[19]:
+# In[18]:
 
 
 #making Genres bar plot
@@ -232,7 +232,7 @@ plt.title('Major Genre', color = 'black', fontsize = 18)
 plt.savefig('num_movie_genre_barplot.png')
 
 
-# In[20]:
+# In[19]:
 
 
 #merging Gross with IMDBVotes into one DataFrame
@@ -240,7 +240,7 @@ gross_votes_df = pd.merge(pd.DataFrame(gross), pd.DataFrame(imdbv), left_index =
 print(gross_votes_df)
 
 
-# In[21]:
+# In[20]:
 
 
 m = gross_votes_df['Gross'].mean()
@@ -259,7 +259,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('Grosslog_Histogram.png')
 
 
-# In[22]:
+# In[21]:
 
 
 m = gross_votes_df['IMDBVotes'].mean()
@@ -276,7 +276,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('Voteslog_Histogram.png')
 
 
-# In[23]:
+# In[22]:
 
 
 #making Worldwide Gross and IMDB Votes Scatterplot
@@ -290,21 +290,21 @@ plt.ylabel('Gross ($)', fontsize = 14)
 plt.savefig('VotesGross_Scatterplot.png')
 
 
-# In[24]:
+# In[23]:
 
 
 #Pearson Correlation Coefficient: Worldwide Gross and IMDB Votes
 gross_votes_df.corr(method = 'pearson')
 
 
-# In[25]:
+# In[24]:
 
 
 #Spearman Correlation Coefficient: Worldwide Gross and IMDB Votes
 gross_votes_df.corr(method = 'spearman')
 
 
-# In[26]:
+# In[25]:
 
 
 #2 sample z-test: Worldwide Gross and IMDB Votes
@@ -322,7 +322,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[27]:
+# In[26]:
 
 
 #concatenating RTRating with IMDBRating into one DataFrame
@@ -331,7 +331,7 @@ rtr_imdbr_df.dropna(inplace=True)
 print(rtr_imdbr_df)
 
 
-# In[28]:
+# In[27]:
 
 
 #making RTRating and IMDBRating Scatterplot
@@ -346,21 +346,21 @@ plt.ylabel('IMDB Rating', fontsize = 14)
 plt.savefig('RTR_IMDB_Ratings_Scatterplot.png')
 
 
-# In[29]:
+# In[28]:
 
 
 #Pearson Correlation Coefficient: RTRating and IMDBRating
 rtr_imdbr_df.corr(method = 'pearson')
 
 
-# In[30]:
+# In[29]:
 
 
 #Spearman Correlation Coefficient: RTRating and IMDBRating
 rtr_imdbr_df.corr(method = 'spearman')
 
 
-# In[31]:
+# In[30]:
 
 
 #2 sample z-test1:  RTRating and IMDBRating
@@ -378,7 +378,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[32]:
+# In[31]:
 
 
 #2 sample z-test2:  RTRating and IMDBRating
@@ -396,7 +396,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[33]:
+# In[32]:
 
 
 #merging Gross with Genres into one DataFrame
@@ -408,7 +408,7 @@ gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex=True)
 print(gross_genre_df)
 
 
-# In[34]:
+# In[33]:
 
 
 #creating a dictionary for Genre: total Gross per genre
@@ -460,7 +460,7 @@ for g in range(len(gross_list)):
 print(gross_hash)
 
 
-# In[35]:
+# In[34]:
 
 
 #making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
@@ -474,25 +474,25 @@ plt.ylabel('Worldwide Gross', fontsize = 14)
 plt.savefig('Budget_Gross_Scatterplot.png')
 
 
-# In[36]:
+# In[35]:
 
 
 #Pearson Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'pearson')
 
 
-# In[37]:
+# In[36]:
 
 
 #Spearman Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'spearman')
 
 
-# In[38]:
+# In[37]:
 
 
-#2 sample z-test: Production Budget and Worldwide Gross
-print('H0: Grosses are larger, when budget is big.\n ')
+#2 sample z-test1: Production Budget and Worldwide Gross
+print('H0: Grosses are larger than budgets invested.\n ')
 
 ztest, pval = stests.ztest(budget_gross_df['Gross'], x2 = budget_gross_df['Budget'], value = 0 , alternative = 'larger')
 print('p-value: ', pval)
@@ -504,6 +504,24 @@ if pval<0.05:
 else:
     
     print('\nAccept Null Hypothesis (H0)')
+
+
+# In[38]:
+
+
+#2 sample z-test2: Production Budget and Worldwide Gross
+print('H1: Grosses are smaller than budgets invested.\n ')
+
+ztest, pval = stests.ztest(budget_gross_df['Gross'], x2 = budget_gross_df['Budget'], value = 0 , alternative = 'smaller')
+print('p-value: ', pval)
+
+if pval<0.05:
+    
+    print('\nReject Null Hypothesis (H1)')
+
+else:
+    
+    print('\nAccept Null Hypothesis (H1)')
 
 
 # In[ ]:
