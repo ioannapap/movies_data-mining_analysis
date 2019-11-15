@@ -542,7 +542,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[40]:
+# In[58]:
 
 
 #
@@ -550,8 +550,14 @@ ratings_dates_df = df[['RTRating', 'IMDBRating', 'Date']]
 
 ratings_dates_df.sort_values('Date', ascending = True, inplace = True)
 ratings_dates_df = ratings_dates_df.groupby((df.Date//10)*10).mean()
-print(ratings_dates_df)
 
+ratings_dates_df = ratings_dates_df[['RTRating', 'IMDBRating']]
+ratings_dates_df.reset_index(level=0, inplace=True)
+ratings_dates_df = ratings_dates_df.rename(columns={'Date' : 'Decade'})
+ratings_dates_df.columns.names = ['Index']
+print(ratings_dates_df)
+ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Website', value_name='Rating')
+print(ratings_dates_df)
 
 
 # In[ ]:
