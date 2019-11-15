@@ -411,19 +411,19 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[33]:
+# In[58]:
 
 
 #merging Gross with Genres into one DataFrame
-gross_genre_df = df[['Gross']]
-gross_genre_df['Genre1'] = genres_df['First']
+gross_genre_df = pd.DataFrame(df['Gross'])
+gross_genre_df['Genre1'] = genres_df[['First']]
 gross_genre_df.dropna(inplace = True)
-gross_genre_df['Genre2'] = genres_df['Second']
-gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex=True)
+gross_genre_df['Genre2'] = genres_df[['Second']]
+gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex = True)
 print(gross_genre_df)
 
 
-# In[34]:
+# In[33]:
 
 
 ##neeeeeeeeeed it?or nahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
@@ -477,7 +477,7 @@ for g in range(len(gross_list)):
 print(gross_hash)
 
 
-# In[35]:
+# In[34]:
 
 
 #making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
@@ -492,21 +492,21 @@ plt.ylabel('Worldwide Gross', fontsize = 14)
 plt.savefig('Budget_Gross_Scatterplot.png')
 
 
-# In[36]:
+# In[35]:
 
 
 #Pearson Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'pearson')
 
 
-# In[37]:
+# In[36]:
 
 
 #Spearman Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'spearman')
 
 
-# In[38]:
+# In[37]:
 
 
 #2 sample z-test1: Production Budget and Worldwide Gross
@@ -524,7 +524,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[39]:
+# In[38]:
 
 
 #2 sample z-test2: Production Budget and Worldwide Gross
@@ -542,7 +542,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[40]:
+# In[53]:
 
 
 # making the DataFrame for the mean() RTRating and mean() IMDBRating per decade
@@ -558,11 +558,11 @@ ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Web
 print(ratings_dates_df)
 
 
-# In[48]:
+# In[49]:
 
 
 #creating catplot for mean ratings per decade
-plt.figure(figsize=(20, 15))
+plt.figure(figsize=(10, 5))
 colors = ['darkred', 'black']
 palette = sns.color_palette(colors)
 sns.catplot(x = 'Decade', y = 'Rating', hue = 'Website', data = ratings_dates_df, palette = palette, kind = 'bar')
@@ -572,7 +572,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_catplot.png')
 
 
-# In[42]:
+# In[41]:
 
 
 #creating pointplot for mean ratings per decade
@@ -586,7 +586,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_pointplot.png')
 
 
-# In[43]:
+# In[42]:
 
 
 #creating scatterplot for mean ratings per decade
