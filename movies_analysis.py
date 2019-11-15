@@ -88,7 +88,7 @@ print(df)
 # In[54]:
 
 
-#making Budget and GrossDataframe ---my data mining problem ---
+#making Production Budget and GrossDataframe ---my data mining problem ---
 budget_gross_df = df[['Gross', 'Budget']]
 budget_gross_df = budget_gross_df.dropna()
 print(budget_gross_df)
@@ -360,13 +360,13 @@ rtr_imdbr_df.corr(method = 'pearson')
 rtr_imdbr_df.corr(method = 'spearman')
 
 
-# In[49]:
+# In[74]:
 
 
 #2 sample z-test:  RTRating and IMDBRating
-print('H0: The way people vote in Rotten Tomatoes and IMDB has a non-linear correlation.\n ')
+print('H0: People in Rotten Tomatoes vote higher than in IMDB.\n ')
 
-ztest, pval = stests.ztest(rtr_imdbr_df['RTRating'], x2 = rtr_imdbr_df['IMDBRating'], value = rtr_imdbr_df['RTRating'].mean() , alternative = 'two-sided')
+ztest, pval = stests.ztest(rtr_imdbr_df['RTRating'], x2 = rtr_imdbr_df['IMDBRating'], value = 0 , alternative = 'larger')
 print('p-value: ', pval)
 
 if pval<0.05:
@@ -442,10 +442,50 @@ for g in range(len(gross_list)):
 print(gross_hash)
 
 
-# In[ ]:
+# In[63]:
 
 
+#making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
+sns.scatterplot(x = 'Budget', y='Gross', data = budget_gross_df, facecolor = 'skyblue', edgecolor ='darkblue')
 
+plt.title('Production Budget - Worldwide Gross',color = 'black', fontsize = 18)
+
+plt.xlabel('Production Budget', fontsize = 14)
+plt.ylabel('Worldwide Gross', fontsize = 14)
+
+plt.savefig('Budget_Gross_Scatterplot.png')
+
+
+# In[68]:
+
+
+#Pearson Correlation Coefficient: Production Budget and Worldwide Gross
+budget_gross_df.corr(method = 'pearson')
+
+
+# In[69]:
+
+
+#Spearman Correlation Coefficient: Production Budget and Worldwide Gross
+budget_gross_df.corr(method = 'spearman')
+
+
+# In[70]:
+
+
+#2 sample z-test: Production Budget and Worldwide Gross
+print('H0: Production Budget is not correlated with world.\n ')
+
+ztest, pval = stests.ztest(budget_gross_df['Budget'], x2 = budget_gross_df['Gross'], value = budget_gross_df['Gross'].mean()-budget_gross_df['Budget'].mean() , alternative = 'two-sided')
+print('p-value: ', pval)
+
+if pval<0.05:
+    
+    print('\nReject Null Hypothesis (H0)')
+
+else:
+    
+    print('\nAccept Null Hypothesis (H0)')
 
 
 # In[ ]:
