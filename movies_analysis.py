@@ -157,7 +157,9 @@ sns.set_style('white')
 
 gross = df['Gross']
 
+plt.figure(figsize=(10, 5))
 sns.distplot( gross, kde = False, color = 'darkgreen', bins = 100)
+
 plt.xscale('log')
 plt.title('Worldwide Gross', color = 'darkgreen', fontsize = 18)
 plt.xlabel('Dollars', fontsize = 14)
@@ -172,7 +174,9 @@ plt.savefig('WorldwideGross_Histogram.png')
 #making Rotten Tomatoes Rating histogram
 rtr = df['RTRating'].dropna()
 
+plt.figure(figsize=(10, 5))
 sns.distplot(rtr, kde = False, color='darkred', bins = 10)
+
 plt.title('Rotten Tomatoes Rating',color = 'darkred', fontsize = 18)
 plt.xlabel('Rating', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
@@ -190,6 +194,7 @@ plt.savefig('RottenTomatoesRating_Histogram.png')
 #making IMDB Rating histogram
 imdbr = df['IMDBRating'].dropna()
 
+plt.figure(figsize=(10, 5))
 sns.distplot(imdbr, kde = False, color='goldenrod', bins = 8)
 
 plt.xlim(0, 10)
@@ -210,7 +215,9 @@ plt.savefig('IMDBRating_Histogram.png')
 #making IMDB Votes histogram
 imdbv = df['IMDBVotes'].dropna()
 
+plt.figure(figsize=(10, 5))
 sns.distplot(imdbv, kde = False, color = 'black', bins = 25)
+
 plt.title('IMDB Votes',color = 'black', fontsize = 18)
 plt.xlabel('Number of Votes', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
@@ -226,7 +233,9 @@ plt.savefig('IMDBVotes_Histogram.png')
 
 
 #making Genres bar plot
+plt.figure(figsize=(10, 5))
 sns.barplot(x = 'Number of Movies', y = 'Genre', data = genre_numbers_df)
+
 plt.title('Major Genre', color = 'black', fontsize = 18)
 
 plt.savefig('num_movie_genre_barplot.png')
@@ -245,6 +254,7 @@ print(gross_votes_df)
 
 m = gross_votes_df['Gross'].mean()
 
+plt.figure(figsize=(10, 5))
 sns.distplot(gross_votes_df['Gross'], kde = False, color = 'darkgreen', label = 'Gross', bins = 90)
 
 plt.xscale('log')
@@ -263,6 +273,8 @@ plt.savefig('Grosslog_Histogram.png')
 
 
 m = gross_votes_df['IMDBVotes'].mean()
+
+plt.figure(figsize=(10, 5))
 sns.distplot(gross_votes_df['IMDBVotes'] , kde = False, color = 'black', label = 'IMDBVotes', bins = 80)
 
 plt.xscale('log')
@@ -280,6 +292,8 @@ plt.savefig('Voteslog_Histogram.png')
 
 
 #making Worldwide Gross and IMDB Votes Scatterplot
+
+plt.figure(figsize=(10, 5))
 sns.scatterplot(x = 'IMDBVotes', y = 'Gross', data = gross_votes_df, facecolor = 'goldenrod' )
 
 plt.xscale('log')
@@ -335,6 +349,7 @@ print(rtr_imdbr_df)
 
 
 #making RTRating and IMDBRating Scatterplot
+plt.figure(figsize=(10, 5))
 sns.scatterplot(x = 'RTRating', y='IMDBRating', data = rtr_imdbr_df, facecolor = 'm', edgecolor = 'black')
 
 plt.title('Rotten Tomatoes Rating - IMDB Rating',color = 'black', fontsize = 18)
@@ -464,6 +479,7 @@ print(gross_hash)
 
 
 #making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
+plt.figure(figsize=(10, 5))
 sns.scatterplot(x = 'Budget', y='Gross', data = budget_gross_df, facecolor = 'skyblue', edgecolor ='darkblue')
 
 plt.title('Production Budget - Worldwide Gross',color = 'black', fontsize = 18)
