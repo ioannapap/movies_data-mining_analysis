@@ -411,7 +411,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[32]:
+# In[33]:
 
 
 #merging Gross with Genres into one DataFrame
@@ -423,7 +423,7 @@ gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex=True)
 print(gross_genre_df)
 
 
-# In[33]:
+# In[34]:
 
 
 ##neeeeeeeeeed it?or nahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
@@ -477,7 +477,7 @@ for g in range(len(gross_list)):
 print(gross_hash)
 
 
-# In[34]:
+# In[35]:
 
 
 #making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
@@ -492,21 +492,21 @@ plt.ylabel('Worldwide Gross', fontsize = 14)
 plt.savefig('Budget_Gross_Scatterplot.png')
 
 
-# In[35]:
+# In[36]:
 
 
 #Pearson Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'pearson')
 
 
-# In[36]:
+# In[37]:
 
 
 #Spearman Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'spearman')
 
 
-# In[37]:
+# In[38]:
 
 
 #2 sample z-test1: Production Budget and Worldwide Gross
@@ -524,7 +524,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[38]:
+# In[39]:
 
 
 #2 sample z-test2: Production Budget and Worldwide Gross
@@ -542,28 +542,60 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[58]:
+# In[40]:
 
 
-#
+# making the DataFrame for the mean() RTRating and mean() IMDBRating per decade
 ratings_dates_df = df[['RTRating', 'IMDBRating', 'Date']]
-
-ratings_dates_df.sort_values('Date', ascending = True, inplace = True)
+ratings_dates_df = ratings_dates_df.rename(columns = {'RTRating' : 'Rotten Tomatoes', 'IMDBRating': 'IMDB'})
 ratings_dates_df = ratings_dates_df.groupby((df.Date//10)*10).mean()
 
-ratings_dates_df = ratings_dates_df[['RTRating', 'IMDBRating']]
-ratings_dates_df.reset_index(level=0, inplace=True)
-ratings_dates_df = ratings_dates_df.rename(columns={'Date' : 'Decade'})
-ratings_dates_df.columns.names = ['Index']
+ratings_dates_df = ratings_dates_df[['Rotten Tomatoes', 'IMDB']]
+ratings_dates_df.reset_index(level = 0, inplace = True)
+ratings_dates_df = ratings_dates_df.rename(columns = {'Date' : 'Decade'})
+
+ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Website', value_name = 'Rating')
 print(ratings_dates_df)
-ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Website', value_name='Rating')
-print(ratings_dates_df)
 
 
-# In[ ]:
+# In[48]:
 
 
+#creating catplot for mean ratings per decade
+plt.figure(figsize=(20, 15))
+colors = ['darkred', 'black']
+palette = sns.color_palette(colors)
+sns.catplot(x = 'Decade', y = 'Rating', hue = 'Website', data = ratings_dates_df, palette = palette, kind = 'bar')
 
+plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
+
+plt.savefig('ratings_decade_catplot.png')
+
+
+# In[42]:
+
+
+#creating pointplot for mean ratings per decade
+plt.figure(figsize=(10, 5))
+colors = ['darkred', 'black']
+palette = sns.color_palette(colors)
+sns.pointplot(x = 'Decade', y = 'Rating', hue = 'Website', data = ratings_dates_df, palette = palette, kind = 'point')
+
+plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
+
+plt.savefig('ratings_decade_pointplot.png')
+
+
+# In[43]:
+
+
+#creating scatterplot for mean ratings per decade
+plt.figure(figsize=(10, 5))
+sns.heatmap(ratings_dates_df.pivot('Website', 'Decade', 'Rating'), cmap='Reds')
+
+plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
+
+plt.savefig('ratings_decade_heatmap.png')
 
 
 # In[ ]:
