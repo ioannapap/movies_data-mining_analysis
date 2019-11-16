@@ -150,7 +150,7 @@ genre_numbers_df = genre_numbers_df.rename(columns = {'index' : 'Genre'})
 print(genre_numbers_df)
 
 
-# In[14]:
+# In[66]:
 
 
 #making Worldwide Gross histogram
@@ -160,9 +160,8 @@ sns.set_style('white')
 gross = df['Gross']
 
 plt.figure(figsize=(10, 5))
-sns.distplot( gross, kde = False, color = 'darkgreen', bins = 100)
+sns.distplot( gross, kde = False, color = 'darkgreen', bins = 30)
 
-plt.xscale('log')
 plt.title('Worldwide Gross', color = 'darkgreen', fontsize = 18)
 plt.xlabel('Dollars', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
@@ -231,7 +230,7 @@ plt.legend({'Mean':mean})
 plt.savefig('IMDBVotes_Histogram.png')
 
 
-# In[18]:
+# In[32]:
 
 
 #making Genres bar plot
@@ -243,56 +242,50 @@ plt.title('Major Genre', color = 'black', fontsize = 18)
 plt.savefig('num_movie_genre_barplot.png')
 
 
-# In[19]:
+# In[33]:
 
 
 #merging Gross with IMDBVotes into one DataFrame
 gross_votes_df = pd.merge(pd.DataFrame(gross), pd.DataFrame(imdbv), left_index = True, right_index = True)
 print(gross_votes_df)
+print(gross_votes_df['Gross'].mean())
 
 
-# In[20]:
+# In[73]:
 
 
-sns.set_style('white')
-
-m = gross_votes_df['Gross'].mean()
-
+#making exp. Worldwide Gross Histogram
 plt.figure(figsize=(10, 5))
-sns.distplot(gross_votes_df['Gross'], kde = False, color = 'darkgreen', label = 'Gross', bins = 90)
+sns.distplot(gross_votes_df['Gross'], kde = False, color = 'darkgreen', label = 'Gross', bins = 50)
 
 plt.xscale('log')
 plt.yscale('log')
-plt.xlim(m)
-#.mean(skipna = True)
 
-plt.title('Worldwide Gross',color = 'black', fontsize = 18)
-plt.xlabel('Dollars [0-mean()] ', fontsize = 14)
+plt.title('Worldwide Gross exp.',color = 'black', fontsize = 18)
+plt.xlabel('Dollars ', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
 plt.savefig('Grosslog_Histogram.png')
 
 
-# In[21]:
+# In[75]:
 
 
-m = gross_votes_df['IMDBVotes'].mean()
-
+#making exp. IMDB Votes Histogram
 plt.figure(figsize=(10, 5))
-sns.distplot(gross_votes_df['IMDBVotes'] , kde = False, color = 'black', label = 'IMDBVotes', bins = 80)
+sns.distplot(gross_votes_df['IMDBVotes'] , kde = False, color = 'black', label = 'IMDBVotes', bins = 50)
 
 plt.xscale('log')
 plt.yscale('log')
-plt.xlim(m)
 
-plt.title('IMDB Votes',color = 'black', fontsize = 18)
-plt.xlabel('Votes [18-mean()] ', fontsize = 14)
+plt.title('IMDB Votes exp.',color = 'black', fontsize = 18)
+plt.xlabel('Votes ', fontsize = 14)
 plt.ylabel('Number of Movies', fontsize = 14)
 
 plt.savefig('Voteslog_Histogram.png')
 
 
-# In[22]:
+# In[ ]:
 
 
 #making Worldwide Gross and IMDB Votes Scatterplot
@@ -308,21 +301,37 @@ plt.ylabel('Gross ($)', fontsize = 14)
 plt.savefig('VotesGross_Scatterplot.png')
 
 
-# In[23]:
+# In[59]:
+
+
+#making Worldwide Gross and IMDB Votes Scatterplot
+
+plt.figure(figsize=(10, 5))
+sns.scatterplot(x = 'IMDBVotes', y = 'Gross', data = gross_votes_df, facecolor = 'goldenrod' )
+
+plt.xscale('log')
+plt.title('IMDB Votes - Worldwide Gross',color = 'black', fontsize = 18)
+plt.xlabel('Votes', fontsize = 14)
+plt.ylabel('Gross ($)', fontsize = 14)
+
+plt.savefig('VotesGross_Scatterplot.png')
+
+
+# In[39]:
 
 
 #Pearson Correlation Coefficient: Worldwide Gross and IMDB Votes
 gross_votes_df.corr(method = 'pearson')
 
 
-# In[24]:
+# In[40]:
 
 
 #Spearman Correlation Coefficient: Worldwide Gross and IMDB Votes
 gross_votes_df.corr(method = 'spearman')
 
 
-# In[25]:
+# In[41]:
 
 
 #2 sample z-test: Worldwide Gross and IMDB Votes
@@ -340,7 +349,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[26]:
+# In[42]:
 
 
 #concatenating RTRating with IMDBRating into one DataFrame
@@ -349,7 +358,7 @@ rtr_imdbr_df.dropna(inplace=True)
 print(rtr_imdbr_df)
 
 
-# In[27]:
+# In[43]:
 
 
 #making RTRating and IMDBRating Scatterplot
@@ -365,21 +374,21 @@ plt.ylabel('IMDB Rating', fontsize = 14)
 plt.savefig('RTR_IMDB_Ratings_Scatterplot.png')
 
 
-# In[28]:
+# In[44]:
 
 
 #Pearson Correlation Coefficient: RTRating and IMDBRating
 rtr_imdbr_df.corr(method = 'pearson')
 
 
-# In[29]:
+# In[45]:
 
 
 #Spearman Correlation Coefficient: RTRating and IMDBRating
 rtr_imdbr_df.corr(method = 'spearman')
 
 
-# In[30]:
+# In[46]:
 
 
 #2 sample z-test1:  RTRating and IMDBRating
@@ -397,7 +406,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[31]:
+# In[ ]:
 
 
 #2 sample z-test2:  RTRating and IMDBRating
@@ -415,7 +424,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[32]:
+# In[ ]:
 
 
 #making one DataFrame with Genres (1 and 2 ) and Gross
@@ -423,9 +432,10 @@ gross_genre_df = pd.DataFrame(df['Gross'])
 gross_genre_df['Genre1'] = genres_df[['First']]
 gross_genre_df.dropna(inplace = True)
 gross_genre_df['Genre2'] = genres_df[['Second']]
+print(gross_genre_df)
 
 
-# In[33]:
+# In[ ]:
 
 
 #Grouping by genres and finding mean gross (in both genre dfs), then putting them all in one DataFrame
@@ -439,7 +449,7 @@ m_gross_genre1_df.sort_values('Mean Gross', ascending = False, inplace = True)
 print(m_gross_genre1_df)
 
 
-# In[34]:
+# In[ ]:
 
 
 #Grouping by genres and finding std gross (in both genre dfs), then putting them all in one DataFrame
@@ -452,7 +462,7 @@ std_gross_genre1_df = std_gross_genre1_df.rename(columns = {'Genre1' : 'Genre', 
 print(std_gross_genre1_df)
 
 
-# In[35]:
+# In[ ]:
 
 
 #calculating the confidence intervals ci lower and ci upper 
@@ -461,7 +471,7 @@ conf_int = np.array(conf_int)
 print(conf_int)
 
 
-# In[36]:
+# In[ ]:
 
 
 # putting ci lower and ci upper in or m_gross_genre1_df DataFrame
@@ -471,16 +481,16 @@ m_gross_genre1_df.reset_index(drop = True, inplace = True)
 print(m_gross_genre1_df)
 
 
-# In[37]:
+# In[ ]:
 
 
 # fixing the negative bottom error CIs and give them the Mean Gross number
-#in order to be 0 when the errorbar calculates xerror ( it calculates: mean - bottom error ci)
+# in order to be 0 when the errorbar calculates xerror ( it calculates: mean - bottom error ci)
 m_gross_genre1_df['Bottom Error Ci'] = m_gross_genre1_df['Bottom Error Ci'].mask(m_gross_genre1_df['Bottom Error Ci'] < 0, m_gross_genre1_df['Mean Gross'])
 print(m_gross_genre1_df)
 
 
-# In[38]:
+# In[ ]:
 
 
 #making the barplot of Mean Worldwide Gross per Genre
@@ -497,10 +507,40 @@ plt.ylabel('Genre', fontsize = 14)
 plt.savefig('mean_gross_genre_barplot.png')
 
 
-# In[39]:
+# In[ ]:
 
 
-#making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
+#2 sample T-test :Adventure - Action Genre Mean Worldwide Gross 
+
+print('H0: There is no significant difference between adventure movies mean gross and action movies mean gross.\n ')
+
+adventure_mean = m_gross_genre1_df[m_gross_genre1_df['Genre']=='Adventure']
+adventure_mean = adventure_mean['Mean Gross']
+action_mean = m_gross_genre1_df[m_gross_genre1_df['Genre']=='Action']
+action_mean = action_mean['Mean Gross']
+
+adventure_std = std_gross_genre1_df[std_gross_genre1_df['Genre']=='Adventure']
+adventure_std = adventure_std['Std Gross']
+action_std = std_gross_genre1_df[std_gross_genre1_df['Genre']=='Action']
+action_std = action_std['Std Gross']
+
+adventure_count = np.array(gross_genre_df[gross_genre_df['Genre1'] == 'Adventure'].count())[0]
+action_count = np.array(gross_genre_df[gross_genre_df['Genre1'] == 'Action'].count())[0]
+
+
+t = (adventure_mean - action_mean)/(np.sqrt((adventure_std**2 / adventure_count) + (action_std**2 / action_count)))
+
+deg_freedom = adventure_count + action_count - 2
+ttest, pval = 2*(1 - stats.t.pdf(0.95, df = t))
+
+print(t)
+print(pval)
+
+
+# In[ ]:
+
+
+#--------my data mining problem--------making Production Budget and Worldwide Gross Scatterplot
 plt.figure(figsize=(10, 5))
 sns.scatterplot(x = 'Budget', y='Gross', data = budget_gross_df, facecolor = 'skyblue', edgecolor ='darkblue')
 
@@ -512,21 +552,21 @@ plt.ylabel('Worldwide Gross', fontsize = 14)
 plt.savefig('Budget_Gross_Scatterplot.png')
 
 
-# In[40]:
+# In[ ]:
 
 
 #Pearson Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'pearson')
 
 
-# In[41]:
+# In[ ]:
 
 
 #Spearman Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'spearman')
 
 
-# In[42]:
+# In[ ]:
 
 
 #2 sample z-test1: Production Budget and Worldwide Gross
@@ -544,7 +584,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[43]:
+# In[ ]:
 
 
 #2 sample z-test2: Production Budget and Worldwide Gross
@@ -562,7 +602,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[44]:
+# In[ ]:
 
 
 # making the DataFrame for the mean() RTRating and mean() IMDBRating per decade
@@ -578,7 +618,7 @@ ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Web
 print(ratings_dates_df)
 
 
-# In[45]:
+# In[ ]:
 
 
 #creating catplot for mean ratings per decade
@@ -592,7 +632,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_catplot.png')
 
 
-# In[46]:
+# In[ ]:
 
 
 #creating pointplot for mean ratings per decade
@@ -606,7 +646,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_pointplot.png')
 
 
-# In[47]:
+# In[ ]:
 
 
 #creating scatterplot for mean ratings per decade
