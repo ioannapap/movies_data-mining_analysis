@@ -7,15 +7,17 @@
 import pandas as pd
 import numpy as np
 import itertools
-from pandas import Series, DataFrame
+import math
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 import scipy as sp
 from scipy import stats
 from scipy.stats import sem, t
+from pandas import Series, DataFrame
 from statsmodels.stats import weightstats as stests
 
+pd.options.display.float_format = '{:.1f}'.format
 df = pd.read_csv('movies.csv')
 
 
@@ -234,7 +236,7 @@ plt.savefig('IMDBVotes_Histogram.png')
 
 #making Genres bar plot
 plt.figure(figsize=(10, 5))
-sns.barplot(x = 'Number of Movies', y = 'Genre', data = genre_numbers_df)
+sns.barplot(x = 'Number of Movies', y = 'Genre', saturation = 1, data = genre_numbers_df)
 
 plt.title('Major Genre', color = 'black', fontsize = 18)
 
@@ -251,6 +253,8 @@ print(gross_votes_df)
 
 # In[20]:
 
+
+sns.set_style('white')
 
 m = gross_votes_df['Gross'].mean()
 
@@ -411,7 +415,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[55]:
+# In[32]:
 
 
 #making one DataFrame with Genres (1 and 2 ) and Gross
@@ -421,7 +425,7 @@ gross_genre_df.dropna(inplace = True)
 gross_genre_df['Genre2'] = genres_df[['Second']]
 
 
-# In[57]:
+# In[33]:
 
 
 #Grouping by genres and finding mean gross (in both genre dfs), then putting them all in one DataFrame
@@ -431,10 +435,12 @@ m_gross_genre2_df = m_gross_genre2_df.rename(columns = {'Genre2' : 'Genre1'})
 
 m_gross_genre1_df = m_gross_genre1_df.append(m_gross_genre2_df, ignore_index = True)
 m_gross_genre1_df = m_gross_genre1_df.rename(columns = {'Genre1' : 'Genre', 'Gross' : 'Mean Gross'})
+
+m_gross_genre1_df.sort_values('Mean Gross', ascending = False, inplace = True)
 print(m_gross_genre1_df)
 
 
-# In[58]:
+# In[34]:
 
 
 #Grouping by genres and finding std gross (in both genre dfs), then putting them all in one DataFrame
@@ -442,66 +448,58 @@ std_gross_genre1_df = gross_genre_df.groupby('Genre1').std().reset_index()
 std_gross_genre2_df = gross_genre_df.groupby('Genre2').std().reset_index()
 std_gross_genre2_df = std_gross_genre2_df.rename(columns = {'Genre2' : 'Genre1'})
 
-std_gross_genre1_df = std_gross_genre1_df.append(gross_genre2_df, ignore_index = True)
+std_gross_genre1_df = std_gross_genre1_df.append(std_gross_genre2_df, ignore_index = True)
 std_gross_genre1_df = std_gross_genre1_df.rename(columns = {'Genre1' : 'Genre', 'Gross' : 'Std Gross'})
 print(std_gross_genre1_df)
 
 
-# In[33]:
+# In[35]:
 
 
-##neeeeeeeeeed it?or nahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+#calculating the confidence intervals ci lower and ci upper 
+conf_int = stats.norm.interval(0.95, loc = m_gross_genre1_df['Mean Gross'], scale = std_gross_genre1_df['Std Gross']/np.sqrt(std_gross_genre1_df['Std Gross'].count()))
+conf_int = np.array(conf_int)
+print(conf_int)
 
-#creating a dictionary for Genre: total Gross per genre
-gross_genre_df = gross_genre_df.replace(np.nan, ' ', regex = True)
-gross_hash ={}
 
-gross_list = gross_genre_df['Gross'].values
-genre1_list = gross_genre_df['Genre1'].values
-genre2_list = gross_genre_df['Genre2'].values
+# In[49]:
 
-for g in range(len(gross_list)):
 
-    
-    if genre1_list[g] != ' ':
-    
-        if genre1_list[g] not in gross_hash:
-            
-            
-            gross_hash[genre1_list[g]] = [gross_list[g], 1]
+# putting ci lower and ci upper in or m_gross_genre1_df DataFrame
+# ready to make the barplot with confidence intervals
+m_gross_genre1_df['Bottom Error Ci'] = conf_int[0]
+m_gross_genre1_df['Top Error Ci'] = conf_int[1]
 
-           
 
-        else:
-            
-            gross_sum = float(list(gross_hash.get(genre1_list[g]))[0]) + gross_list[g]
-            counter_movies = int(list(gross_hash.get(genre1_list[g]))[1]) + 1
-            
-            gross_hash[genre1_list[g]] = [gross_sum, counter_movies]
+m_gross_genre1_df.reset_index(drop = True, inplace = True)
 
-            
-            
-    if genre2_list[g] != ' ':
-        
-        if genre2_list[g] not in gross_hash:
 
-            gross_hash[genre2_list[g]] = [gross_list[g], 1 ]
-          
-
-        else:
-            
-            gross_sum = float(list(gross_hash.get(genre2_list[g]))[0]) + gross_list[g]
-            counter_movies = int(list(gross_hash.get(genre2_list[g]))[1]) + 1
-                                  
-            gross_hash[genre2_list[g]] = [gross_sum, counter_movies]
+m_gross_genre1_df['Bottom Error Ci'] = m_gross_genre1_df['Bottom Error Ci'].mask(m_gross_genre1_df['Bottom Error Ci'] < 0, 0)
+yerror = [m_gross_genre1_df['Top Error Ci'] - m_gross_genre1_df['Mean Gross'], m_gross_genre1_df['Mean Gross'] - m_gross_genre1_df['Bottom Error Ci']]
 
 
 
+print(m_gross_genre1_df)
+print(yerror)
 
-print(gross_hash)
+
+# In[47]:
 
 
-# In[34]:
+#making the barplot of Mean Worldwide Gross per Genre
+plt.figure(figsize=(20, 5))
+sns.barplot(x = 'Genre', y = 'Mean Gross', saturation = 1, data = m_gross_genre1_df)
+
+plt.errorbar(x = 'Genre', y = 'Mean Gross', yerr = yerror, c = 'r')
+
+plt.title('Mean Worldwide Gross per Genre', color = 'black', fontsize = 18)
+plt.xlabel('Genre', fontsize = 14)
+plt.ylabel('Mean Worldwide Gross', fontsize = 14)
+
+plt.savefig('mean_gross_genre_barplot.png')
+
+
+# In[48]:
 
 
 #making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
@@ -516,21 +514,21 @@ plt.ylabel('Worldwide Gross', fontsize = 14)
 plt.savefig('Budget_Gross_Scatterplot.png')
 
 
-# In[35]:
+# In[46]:
 
 
 #Pearson Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'pearson')
 
 
-# In[36]:
+# In[47]:
 
 
 #Spearman Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'spearman')
 
 
-# In[37]:
+# In[48]:
 
 
 #2 sample z-test1: Production Budget and Worldwide Gross
@@ -548,7 +546,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[38]:
+# In[49]:
 
 
 #2 sample z-test2: Production Budget and Worldwide Gross
@@ -566,7 +564,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[39]:
+# In[50]:
 
 
 # making the DataFrame for the mean() RTRating and mean() IMDBRating per decade
@@ -575,7 +573,6 @@ ratings_dates_df = ratings_dates_df.rename(columns = {'RTRating' : 'Rotten Tomat
 ratings_dates_df = ratings_dates_df.groupby((ratings_dates_df.Date//10)*10).mean()
 
 ratings_dates_df = ratings_dates_df[['Rotten Tomatoes', 'IMDB']]
-print(ratings_dates_df)
 ratings_dates_df.reset_index(level = 0, inplace = True)
 ratings_dates_df = ratings_dates_df.rename(columns = {'Date' : 'Decade'})
 
@@ -583,7 +580,7 @@ ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Web
 print(ratings_dates_df)
 
 
-# In[40]:
+# In[51]:
 
 
 #creating catplot for mean ratings per decade
@@ -597,7 +594,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_catplot.png')
 
 
-# In[41]:
+# In[52]:
 
 
 #creating pointplot for mean ratings per decade
@@ -611,7 +608,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_pointplot.png')
 
 
-# In[42]:
+# In[53]:
 
 
 #creating scatterplot for mean ratings per decade
