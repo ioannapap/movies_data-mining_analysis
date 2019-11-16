@@ -432,7 +432,6 @@ gross_genre_df['Genre2'] = genres_df[['Second']]
 m_gross_genre1_df = gross_genre_df.groupby('Genre1').mean().reset_index()
 m_gross_genre2_df = gross_genre_df.groupby('Genre2').mean().reset_index()
 m_gross_genre2_df = m_gross_genre2_df.rename(columns = {'Genre2' : 'Genre1'})
-
 m_gross_genre1_df = m_gross_genre1_df.append(m_gross_genre2_df, ignore_index = True)
 m_gross_genre1_df = m_gross_genre1_df.rename(columns = {'Genre1' : 'Genre', 'Gross' : 'Mean Gross'})
 
@@ -462,44 +461,43 @@ conf_int = np.array(conf_int)
 print(conf_int)
 
 
-# In[49]:
+# In[36]:
 
 
 # putting ci lower and ci upper in or m_gross_genre1_df DataFrame
-# ready to make the barplot with confidence intervals
 m_gross_genre1_df['Bottom Error Ci'] = conf_int[0]
 m_gross_genre1_df['Top Error Ci'] = conf_int[1]
-
-
 m_gross_genre1_df.reset_index(drop = True, inplace = True)
-
-
-m_gross_genre1_df['Bottom Error Ci'] = m_gross_genre1_df['Bottom Error Ci'].mask(m_gross_genre1_df['Bottom Error Ci'] < 0, 0)
-yerror = [m_gross_genre1_df['Top Error Ci'] - m_gross_genre1_df['Mean Gross'], m_gross_genre1_df['Mean Gross'] - m_gross_genre1_df['Bottom Error Ci']]
-
-
-
 print(m_gross_genre1_df)
-print(yerror)
 
 
-# In[47]:
+# In[37]:
+
+
+# fixing the negative bottom error CIs and give them the Mean Gross number
+#in order to be 0 when the errorbar calculates xerror ( it calculates: mean - bottom error ci)
+m_gross_genre1_df['Bottom Error Ci'] = m_gross_genre1_df['Bottom Error Ci'].mask(m_gross_genre1_df['Bottom Error Ci'] < 0, m_gross_genre1_df['Mean Gross'])
+print(m_gross_genre1_df)
+
+
+# In[38]:
 
 
 #making the barplot of Mean Worldwide Gross per Genre
-plt.figure(figsize=(20, 5))
-sns.barplot(x = 'Genre', y = 'Mean Gross', saturation = 1, data = m_gross_genre1_df)
+plt.figure(figsize=(10, 5))
 
-plt.errorbar(x = 'Genre', y = 'Mean Gross', yerr = yerror, c = 'r')
+a = sns.barplot(x = 'Mean Gross', y = 'Genre', data = m_gross_genre1_df)
+
+plt.errorbar(x = 'Mean Gross', y = 'Genre', xerr =[m_gross_genre1_df['Bottom Error Ci'], m_gross_genre1_df['Top Error Ci']],  data = m_gross_genre1_df, fmt = 'o', c = 'navy')
 
 plt.title('Mean Worldwide Gross per Genre', color = 'black', fontsize = 18)
-plt.xlabel('Genre', fontsize = 14)
-plt.ylabel('Mean Worldwide Gross', fontsize = 14)
+plt.xlabel('Mean Worldwide Gross', fontsize = 14)
+plt.ylabel('Genre', fontsize = 14)
 
 plt.savefig('mean_gross_genre_barplot.png')
 
 
-# In[48]:
+# In[39]:
 
 
 #making Production Budget and Worldwide Gross Scatterplot ----my data mining problem------
@@ -514,21 +512,21 @@ plt.ylabel('Worldwide Gross', fontsize = 14)
 plt.savefig('Budget_Gross_Scatterplot.png')
 
 
-# In[46]:
+# In[40]:
 
 
 #Pearson Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'pearson')
 
 
-# In[47]:
+# In[41]:
 
 
 #Spearman Correlation Coefficient: Production Budget and Worldwide Gross
 budget_gross_df.corr(method = 'spearman')
 
 
-# In[48]:
+# In[42]:
 
 
 #2 sample z-test1: Production Budget and Worldwide Gross
@@ -546,7 +544,7 @@ else:
     print('\nAccept Null Hypothesis (H0)')
 
 
-# In[49]:
+# In[43]:
 
 
 #2 sample z-test2: Production Budget and Worldwide Gross
@@ -564,7 +562,7 @@ else:
     print('\nAccept Null Hypothesis (H1)')
 
 
-# In[50]:
+# In[44]:
 
 
 # making the DataFrame for the mean() RTRating and mean() IMDBRating per decade
@@ -580,7 +578,7 @@ ratings_dates_df = pd.melt(ratings_dates_df, id_vars = 'Decade', var_name = 'Web
 print(ratings_dates_df)
 
 
-# In[51]:
+# In[45]:
 
 
 #creating catplot for mean ratings per decade
@@ -594,7 +592,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_catplot.png')
 
 
-# In[52]:
+# In[46]:
 
 
 #creating pointplot for mean ratings per decade
@@ -608,7 +606,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_pointplot.png')
 
 
-# In[53]:
+# In[47]:
 
 
 #creating scatterplot for mean ratings per decade
