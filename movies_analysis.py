@@ -25,7 +25,7 @@ df = pd.read_csv('movies.csv')
 
 
 #keeping only the necessary columns
-df = df[['Title', 'Worldwide Gross', 'Production Budget', 'Release Date', 'Major Genre', 'Director', 'Rotten Tomatoes Rating', 'IMDB Rating', 'IMDB Votes']]
+df = df[['Title', 'Worldwide Gross', 'Production Budget', 'Release Date', 'Major Genre', 'Rotten Tomatoes Rating', 'IMDB Rating', 'IMDB Votes']]
 #renaming some columns
 df.rename(columns = {'Worldwide Gross' : 'Gross', 'Production Budget' : 'Budget', 'Release Date' : 'Date', 'Major Genre' : 'Genre', 'Rotten Tomatoes Rating' : 'RTRating', 'IMDB Rating' : 'IMDBRating', 'IMDB Votes' : 'IMDBVotes'}, inplace = True)
 
@@ -282,7 +282,7 @@ plt.savefig('IMDBVotes_Histogram.png')
 # In[18]:
 
 
-#making Genres bar plot
+#making Genres Bar Plot
 plt.figure(figsize=(10, 5))
 
 sns.barplot(x = 'Number of Movies', y = 'Genre', saturation = 1, data = genre_numbers_df)
@@ -292,7 +292,7 @@ plt.title('Major Genre', color = 'black', fontsize = 18)
 plt.savefig('num_movie_genre_barplot.png')
 
 
-# Number of Movies per Genre Bar Plot  “Oh! Too much DRAMA” 
+# Number of Movies per Genre Barplot  “Oh! Too much DRAMA” 
 # 
 # The barplot shows some interesting analytics for what kind of movie, Production Companies, prefer to 
 # release. 
@@ -323,7 +323,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('Grosslog_Histogram.png')
 
 
-# exp. Worldwide Gross Histogram
+# Worldwide Gross Histogram (exponential bins)
 # 
 # - Data points are gathered in the left side.
 # 
@@ -353,7 +353,7 @@ plt.ylabel('Number of Movies', fontsize = 14)
 plt.savefig('Voteslog_Histogram.png')
 
 
-# exp. IMDB Votes Histogram
+# IMDB Votes Histogram (exponential bins)
 # 
 # - IMDB votes follow exponential regression. 
 # 
@@ -387,10 +387,9 @@ plt.ylabel('Gross ($)', fontsize = 14)
 plt.savefig('VotesGrosslog_Scatterplot.png')
 
 
-# exp. Worldwide Gross and IMDB Votes Scatterplot
+# Worldwide Gross and IMDB Votes Scatterplot (exponential bins)
 # 
-# In this scatterplot, it is easy to realize that there is a high positive linear correlation between the revenues and IMDB votes.  
-# Most data points are clustered together. 
+# In this scatterplot, it is easy to realize that there is a high positive linear correlation between the revenues and IMDB votes. Most data points are clustered together as x and y axis increases. 
 
 # In[23]:
 
@@ -477,10 +476,7 @@ plt.savefig('RTR_IMDB_Ratings_Scatterplot.png')
 
 # Rotten Tomatoes Rating and IMDB Rating Scatterplot
 # 
-# As we can see from the Rotten Tomatoes – IMDB Rating Scatterplot there is a strong linear positive correlation between them. 
-# 
-# Small values of RTRating correspond to small values of IMDBRating. Large values of RTRating correspond to large values of IMDBRating.
-# 
+# As we can see from the Rotten Tomatoes – IMDB Rating Scatterplot there is a strong linear positive correlation between them. Small values of Rotten Tomatoes Rating correspond to small values of IMDB Rating. Large values of Rotten Tomatoes Rating correspond to large values of IMDB Rating.
 # If we take a careful look, we see that when people vote movies under 5 in Rotten Tomatoes, people in IMDB vote (for the same movies) a litle higher. However, when people vote above 6 in Rotten Tomatoes, people in IMDB vote lower than those in Rotten, still above 6.
 
 # In[29]:
@@ -626,10 +622,7 @@ plt.savefig('mean_gross_genre_barplot.png')
 # Mean Worldwide Gross per Genre Barplot
 # 
 # Firstly, it is clear that adventure movies are far more profitable than the rest. 
-# Interesting is, that drama movies, the most preferable among production companies, are not that prosperous at all and that is also for comedies. 
-#     
-# Secondly, the confidence interval for adventure movies is enormous! As it comes 4rth in the production 
-# ranking (checking back on the previous barplot about popularity of genres), the reason seems to be that it has wide dispersion.
+# Interesting is, that drama movies, the most preferable among production companies, are not that prosperous at all and that is also for comedies. Secondly, the confidence interval for adventure movies is enormous! As it comes 4rth in the production ranking (checking back on the previous barplot about popularity of genres), the reason seems to be that it has wide dispersion.
 
 # In[40]:
 
@@ -723,7 +716,7 @@ plt.savefig('Budget_Gross_Scatterplot.png')
 # 
 # Scatterplot gives us a first thought that the bigger the budget the better the gross ( le8 vs le9). 
 # It follows a weak linear positive correlation, data points are less as budget goes up. 
-# However, most of the data points are gathered in the left down corner.
+# Most of the data points are clustered in the left down corner.
 # 
 
 # In[44]:
@@ -809,9 +802,9 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_catplot.png')
 
 
-# Mean Ratings per Decade catplot
+# Mean Ratings per Decade 2-Barplot
 # 
-# From this plot, we realise that ratings are higher back in the years that what they are today.
+# From this plot, we realize that ratings are higher back in the years that what they are today.
 # This catplot gives us more info about the votes as it categorizes them with different colors. 
 # Another inference is that IMDB Votes are more symmetric than Rotten Tomatoes votes, which indicates that 
 # users think movies are not that bad nowadays, whereas, critics in Rotten Tomatoes seem to be dissapointed 
@@ -833,7 +826,7 @@ plt.title('Mean Ratings per Decade', color = 'black', fontsize = 18)
 plt.savefig('ratings_decade_pointplot.png')
 
 
-# Mean Ratings per Decade pointplot
+# Mean Ratings per Decade Pointplot
 # 
 # Pointplot shows exactly the “line drop” we mentioned above. The red line used to be really high, even higher than the black, and nearby 1985 dropped rappidly under the black one.
 # 
