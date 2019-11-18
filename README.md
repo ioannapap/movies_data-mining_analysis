@@ -29,4 +29,6 @@ We are using libraries libraries for our analysis. If not installed (Linux):
 
 >> pip install seaborn
 
+>> pip install git+https://github.com/statsmodels/statsmodels
+
 And run the .ipynb file via Notebook

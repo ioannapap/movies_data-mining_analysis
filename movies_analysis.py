@@ -6,10 +6,7 @@
 
 import pandas as pd
 import numpy as np
-import itertools
-import math
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 import seaborn as sns
 import scipy as sp
 from scipy import stats
