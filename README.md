@@ -4,8 +4,7 @@ Movies analysis based on multi-attributes.
 
 ANALYSIS CASE:
 
-There are data for 3201 movies. The goal is to analyze this data, understand their form, pose some questions, and answer them
-using the data. For more info, and to see how these data are interpreted and what are the results, check movies_analysis_report.pdf.
+There are data for 3201 movies. The goal is to analyze these data, understand their form, pose some questions, and answer them using the data. For more info, and to see how these data are interpreted and what are the results, check movies_analysis_report.pdf.
 
 SOURCE:
 Dataset "Movie Data" : http://www.data-manual.com/data from : "The Data Science Manual" book
